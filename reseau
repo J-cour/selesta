@@ -1,0 +1,24 @@
+https://www.instagram.com/selesta_lyon/
+
+https://www.facebook.com/people/Selesta-B%C3%A2timent/61586632689830/
+
+https://www.linkedin.com/company/selesta-b%C3%A2timent/
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAYLyaxPVShaP8TgmwSnhy_GYmMg2pnkvE",
+  authDomain: "selesta-4533a.firebaseapp.com",
+  projectId: "selesta-4533a",
+  storageBucket: "selesta-4533a.firebasestorage.app",
+  messagingSenderId: "687723882748",
+  appId: "1:687723882748:web:02f769fd223a29be748f79"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
