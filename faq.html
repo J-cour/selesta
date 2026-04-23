@@ -7,9 +7,11 @@
   <meta name="description" content="Découvrez la méthode Selesta : processus en 6 étapes, de la rencontre initiale à la réception clé en main. Réponses à toutes vos questions sur la rénovation énergétique à Lyon." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://selesta.fr/faq.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Instrument+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     :root{--flame:#C9A84C;--flame-deep:#A07830;--flame-soft:rgba(201,168,76,.10);--flame-glow:rgba(201,168,76,.30);--ink:#0E0C0A;--ink-80:rgba(14,12,10,.8);--ink-50:rgba(14,12,10,.5);--ink-20:rgba(14,12,10,.2);--ink-08:rgba(14,12,10,.08);--cream:#FAF8F5;--cream-deep:#F2EFE9;--white:#FFFFFF;--border:rgba(14,12,10,.12);--font-display:'Unbounded',sans-serif;--font-body:'Instrument Sans',sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1)}
@@ -28,9 +30,11 @@
     /* HEADER */
     header{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,box-shadow .4s}
     header.scrolled{background:rgba(250,248,245,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
-    .logo{font-family:var(--font-display);font-size:18px;font-weight:700;letter-spacing:-.5px;color:var(--ink);display:flex;align-items:center;gap:10px}
-    .logo-mark{width:32px;height:32px;background:var(--flame);border-radius:8px;display:flex;align-items:center;justify-content:center}
-    .logo-mark svg{width:18px;height:18px;fill:none;stroke:white;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .logo img { height:40px; width:auto; display:block; border-radius:8px; }
+    .logo-text { font-family: 'Playfair Display', Georgia, serif; font-size:26px; font-weight:700; background: linear-gradient(135deg, #C9A84C 0%, #F0D080 40%, #A07830 70%, #C9A84C 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; letter-spacing:-0.5px; line-height:1; }
+    
+    
     nav{display:flex;align-items:center;gap:32px}
     nav a{font-size:13px;font-weight:500;color:var(--ink-50);transition:color .2s}
     nav a:hover,nav a.active{color:var(--ink)}
@@ -135,8 +139,8 @@
 <body>
 <header id="header">
   <a href="index.html" class="logo">
-    <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2L4 7v10l8 5 8-5V7z"/><path d="M12 12l4-2.3V14L12 16l-4-2V9.7z"/></svg></div>
-    Selesta
+    <img src="favicon.png" alt="Selesta" />
+    <span class="logo-text">Selesta</span>
   </a>
   <nav>
     <a href="prestations.html">Nos prestations</a>
@@ -291,7 +295,7 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2L4 7v10l8 5 8-5V7z"/><path d="M12 12l4-2.3V14L12 16l-4-2V9.7z"/></svg></div>Selesta</div>
+        <div class="logo" style="gap:10px;margin-bottom:0;"><img src="favicon.png" alt="Selesta" style="height:40px;width:auto;border-radius:8px;" /><span class="logo-text" style="font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:700;background:linear-gradient(135deg,#C9A84C 0%,#F0D080 40%,#A07830 70%,#C9A84C 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.5px;line-height:1;">Selesta</span></div>
         <p>Entreprise de rénovation énergétique certifiée RGE Qualibat, basée à Vénissieux (69). Rhône-Alpes.</p>
       </div>
       <div class="footer-col"><h5>Prestations</h5><ul><li><a href="prestations.html#interieurs">Travaux intérieurs</a></li><li><a href="prestations.html#exterieurs">Travaux extérieurs</a></li><li><a href="prestations.html#isolation">Isolation thermique</a></li><li><a href="prestations.html#facades">Façades &amp; Patrimoine</a></li></ul></div>
