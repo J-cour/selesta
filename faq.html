@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notre Méthode &amp; FAQ – Selesta Lyon | Processus de Rénovation RGE Qualibat</title>
+  <meta name="description" content="Découvrez la méthode Selesta : processus en 6 étapes, de la rencontre initiale à la réception clé en main. Réponses à toutes vos questions sur la rénovation énergétique à Lyon." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://selesta.fr/faq.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Instrument+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--flame:#C9A84C;--flame-deep:#A07830;--flame-soft:rgba(201,168,76,.10);--flame-glow:rgba(201,168,76,.30);--ink:#0E0C0A;--ink-80:rgba(14,12,10,.8);--ink-50:rgba(14,12,10,.5);--ink-20:rgba(14,12,10,.2);--ink-08:rgba(14,12,10,.08);--cream:#FAF8F5;--cream-deep:#F2EFE9;--white:#FFFFFF;--border:rgba(14,12,10,.12);--font-display:'Unbounded',sans-serif;--font-body:'Instrument Sans',sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1)}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font-body);color:var(--ink);background:var(--white);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes pulse-ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
+    @keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-2%,-3%)}20%{transform:translate(3%,1%)}30%{transform:translate(-1%,4%)}40%{transform:translate(4%,-1%)}50%{transform:translate(-3%,2%)}60%{transform:translate(1%,-4%)}70%{transform:translate(-4%,3%)}80%{transform:translate(2%,-2%)}90%{transform:translate(3%,4%)}}
+    body::after{content:'';position:fixed;inset:-50%;width:200%;height:200%;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");opacity:.025;pointer-events:none;z-index:9999;animation:grain 8s steps(10) infinite}
+    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal.visible{opacity:1;transform:none}
+
+    /* HEADER */
+    header{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,box-shadow .4s}
+    header.scrolled{background:rgba(250,248,245,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
+    .logo{font-family:var(--font-display);font-size:18px;font-weight:700;letter-spacing:-.5px;color:var(--ink);display:flex;align-items:center;gap:10px}
+    .logo-mark{width:32px;height:32px;background:var(--flame);border-radius:8px;display:flex;align-items:center;justify-content:center}
+    .logo-mark svg{width:18px;height:18px;fill:none;stroke:white;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    nav{display:flex;align-items:center;gap:32px}
+    nav a{font-size:13px;font-weight:500;color:var(--ink-50);transition:color .2s}
+    nav a:hover,nav a.active{color:var(--ink)}
+    .header-actions{display:flex;align-items:center;gap:12px}
+    .pill-rge{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--flame);border:1.5px solid var(--flame);padding:5px 12px;border-radius:100px}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:500;cursor:pointer;background:var(--flame);color:var(--white);padding:10px 20px;border-radius:6px;font-size:13px;border:none;transition:all .25s var(--ease-out)}
+    .btn-primary:hover{background:var(--flame-deep);transform:translateY(-2px)}
+    .burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:1.5px solid var(--border);border-radius:8px;cursor:pointer;padding:8px}
+    .burger span{display:block;height:1.5px;background:var(--ink);border-radius:2px;transition:all .3s var(--ease-out);transform-origin:center}
+    .burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+    .burger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
+    .burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+    .mobile-nav-overlay{display:none;position:fixed;inset:0;top:72px;background:rgba(250,248,245,.98);backdrop-filter:blur(20px);z-index:490;padding:32px 24px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .3s var(--ease-out),transform .3s var(--ease-out)}
+    .mobile-nav-overlay.open{opacity:1;transform:translateY(0);pointer-events:all}
+    .mobile-nav{display:flex;flex-direction:column;gap:4px}
+    .mobile-nav a{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--border);display:block;transition:color .2s,padding-left .2s}
+    .mobile-nav a:hover{color:var(--flame);padding-left:8px}
+    .mobile-nav a.mobile-nav-cta{margin-top:20px;background:var(--flame);color:white;padding:16px 24px;border-radius:8px;border:none;text-align:center;font-size:14px}
+
+    /* PAGE HERO */
+    .page-hero{background:var(--cream);padding:140px 40px 80px;position:relative;overflow:hidden}
+    .page-hero-inner{max-width:1240px;margin:0 auto}
+    .page-hero-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px;animation:fadeIn .8s var(--ease-out) .1s both}
+    .page-hero-eyebrow-dot{width:8px;height:8px;background:var(--flame);border-radius:50%;position:relative}
+    .page-hero-eyebrow-dot::after{content:'';position:absolute;inset:-4px;border:1px solid var(--flame);border-radius:50%;animation:pulse-ring 2s ease-out infinite}
+    .page-hero-eyebrow span{font-family:var(--font-display);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--flame)}
+    .page-hero h1{font-family:var(--font-display);font-size:clamp(40px,5vw,64px);font-weight:700;line-height:.98;letter-spacing:-2px;color:var(--ink);margin-bottom:24px;animation:fadeUp .9s var(--ease-out) .2s both}
+    .page-hero h1 span{color:var(--flame)}
+    .page-hero-desc{font-size:17px;font-weight:300;color:var(--ink-50);max-width:620px;line-height:1.75;animation:fadeUp .9s var(--ease-out) .35s both}
+
+    /* SECTIONS */
+    .section{padding:100px 40px}
+    .section-inner{max-width:1240px;margin:0 auto}
+    .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+    .eyebrow::before{content:'';display:block;width:28px;height:2px;background:var(--flame);flex-shrink:0}
+    .eyebrow span{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--flame)}
+    .section-title{font-family:var(--font-display);font-size:clamp(30px,4vw,50px);font-weight:700;letter-spacing:-1.5px;line-height:1.02;color:var(--ink)}
+    .section-sub{font-size:17px;color:var(--ink-50);max-width:520px;line-height:1.75;font-weight:300}
+
+    /* PROCESS */
+    .process-section{background:var(--ink)}
+    .process-header{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end;margin-bottom:72px}
+    .process-header .section-title{color:var(--white)}
+    .process-header .section-sub{color:rgba(255,255,255,.45)}
+    .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.06);border-radius:16px;overflow:hidden}
+    .process-step{background:rgba(255,255,255,.02);padding:40px 36px;transition:background .3s}
+    .process-step:hover{background:rgba(255,255,255,.05)}
+    .step-index{font-family:var(--font-display);font-size:64px;font-weight:900;letter-spacing:-3px;color:rgba(255,255,255,.07);line-height:1;margin-bottom:24px}
+    .step-line{width:32px;height:2px;background:var(--flame);margin-bottom:20px}
+    .process-step h3{font-family:var(--font-display);font-size:18px;font-weight:700;letter-spacing:-.3px;color:var(--white);margin-bottom:12px}
+    .process-step p{font-size:14px;color:rgba(255,255,255,.45);line-height:1.7}
+
+    /* FAQ */
+    .faq-section{background:var(--cream)}
+    .faq-layout{display:grid;grid-template-columns:4fr 8fr;gap:80px;align-items:start}
+    .faq-sticky{position:sticky;top:100px}
+    .faq-list{display:flex;flex-direction:column}
+    .faq-item{border-bottom:1px solid var(--border)}
+    .faq-q{width:100%;text-align:left;background:none;border:none;font-family:var(--font-body);font-size:16px;font-weight:500;color:var(--ink);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;transition:color .2s}
+    .faq-q:hover{color:var(--flame)}
+    .faq-toggle{width:28px;height:28px;border:1.5px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;line-height:1;color:var(--ink-50);transition:all .3s var(--ease-out)}
+    .faq-item.open .faq-toggle{transform:rotate(45deg);border-color:var(--flame);color:var(--flame);background:var(--flame-soft)}
+    .faq-a{max-height:0;overflow:hidden;transition:max-height .4s var(--ease-out)}
+    .faq-a-inner{padding-bottom:22px;font-size:15px;color:var(--ink-50);line-height:1.75}
+
+    /* CTA */
+    .cta-section{background:var(--flame);padding:80px 40px;position:relative;overflow:hidden}
+    .cta-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+    .cta-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:48px;position:relative}
+    .cta-text h2{font-family:var(--font-display);font-size:clamp(28px,3.5vw,46px);font-weight:800;letter-spacing:-1.5px;color:var(--white);line-height:1.05;margin-bottom:12px}
+    .cta-text p{font-size:17px;color:rgba(255,255,255,.75);font-weight:300}
+    .btn-cta-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--flame);padding:18px 36px;border-radius:8px;font-family:var(--font-display);font-size:13px;font-weight:700;white-space:nowrap;transition:all .3s var(--ease-out)}
+    .btn-cta-white:hover{background:var(--ink);color:var(--white);transform:translateY(-3px)}
+
+    /* FOOTER */
+    footer{background:var(--ink);padding:64px 40px 36px}
+    .footer-inner{max-width:1240px;margin:0 auto}
+    .footer-top{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:32px}
+    .footer-brand .logo{color:var(--white);margin-bottom:16px}
+    .footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.7}
+    .footer-col h5{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px}
+    .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+    .footer-col ul li a{font-size:14px;color:rgba(255,255,255,.5);transition:color .2s}
+    .footer-col ul li a:hover{color:var(--flame)}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.3);flex-wrap:wrap;gap:12px}
+
+    @media(max-width:768px){
+      header{padding:0 20px} nav{display:none} .pill-rge{display:none}
+      .burger{display:flex} .mobile-nav-overlay{display:block}
+      .section{padding:72px 20px}
+      .page-hero{padding:120px 20px 60px}
+      .process-header{grid-template-columns:1fr;gap:24px;margin-bottom:48px}
+      .process-grid{grid-template-columns:1fr}
+      .faq-layout{grid-template-columns:1fr;gap:40px}
+      .faq-sticky{position:static}
+      .cta-inner{flex-direction:column;text-align:center}
+      .footer-top{grid-template-columns:1fr 1fr;gap:32px}
+    }
+    @media(max-width:480px){.footer-top{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header id="header">
+  <a href="index.html" class="logo">
+    <div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2L4 7v10l8 5 8-5V7z"/><path d="M12 12l4-2.3V14L12 16l-4-2V9.7z"/></svg></div>
+    Selesta
+  </a>
+  <nav>
+    <a href="prestations.html">Nos prestations</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="faq.html" class="active">Méthode &amp; FAQ</a>
+    <a href="index.html#avis">Avis</a>
+    <a href="index.html#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    <span class="pill-rge">RGE Qualibat</span>
+    <a href="index.html#contact" class="btn-primary">Devis gratuit</a>
+    <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mobile-nav-overlay" id="mobile-nav-overlay">
+  <nav class="mobile-nav">
+    <a href="prestations.html">Nos prestations</a>
+    <a href="realisations.html">Réalisations</a>
+    <a href="faq.html">Méthode &amp; FAQ</a>
+    <a href="index.html#avis">Avis</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#contact" class="mobile-nav-cta">Devis gratuit →</a>
+  </nav>
+</div>
+
+<main id="main-content">
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-hero-eyebrow"><div class="page-hero-eyebrow-dot"></div><span>Notre approche — RGE Qualibat</span></div>
+    <h1>Notre méthode<br/>&amp; vos <span>questions.</span></h1>
+    <p class="page-hero-desc">Un accompagnement structuré de A à Z, avec une réponse claire à chaque étape. Découvrez comment Selesta pilote vos projets de rénovation à Lyon et en Rhône-Alpes.</p>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="section process-section" id="processus">
+  <div class="section-inner">
+    <div class="process-header">
+      <div>
+        <div class="eyebrow reveal"><span style="color:var(--flame)">Notre méthode</span></div>
+        <h2 class="section-title reveal">Un accompagnement<br/>structuré de A à Z.</h2>
+      </div>
+      <p class="section-sub reveal">Chaque chantier suit un processus rigoureux. Vous savez toujours où vous en êtes, et pourquoi.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step reveal">
+        <div class="step-index">01</div><div class="step-line"></div>
+        <h3>Rencontre &amp; étude</h3>
+        <p>Nous échangeons sur vos besoins, analysons vos contraintes et établissons un diagnostic précis de votre bâtiment.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:.12s">
+        <div class="step-index">02</div><div class="step-line"></div>
+        <h3>Devis personnalisé</h3>
+        <p>Gratuit et remis sous 48h, le devis détaille chaque poste de travaux avec transparence sur les coûts et délais.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:.24s">
+        <div class="step-index">03</div><div class="step-line"></div>
+        <h3>Conception &amp; coordination</h3>
+        <p>Nos conducteurs de travaux réalisent les plans, organisent et pilotent l'ensemble des corps de métier.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:.36s">
+        <div class="step-index">04</div><div class="step-line"></div>
+        <h3>Suivi de chantier</h3>
+        <p>Présence permanente sur site, reporting régulier et respect strict du planning établi ensemble.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:.48s">
+        <div class="step-index">05</div><div class="step-line"></div>
+        <h3>Réception clé en main</h3>
+        <p>Nos équipes qualifiées terminent chaque chantier avec rigueur. Livraison dans les délais, qualité garantie.</p>
+      </div>
+      <div class="process-step reveal" style="transition-delay:.60s">
+        <div class="step-index">06</div><div class="step-line"></div>
+        <h3>Aides &amp; subventions</h3>
+        <p>Nous vous guidons dans les démarches MaPrimeRénov', CEE et autres dispositifs pour maximiser votre financement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section" id="faq">
+  <div class="section-inner">
+    <div class="faq-layout">
+      <div class="faq-sticky">
+        <div class="eyebrow reveal"><span>Questions fréquentes</span></div>
+        <h2 class="section-title reveal" style="margin-bottom:20px">Tout ce qu'il faut savoir.</h2>
+        <p class="section-sub reveal" style="font-size:15px">Une question sans réponse ? Notre équipe est joignable par téléphone ou email.</p>
+        <div style="margin-top:32px;" class="reveal">
+          <a href="tel:+33487627179" class="btn-primary">04 87 62 71 79</a>
+        </div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Quels types de travaux propose Selesta ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Selesta intervient sur trois grands domaines : les <strong>travaux intérieurs</strong> (isolation, plâtrerie, menuiserie, électricité, plomberie), les <strong>travaux extérieurs</strong> (isolation par l'extérieur, ravalement de façades, maçonnerie, étanchéité) et la <strong>rénovation globale</strong> clé en main.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.05s">
+          <button class="faq-q" aria-expanded="false">Intervenez-vous uniquement à Vénissieux ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Nous sommes basés à Vénissieux (69), mais nous intervenons sur l'ensemble de la métropole lyonnaise et ses alentours : Lyon, Villefranche-sur-Saône, Vienne, et plus généralement toute la région Rhône-Alpes.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.1s">
+          <button class="faq-q" aria-expanded="false">Puis-je bénéficier d'aides financières pour mes travaux ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Oui. Grâce à la certification RGE Qualibat de Selesta, vous pouvez accéder à <strong>MaPrimeRénov'</strong>, les <strong>CEE</strong>, l'<strong>Éco-PTZ</strong> et la <strong>TVA à 5,5%</strong> selon la nature de vos travaux. Nous vous accompagnons dans toutes les démarches.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.15s">
+          <button class="faq-q" aria-expanded="false">Proposez-vous un diagnostic avant les travaux ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Oui. Chaque projet débute par un diagnostic précis permettant d'évaluer l'état du bâtiment et d'identifier les solutions les plus adaptées à vos besoins et à votre budget. Ce diagnostic est inclus dans notre devis gratuit.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.2s">
+          <button class="faq-q" aria-expanded="false">Qui réalise concrètement les travaux ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Les propres équipes de Selesta interviennent sur la maçonnerie, l'isolation extérieure et intérieure, la plâtrerie et l'agencement. Pour les lots techniques (thermique, électricité), Selesta fait appel à des partenaires experts coordonnés et contrôlés directement par notre encadrement.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.25s">
+          <button class="faq-q" aria-expanded="false">Comment obtenir un devis ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Contactez Selesta via le formulaire sur le site ou par téléphone au <strong>04 87 62 71 79</strong>. L'équipe vous propose un devis personnalisé et gratuit sous 48h, sans engagement.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.3s">
+          <button class="faq-q" aria-expanded="false">Selesta est-elle certifiée RGE Qualibat ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Oui, Selesta est certifiée <strong>RGE (Reconnu Garant de l'Environnement)</strong> par Qualibat. Cette certification est indispensable pour que vous puissiez bénéficier des aides de l'État pour vos travaux d'isolation et de rénovation énergétique.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.35s">
+          <button class="faq-q" aria-expanded="false">Quelle est votre zone d'intervention ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Selesta intervient principalement à Lyon, Vénissieux, Bron, Décines, Vienne, Villefranche-sur-Saône et dans l'ensemble de la région Auvergne-Rhône-Alpes. N'hésitez pas à nous contacter pour vérifier la disponibilité selon votre localisation.</div></div>
+        </div>
+        <div class="faq-item reveal" style="transition-delay:.40s">
+          <button class="faq-q" aria-expanded="false">Proposez-vous des garanties sur vos travaux ?<span class="faq-toggle">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Oui. Selesta propose des garanties décennales sur les travaux qui le nécessitent (étanchéité, isolation extérieure, maçonnerie structurelle). Une assurance responsabilité civile couvre également l'ensemble de nos interventions.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-text reveal">
+      <h2>Votre projet de rénovation<br/>commence ici.</h2>
+      <p>Devis gratuit, diagnostic précis, accompagnement clé en main. Sans engagement.</p>
+    </div>
+    <a href="index.html#contact" class="btn-cta-white reveal">
+      Obtenir mon devis gratuit
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 2L4 7v10l8 5 8-5V7z"/><path d="M12 12l4-2.3V14L12 16l-4-2V9.7z"/></svg></div>Selesta</div>
+        <p>Entreprise de rénovation énergétique certifiée RGE Qualibat, basée à Vénissieux (69). Rhône-Alpes.</p>
+      </div>
+      <div class="footer-col"><h5>Prestations</h5><ul><li><a href="prestations.html#interieurs">Travaux intérieurs</a></li><li><a href="prestations.html#exterieurs">Travaux extérieurs</a></li><li><a href="prestations.html#isolation">Isolation thermique</a></li><li><a href="prestations.html#facades">Façades &amp; Patrimoine</a></li></ul></div>
+      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="faq.html">Méthode &amp; FAQ</a></li><li><a href="index.html#avis">Avis clients</a></li></ul></div>
+      <div class="footer-col"><h5>Nous joindre</h5><ul><li><a href="tel:+33487627179">04 87 62 71 79</a></li><li><a href="tel:+33765165430">07 65 16 54 30</a></li><li><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 <a href="index.html" style="color:inherit">Selesta</a> — 158 Av. Francis de Pressensé, 69200 Vénissieux</span>
+      <strong style="color:rgba(255,255,255,.5)">RGE Qualibat · Entreprise du Bâtiment</strong>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const burgerBtn = document.getElementById('burger-btn');
+  const mobileOverlay = document.getElementById('mobile-nav-overlay');
+  burgerBtn.addEventListener('click', () => { const isOpen = mobileOverlay.classList.toggle('open'); burgerBtn.classList.toggle('open', isOpen); burgerBtn.setAttribute('aria-expanded', isOpen); document.body.style.overflow = isOpen ? 'hidden' : ''; });
+  mobileOverlay.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => { mobileOverlay.classList.remove('open'); burgerBtn.classList.remove('open'); burgerBtn.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; }); });
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); }, { passive:true });
+  const revealObserver = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObserver.unobserve(e.target); } }); }, { threshold:0.1, rootMargin:'0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const answer = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-a').style.maxHeight = '0'; i.querySelector('.faq-q').setAttribute('aria-expanded','false'); });
+      if(!isOpen){ item.classList.add('open'); answer.style.maxHeight = answer.scrollHeight + 'px'; btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+</script>
+</body>
+</html>
