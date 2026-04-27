@@ -3,329 +3,1112 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Selesta – Rénovation Énergétique Lyon, Vénissieux & Rhône-Alpes | RGE Qualibat | Isolation, Façade, Rénovation Globale</title>
+  <title>Selesta – Rénovation Énergétique Lyon, Vénissieux & Rhône-Alpes | RGE Qualibat</title>
   <meta name="description" content="Selesta, entreprise RGE Qualibat à Vénissieux (69). Isolation thermique, ITE, ravalement de façade, rénovation globale clé en main à Lyon et Rhône-Alpes. Devis gratuit sous 48h." />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
   <link rel="canonical" href="https://selesta.fr/" />
-  <meta name="keywords" content="rénovation énergétique Lyon, isolation thermique Lyon, ITE Lyon, ravalement façade Lyon, RGE Qualibat Vénissieux, rénovation globale Lyon, entreprise rénovation Rhône-Alpes, isolation extérieure Lyon, MaPrimeRénov Lyon, travaux façade Lyon, maçonnerie Lyon, plâtrerie Lyon" />
+  <meta name="keywords" content="rénovation énergétique Lyon, isolation thermique Lyon, ITE Lyon, ravalement façade Lyon, RGE Qualibat Vénissieux, rénovation globale Lyon" />
   <meta name="theme-color" content="#C9A84C" />
   <meta property="og:title" content="Selesta – Rénovation Énergétique Lyon & Rhône-Alpes | RGE Qualibat" />
   <meta property="og:description" content="Isolation thermique, ITE, ravalement de façade et rénovation globale à Lyon. Certifié RGE Qualibat. Devis gratuit sous 48h." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://selesta.fr/wp-content/uploads/Copie-de-Logo-Selesta.webp" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:site_name" content="Selesta Bâtiment" />
   <meta property="og:url" content="https://selesta.fr/" />
-
   <link rel="icon" type="image/png" href="./favicon_32x32.png" />
   <link rel="shortcut icon" type="image/png" href="./favicon_32x32.png" />
   <link rel="apple-touch-icon" href="./favicon_32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Instrument+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --flame: #C9A84C; --flame-deep: #A07830;
-      --flame-soft: rgba(201,168,76,.10); --flame-glow: rgba(201,168,76,.30);
-      --ink: #0E0C0A; --ink-80: rgba(14,12,10,.8); --ink-50: rgba(14,12,10,.5);
-      --ink-20: rgba(14,12,10,.2); --ink-08: rgba(14,12,10,.08);
-      --cream: #FAF8F5; --cream-deep: #F2EFE9; --white: #FFFFFF;
-      --border: rgba(14,12,10,.12);
-      --font-display: 'Unbounded', sans-serif;
-      --font-body: 'Instrument Sans', sans-serif;
-      --ease-out: cubic-bezier(0.16,1,0.3,1);
+      --gold: #C9A84C;
+      --gold-deep: #A07830;
+      --gold-soft: rgba(201,168,76,.12);
+      --gold-glow: rgba(201,168,76,.28);
+      --ink: #0A0908;
+      --ink-70: rgba(10,9,8,.70);
+      --ink-40: rgba(10,9,8,.40);
+      --ink-12: rgba(10,9,8,.12);
+      --ink-06: rgba(10,9,8,.06);
+      --sand: #F5F2EC;
+      --sand-deep: #EDE9E0;
+      --white: #FAFAF8;
+      --dark: #0D0B09;
+      --dark-card: #161310;
+      --dark-border: rgba(255,255,255,.09);
+      --font-display: 'DM Sans', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --ease: cubic-bezier(0.16,1,0.3,1);
     }
+
     html { scroll-behavior: smooth; }
-    body { font-family: var(--font-body); color: var(--ink); background: var(--white); line-height: 1.6; font-size: 16px; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    body {
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      font-weight: 400;
+      letter-spacing: -.01em;
+    }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
 
-    @keyframes fadeUp { from { opacity:0; transform:translateY(28px); } to { opacity:1; transform:translateY(0); } }
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp { from { opacity:0; transform:translateY(32px); } to { opacity:1; transform:none; } }
     @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @keyframes pulse-ring { 0% { transform:scale(1); opacity:.6; } 100% { transform:scale(1.6); opacity:0; } }
-    @keyframes marquee { from { transform:translateX(0); } to { transform:translateX(-50%); } }
-    @keyframes grain {
-      0%,100%{transform:translate(0,0)} 10%{transform:translate(-2%,-3%)} 20%{transform:translate(3%,1%)}
-      30%{transform:translate(-1%,4%)} 40%{transform:translate(4%,-1%)} 50%{transform:translate(-3%,2%)}
-      60%{transform:translate(1%,-4%)} 70%{transform:translate(-4%,3%)} 80%{transform:translate(2%,-2%)} 90%{transform:translate(3%,4%)}
-    }
-    body::after { content:''; position:fixed; inset:-50%; width:200%; height:200%; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E"); opacity:.025; pointer-events:none; z-index:9999; animation:grain 8s steps(10) infinite; }
+    @keyframes ticker { from { transform:translateX(0); } to { transform:translateX(-50%); } }
+    @keyframes pulse { 0%,100%{transform:scale(1);opacity:.5;} 50%{transform:scale(1.5);opacity:0;} }
+    @keyframes scrollDown { from{transform:translateY(0)} to{transform:translateY(-50%)} }
+    @keyframes scrollUp { from{transform:translateY(-50%)} to{transform:translateY(0)} }
 
-    .reveal { opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease-out),transform .7s var(--ease-out); }
+    /* ── DIGITAL SERENITY ── */
+    @keyframes word-appear {
+      0%   { opacity:0; transform:translateY(28px) scale(0.82); filter:blur(10px); }
+      50%  { opacity:.8; transform:translateY(9px) scale(0.97); filter:blur(2px); }
+      100% { opacity:1; transform:translateY(0) scale(1); filter:blur(0); }
+    }
+    @keyframes grid-draw {
+      0%   { stroke-dashoffset:1000; opacity:0; }
+      50%  { opacity:.3; }
+      100% { stroke-dashoffset:0; opacity:.14; }
+    }
+    @keyframes dot-pulse {
+      0%,100% { opacity:.08; transform:scale(1); }
+      50%      { opacity:.35; transform:scale(1.15); }
+    }
+    @keyframes float-particle {
+      0%,100% { transform:translateY(0) translateX(0); opacity:.18; }
+      25%     { transform:translateY(-11px) translateX(5px); opacity:.6; }
+      50%     { transform:translateY(-6px) translateX(-3px); opacity:.35; }
+      75%     { transform:translateY(-16px) translateX(7px); opacity:.75; }
+    }
+    @keyframes underline-grow { to { width:100%; } }
+    @keyframes ripple-out {
+      0%   { transform:translate(-50%,-50%) scale(1); opacity:.6; }
+      100% { transform:translate(-50%,-50%) scale(18); opacity:0; }
+    }
+
+    /* Word-by-word reveal */
+    .wa {
+      display:inline-block; opacity:0;
+      transition:color .3s ease, transform .25s ease;
+    }
+    .wa:hover { color:var(--gold); transform:translateY(-2px); }
+    .wa.go { animation:word-appear .82s ease-out forwards; }
+
+    /* Decorative underline on accent text */
+    .title-line {
+      position:relative; display:inline-block;
+    }
+    .title-line::after {
+      content:''; position:absolute; bottom:-3px; left:0;
+      width:0; height:1px;
+      background:linear-gradient(90deg, transparent, var(--gold), transparent);
+      transition:none;
+    }
+    .title-line.line-go::after {
+      animation:underline-grow 1.4s ease-out forwards;
+      animation-delay:.4s;
+    }
+
+    /* Section title hero-style (used on light bg — gold glow on hover) */
+    .section-title .wa:hover { color:var(--gold-deep); }
+
+    /* SVG grid line */
+    .ds-grid-line {
+      stroke:rgba(201,168,76,.25); stroke-width:.5;
+      opacity:0; stroke-dasharray:5 5; stroke-dashoffset:1000;
+      animation:grid-draw 2.2s ease-out forwards;
+    }
+    .ds-dot {
+      fill:rgba(201,168,76,.5); opacity:0;
+      animation:dot-pulse 3s ease-in-out infinite;
+    }
+
+    /* Floating particles (hero only) */
+    .ds-particle {
+      position:absolute; width:2px; height:2px;
+      background:var(--gold); border-radius:50%;
+      opacity:0; animation:float-particle 4.5s ease-in-out infinite;
+      pointer-events:none;
+    }
+
+    /* Corner brackets */
+    .ds-corner {
+      position:absolute; width:38px; height:38px;
+      border:1px solid rgba(201,168,76,.22);
+      opacity:0; animation:word-appear 1s ease-out forwards;
+      pointer-events:none;
+    }
+
+    /* Mouse gradient */
+    #ds-mouse {
+      position:fixed; pointer-events:none; z-index:0;
+      border-radius:50%;
+      width:420px; height:420px;
+      background:radial-gradient(circle, rgba(201,168,76,.06), rgba(201,168,76,.03), transparent 70%);
+      transform:translate(-50%,-50%);
+      transition:left 80ms linear, top 80ms linear, opacity .35s ease;
+      will-change:left,top,opacity;
+    }
+
+    /* Click ripple */
+    .ds-ripple {
+      position:fixed; width:5px; height:5px;
+      background:rgba(201,168,76,.55); border-radius:50%;
+      transform:translate(-50%,-50%); pointer-events:none;
+      animation:ripple-out .9s ease-out forwards; z-index:9999;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+
+    .reveal { opacity:0; transform:translateY(20px); transition:opacity .65s var(--ease), transform .65s var(--ease); }
     .reveal.visible { opacity:1; transform:none; }
 
-    /* ─── HEADER ─── */
-    header { position:fixed; top:0; left:0; right:0; z-index:500; padding:0 40px; height:72px; display:flex; align-items:center; justify-content:space-between; transition:background .4s,box-shadow .4s; }
-    header.scrolled { background:rgba(250,248,245,.96); backdrop-filter:blur(16px); box-shadow:0 1px 0 var(--border); }
-    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
-    .logo img { height:40px; width:auto; display:block; border-radius:8px; }
-    .logo-text { font-family: 'Playfair Display', Georgia, serif; font-size:26px; font-weight:700; background: linear-gradient(135deg, #C9A84C 0%, #F0D080 40%, #A07830 70%, #C9A84C 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; letter-spacing:-0.5px; line-height:1; }
-    nav { display:flex; align-items:center; gap:32px; }
-    nav a { font-size:13px; font-weight:500; letter-spacing:.2px; color:var(--ink-50); transition:color .2s; }
-    nav a:hover, nav a.active { color:var(--ink); }
-    .header-actions { display:flex; align-items:center; gap:12px; }
-    .pill-rge { font-family:var(--font-display); font-size:9px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--flame); border:1.5px solid var(--flame); padding:5px 12px; border-radius:100px; }
-    .btn { display:inline-flex; align-items:center; gap:8px; font-family:var(--font-body); font-weight:500; cursor:pointer; border:none; transition:all .25s var(--ease-out); white-space:nowrap; text-decoration:none; }
-    .btn-primary { background:var(--flame); color:var(--white); padding:13px 26px; border-radius:6px; font-size:14px; }
-    .btn-primary:hover { background:var(--flame-deep); transform:translateY(-2px); box-shadow:0 8px 24px var(--flame-glow); }
-    .btn-ghost { background:transparent; color:var(--ink); padding:13px 24px; border-radius:6px; font-size:14px; border:1.5px solid var(--border); }
-    .btn-ghost:hover { border-color:var(--ink-50); }
-    .burger { display:none; flex-direction:column; justify-content:center; gap:5px; width:40px; height:40px; background:none; border:1.5px solid var(--border); border-radius:8px; cursor:pointer; padding:8px; transition:border-color .2s; }
-    .burger span { display:block; height:1.5px; background:var(--ink); border-radius:2px; transition:all .3s var(--ease-out); transform-origin:center; }
+    /* ── SKIP LINK ── */
+    .skip-link {
+      position:absolute; left:-9999px; top:4px; z-index:9999;
+      padding:8px 16px; background:var(--gold); color:var(--ink);
+      font-size:14px; font-weight:600; border-radius:4px;
+    }
+    .skip-link:focus { left:4px; }
+
+    /* ────────────────── HEADER ────────────────── */
+    header {
+      position:fixed; top:0; left:0; right:0; z-index:500;
+      height:68px; padding:0 40px;
+      display:flex; align-items:center; justify-content:space-between;
+      transition:background .35s, box-shadow .35s;
+    }
+    header.scrolled {
+      background:rgba(250,250,248,.95);
+      backdrop-filter:blur(18px);
+      box-shadow:0 1px 0 var(--ink-12);
+    }
+    .logo {
+      display:flex; align-items:center; gap:10px;
+      font-family: 'DM Serif Display', serif; font-size:20px; font-weight:400;
+      letter-spacing:-.01em; color:var(--ink);
+    }
+    .logo img { height:36px; width:auto; border-radius:6px; }
+    .logo-word { color: var(--ink); }
+    nav { display:flex; align-items:center; gap:28px; }
+    nav a { font-size: 14px; font-weight: 400; color: var(--ink-70); transition: color .2s; letter-spacing: 0; }
+    nav a:hover { color:var(--ink); }
+    .header-right { display:flex; align-items:center; gap:10px; }
+    .badge-rge {
+      font-family:var(--font-display); font-size:9px; font-weight:700;
+      letter-spacing:1.5px; text-transform:uppercase;
+      color:var(--gold); border:1.5px solid var(--gold);
+      padding:5px 11px; border-radius:100px;
+    }
+    .btn-nav {
+      display:inline-flex; align-items:center; gap:7px;
+      background:var(--ink); color:var(--white);
+      font-family: var(--font-body); font-size:13px; font-weight:500;
+      letter-spacing:0; padding:10px 20px; border-radius:6px;
+      transition:background .2s, transform .2s;
+    }
+    .btn-nav:hover { background:var(--gold); color:var(--ink); transform:translateY(-1px); }
+    .burger {
+      display:none; flex-direction:column; justify-content:center; gap:5px;
+      width:40px; height:40px; background:none;
+      border:1.5px solid var(--ink-12); border-radius:8px;
+      cursor:pointer; padding:8px;
+    }
+    .burger span { display:block; height:1.5px; background:var(--ink); border-radius:2px; transition:all .3s var(--ease); transform-origin:center; }
     .burger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
     .burger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
     .burger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
-    .mobile-nav-overlay { display:none; position:fixed; inset:0; top:72px; background:rgba(250,248,245,.98); backdrop-filter:blur(20px); z-index:490; padding:32px 24px; transform:translateY(-8px); opacity:0; pointer-events:none; transition:opacity .3s var(--ease-out),transform .3s var(--ease-out); }
-    .mobile-nav-overlay.open { opacity:1; transform:translateY(0); pointer-events:all; }
-    .mobile-nav { display:flex; flex-direction:column; gap:4px; }
-    .mobile-nav a { font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-.5px; color:var(--ink); padding:14px 0; border-bottom:1px solid var(--border); display:block; transition:color .2s,padding-left .2s; }
-    .mobile-nav a:hover { color:var(--flame); padding-left:8px; }
-    .mobile-nav a.mobile-nav-cta { margin-top:20px; background:var(--flame); color:white; padding:16px 24px; border-radius:8px; border:none; text-align:center; font-size:14px; }
-    .mobile-nav a.mobile-nav-cta:hover { background:var(--flame-deep); }
+    .mobile-menu {
+      display:none; position:fixed; inset:0; top:68px; z-index:490;
+      background:rgba(250,250,248,.98); backdrop-filter:blur(24px);
+      padding:32px 24px; opacity:0; pointer-events:none;
+      transform:translateY(-6px); transition:opacity .3s var(--ease), transform .3s var(--ease);
+    }
+    .mobile-menu.open { opacity:1; pointer-events:all; transform:none; display:block; }
+    .mobile-nav { display:flex; flex-direction:column; gap:2px; }
+    .mobile-nav a {
+      font-family:var(--font-display); font-size:24px; font-weight:700;
+      letter-spacing:-.5px; color:var(--ink);
+      padding:14px 0; border-bottom:1px solid var(--ink-12);
+      display:block; transition:color .2s, padding-left .2s;
+    }
+    .mobile-nav a:hover { color:var(--gold); padding-left:6px; }
+    .mobile-nav a.cta {
+      margin-top:20px; background:var(--gold); color:var(--ink);
+      padding:16px 24px; border-radius:8px; border:none; text-align:center;
+      font-size:14px; letter-spacing:.2px;
+    }
+    .mobile-nav a.cta:hover { background:var(--gold-deep); color:var(--white); padding-left:24px; }
 
-    /* ─── HERO ─── */
-    .hero { min-height:100vh; background:linear-gradient(160deg,#FAF8F5 0%,#EDE8DF 55%,#FAF8F5 100%); display:flex; flex-direction:column; position:relative; overflow:hidden; padding-top:72px; }
-    .hero::before { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(14,12,10,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(14,12,10,.05) 1px,transparent 1px); background-size:60px 60px; pointer-events:none; }
-    .hero-glow { position:absolute; width:900px; height:900px; top:-250px; right:-250px; background:radial-gradient(ellipse,rgba(201,168,76,.20) 0%,transparent 65%); pointer-events:none; }
-    .hero-glow-2 { position:absolute; width:500px; height:500px; bottom:-50px; left:-150px; background:radial-gradient(ellipse,rgba(201,168,76,.12) 0%,transparent 70%); pointer-events:none; }
-    .hero-decoration { position:absolute; width:640px; height:640px; right:-120px; top:50%; transform:translateY(-50%); border-radius:50%; border:1px solid rgba(201,168,76,.18); pointer-events:none; z-index:0; }
-    .hero-decoration::before { content:''; position:absolute; inset:48px; border-radius:50%; border:1px solid rgba(201,168,76,.12); }
-    .hero-decoration::after { content:''; position:absolute; inset:96px; border-radius:50%; background:radial-gradient(ellipse,rgba(201,168,76,.09) 0%,transparent 70%); }
-    .hero-content { flex:1; display:flex; align-items:center; max-width:1240px; margin:0 auto; padding:80px 40px 60px; width:100%; gap:80px; position:relative; z-index:1; }
-    .hero-left { flex:1; }
-    .hero-eyebrow { display:inline-flex; align-items:center; gap:10px; margin-bottom:32px; animation:fadeIn .8s var(--ease-out) .1s both; }
-    .hero-eyebrow-dot { width:8px; height:8px; background:var(--flame); border-radius:50%; position:relative; }
-    .hero-eyebrow-dot::after { content:''; position:absolute; inset:-4px; border:1px solid var(--flame); border-radius:50%; animation:pulse-ring 2s ease-out infinite; }
-    .hero-eyebrow span { font-family:var(--font-display); font-size:10px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--flame); }
-    .hero h1 { font-family:var(--font-display); font-size:clamp(40px,5vw,66px); font-weight:700; line-height:1.05; letter-spacing:-0.5px; color:var(--ink); margin-bottom:32px; animation:fadeUp .9s var(--ease-out) .2s both; }
-    .hero h1 .accent { color:var(--flame); }
-    .hero h1 .line-indent { display:block; padding-left:clamp(40px,6vw,100px); }
-    .hero-desc { font-size:17px; font-weight:400; color:rgba(14,12,10,.68); max-width:500px; line-height:1.8; margin-bottom:48px; animation:fadeUp .9s var(--ease-out) .35s both; }
-    .hero-ctas { display:flex; gap:14px; flex-wrap:wrap; animation:fadeUp .9s var(--ease-out) .45s both; }
-    .hero-right { display:flex; flex-direction:column; gap:16px; flex-shrink:0; width:300px; animation:fadeIn 1.2s var(--ease-out) .5s both; }
-    .kpi-card { background:var(--white); border:1px solid var(--border); border-left:3px solid var(--flame); border-radius:14px; padding:22px 24px; box-shadow:0 2px 16px rgba(14,12,10,.05); transition:background .3s,border-color .3s,transform .3s,box-shadow .3s; }
-    .kpi-card:hover { background:var(--cream); box-shadow:0 8px 32px rgba(14,12,10,.09); transform:translateX(-4px); }
-    .kpi-number { font-family:var(--font-display); font-size:38px; font-weight:700; color:var(--flame); line-height:1; letter-spacing:-1px; margin-bottom:6px; }
-    .kpi-label { font-size:13px; color:var(--ink-50); line-height:1.4; }
-    .hero-ticker { background:var(--flame); height:48px; display:flex; align-items:center; overflow:hidden; position:relative; z-index:1; }
-    .ticker-track { display:flex; gap:0; animation:marquee 28s linear infinite; width:max-content; }
-    .ticker-item { font-family:var(--font-display); font-size:11px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,.9); padding:0 32px; display:flex; align-items:center; gap:32px; white-space:nowrap; }
-    .ticker-item::after { content:'◆'; font-size:8px; color:rgba(255,255,255,.5); }
+    /* ────────────────── HERO ────────────────── */
+    .hero {
+      min-height:100svh;
+      background: linear-gradient(to right, rgba(10,9,8,.82) 0%, rgba(10,9,8,.55) 55%, rgba(10,9,8,.3) 100%), url('photo/ba/villeurbanne-apres.png') center center / cover no-repeat;
+      display:flex; flex-direction:column;
+      position:relative; overflow:hidden; padding-top:68px;
+    }
+    .hero-glow {
+      position:absolute; width:800px; height:800px;
+      top:-200px; right:-200px; pointer-events:none;
+      background:radial-gradient(ellipse, rgba(201,168,76,.16) 0%, transparent 65%);
+    }
+    .hero-glow-2 {
+      position:absolute; width:400px; height:400px;
+      bottom:-100px; left:-100px; pointer-events:none;
+      background:radial-gradient(ellipse, rgba(201,168,76,.09) 0%, transparent 70%);
+    }
+    .hero-content {
+      flex:1; display:flex; align-items:center;
+      max-width:1240px; margin:0 auto; width:100%;
+      padding:80px 40px 60px; gap:80px; position:relative; z-index:1;
+    }
+    .hero-left { flex:1; min-width:0; }
+    .hero-tag {
+      display:inline-flex; align-items:center; gap:10px; margin-bottom:36px;
+      animation:fadeIn .7s var(--ease) .1s both;
+    }
+    .hero-tag-dot {
+      width:7px; height:7px; border-radius:50%; background:var(--gold); position:relative;
+    }
+    .hero-tag-dot::after {
+      content:''; position:absolute; inset:-4px; border:1px solid var(--gold);
+      border-radius:50%; animation:pulse 2s ease-out infinite;
+    }
+    .hero-tag span {
+      font-family:var(--font-display); font-size:10px; font-weight:700;
+      letter-spacing:2.5px; text-transform:uppercase; color:var(--gold);
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(48px, 6vw, 80px);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -.02em;
+      color: var(--white);
+      margin-bottom: 28px;
+    }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+    .hero h1 .indent { display:block; padding-left:clamp(36px, 6vw, 90px); }
+    .hero-desc {
+      font-size: 16px;
+      color: rgba(250,250,248,.55);
+      max-width: 460px;
+      line-height: 1.8;
+      margin-bottom: 48px;
+      font-weight: 400;
+      animation: fadeUp .9s var(--ease) .35s both;
+    }
+    .hero-desc strong { color: rgba(250,250,248,.8); font-weight: 500; }
+    .hero-ctas {
+      display:flex; gap:12px; flex-wrap:wrap;
+      animation:fadeUp .9s var(--ease) .45s both;
+    }
+    .btn-primary {
+      display:inline-flex; align-items:center; gap:8px;
+      background:var(--gold); color:var(--ink);
+      font-family: var(--font-body); font-size:14px; font-weight:500;
+      letter-spacing:0; padding:14px 28px; border-radius:6px;
+      transition:all .25s var(--ease); cursor:pointer; border:none;
+    }
+    .btn-primary:hover { background:#E0BD62; transform:translateY(-2px); box-shadow:0 10px 28px var(--gold-glow); }
+    .btn-outline {
+      display:inline-flex; align-items:center; gap:8px;
+      background:transparent; color:rgba(250,250,248,.65);
+      font-family: var(--font-body); font-size:14px; font-weight:400;
+      letter-spacing:0; padding:14px 26px; border-radius:6px;
+      border:1.5px solid rgba(255,255,255,.15); transition:all .25s var(--ease);
+    }
+    .btn-outline:hover { border-color:rgba(255,255,255,.4); color:var(--white); }
+    .hero-right {
+      flex-shrink:0; width:270px; display:flex; flex-direction:column; gap:12px;
+      animation:fadeIn 1.1s var(--ease) .5s both;
+    }
+    .kpi {
+      background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.08);
+      border-left:2px solid var(--gold); border-radius:12px;
+      padding:20px 22px; transition:background .3s, transform .3s;
+    }
+    .kpi:hover { background:rgba(201,168,76,.07); transform:translateX(-4px); }
+    .eyebrow span {
+      font-family:var(--font-body); font-size:11px; font-weight:500;
+      letter-spacing:1.5px; text-transform:uppercase; color:var(--gold);
+    }
+    .kpi-val {
+      font-family: 'DM Serif Display', serif; font-size:34px; font-weight:400;
+      color:var(--gold); line-height:1; letter-spacing:-.01em; margin-bottom:5px;
+    }
+    .kpi-lbl { font-size:12px; color:rgba(250,250,248,.45); line-height:1.5; }
 
-    /* ─── SECTIONS ─── */
-    .section { padding:100px 40px; }
+    /* Ticker */
+    .ticker {
+      background:var(--gold); height:46px; display:flex;
+      align-items:center; overflow:hidden; position:relative; z-index:1;
+    }
+    .ticker-track {
+      display:flex; animation:ticker 30s linear infinite; width:max-content;
+    }
+    .ticker-item {
+      font-family:var(--font-display); font-size:10px; font-weight:700;
+      letter-spacing:2px; text-transform:uppercase;
+      color:rgba(10,9,8,.8); padding:0 28px;
+      display:flex; align-items:center; gap:28px; white-space:nowrap;
+    }
+    .ticker-item::after { content:'◆'; font-size:7px; color:rgba(10,9,8,.35); }
+
+    /* ────────────────── SECTIONS ────────────────── */
+    .section { padding:96px 40px; }
     .section-inner { max-width:1240px; margin:0 auto; }
-    .eyebrow { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
-    .eyebrow::before { content:''; display:block; width:28px; height:2px; background:var(--flame); flex-shrink:0; }
-    .eyebrow span { font-family:var(--font-display); font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:var(--flame); }
-    .section-title { font-family:var(--font-display); font-size:clamp(28px,3.5vw,46px); font-weight:600; letter-spacing:-0.3px; line-height:1.08; color:var(--ink); }
-    .section-sub { font-size:16px; color:rgba(14,12,10,.68); max-width:520px; line-height:1.8; font-weight:400; }
+    .eyebrow {
+      display:flex; align-items:center; gap:12px; margin-bottom:14px;
+    }
+    .eyebrow::before { content:''; display:block; width:24px; height:2px; background:var(--gold); flex-shrink:0; }
+    .eyebrow span {
+      font-family:var(--font-display); font-size:10px; font-weight:700;
+      letter-spacing:2.5px; text-transform:uppercase; color:var(--gold);
+    }
+    .section-title {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(30px, 3.5vw, 48px);
+      font-weight: 400;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      color: var(--ink);
+    }
+    .section-sub {
+      font-size: 15px;
+      color: var(--ink-70);
+      max-width: 500px;
+      line-height: 1.85;
+      font-weight: 400;
+    }
 
-    /* ─── SERVICES ─── */
-    .services-section { background:var(--cream); }
-    .services-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:60px; gap:40px; }
-    .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border); border-radius:16px; overflow:hidden; }
-    .service-card { background:var(--white); padding:40px 36px; transition:background .3s; position:relative; overflow:hidden; }
-    .service-card::before { content:''; position:absolute; bottom:0; left:0; right:0; height:3px; background:var(--flame); transform:scaleX(0); transform-origin:left; transition:transform .4s var(--ease-out); }
-    .service-card:hover::before { transform:scaleX(1); }
-    .service-card:hover { background:var(--cream); }
-    .service-num { font-family:var(--font-display); font-size:11px; font-weight:700; letter-spacing:2px; color:var(--ink-20); margin-bottom:32px; }
-    .service-icon-wrap { width:52px; height:52px; background:var(--flame-soft); border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:24px; transition:background .3s,transform .3s; }
-    .service-card:hover .service-icon-wrap { background:var(--flame); transform:scale(1.05); }
-    .service-icon-wrap svg { width:24px; height:24px; stroke:var(--flame); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; transition:stroke .3s; }
-    .service-card:hover .service-icon-wrap svg { stroke:white; }
-    .service-card h3 { font-family:var(--font-display); font-size:18px; font-weight:600; letter-spacing:0; margin-bottom:12px; }
-    .service-card p { font-size:14px; color:rgba(14,12,10,.65); line-height:1.75; margin-bottom:28px; }
-    .service-list { list-style:none; display:flex; flex-direction:column; gap:8px; }
-    .service-list li { font-size:13px; color:rgba(14,12,10,.60); display:flex; align-items:center; gap:10px; }
-    .service-list li::before { content:''; width:5px; height:5px; border-radius:50%; background:var(--flame); flex-shrink:0; opacity:.6; }
-    .services-cta { text-align:center; margin-top:40px; }
+    /* ────────────────── IMAGE ACCORDION ────────────────── */
+    .img-acc-wrap { width:100%; }
 
-    /* ─── WHY ─── */
+    /* Tab buttons */
+    .acc-tabs {
+      display:flex; gap:4px; margin-bottom:20px;
+      background:var(--ink-06); border-radius:10px; padding:4px;
+      width:fit-content;
+    }
+    .acc-tab {
+      font-family:var(--font-display); font-size:12px; font-weight:700;
+      letter-spacing:.3px; padding:10px 20px; border-radius:7px;
+      border:none; cursor:pointer; background:transparent;
+      color:var(--ink-40); transition:all .25s var(--ease);
+    }
+    .acc-tab:hover { color:var(--ink); }
+    .acc-tab.active { background:var(--white); color:var(--ink); box-shadow:0 1px 6px var(--ink-12); }
+    .acc-tab:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+
+    /* Panels */
+    .acc-panel { display:none; }
+    .acc-panel.active { display:block; }
+
+    /* Accordion row */
+    .acc-row {
+      display:flex; gap:10px; height:400px;
+      border-radius:16px; overflow:hidden;
+    }
+
+    /* Individual accordion item */
+    .acc-item {
+      position:relative; overflow:hidden; border-radius:12px;
+      cursor:pointer; flex:0 0 72px;
+      transition:flex .65s cubic-bezier(0.4,0,0.2,1);
+    }
+    .acc-item.active { flex:1; }
+    .acc-item:focus-visible { outline:2px solid var(--gold); outline-offset:2px; }
+
+    /* Image */
+    .acc-item img {
+      position:absolute; inset:0; width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      transition:transform .65s var(--ease), filter .65s ease;
+      filter:saturate(.8) brightness(.9);
+    }
+    .acc-item.active img { filter:saturate(1) brightness(1); transform:scale(1.03); }
+
+    /* Dark overlay */
+    .acc-overlay {
+      position:absolute; inset:0;
+      background:linear-gradient(to top, rgba(10,9,8,.75) 0%, rgba(10,9,8,.2) 50%, transparent 100%);
+      transition:opacity .4s;
+    }
+    .acc-item:not(.active) .acc-overlay { background:rgba(10,9,8,.45); }
+
+    /* Label */
+    .acc-label {
+      position:absolute; font-family:var(--font-display); font-size:13px;
+      font-weight:700; color:var(--white); white-space:nowrap;
+      letter-spacing:.3px; text-shadow:0 1px 4px rgba(0,0,0,.5);
+      transition:all .5s var(--ease);
+    }
+    /* collapsed: rotate 90deg, vertically centered */
+    .acc-item:not(.active) .acc-label {
+      bottom:50%; left:50%;
+      transform:translate(-50%, 50%) rotate(90deg);
+      font-size:11px; letter-spacing:.8px; text-transform:uppercase;
+    }
+    /* expanded: bottom left, horizontal */
+    .acc-item.active .acc-label {
+      bottom:20px; left:20px;
+      transform:none; font-size:14px;
+    }
+    /* Gold accent bar on active item */
+    .acc-item.active::after {
+      content:''; position:absolute; bottom:0; left:0; right:0;
+      height:3px; background:var(--gold);
+    }
+
+    @media (max-width:768px) {
+      .acc-row { height:280px; gap:6px; }
+      .acc-item { flex:0 0 48px; border-radius:10px; }
+      .acc-tabs { flex-wrap:wrap; width:100%; }
+      .acc-tab { flex:1; text-align:center; font-size:11px; padding:9px 12px; }
+    }
+    @media (max-width:480px) {
+      .acc-row { height:240px; }
+      .acc-item { flex:0 0 36px; }
+      .acc-label { font-size:10px; }
+      .acc-item.active .acc-label { font-size:12px; }
+    }
+
+    /* ────────────────── SERVICES ────────────────── */
+    .services-section { background:var(--sand); }
+    .services-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:56px; gap:40px; }
+    .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--ink-12); border-radius:16px; overflow:hidden; }
+    .service-card {
+      background:var(--white); padding:40px 34px;
+      position:relative; overflow:hidden; transition:background .3s;
+    }
+    .service-card::after {
+      content:''; position:absolute; bottom:0; left:0; right:0; height:2px;
+      background:var(--gold); transform:scaleX(0); transform-origin:left;
+      transition:transform .4s var(--ease);
+    }
+    .service-card:hover::after { transform:scaleX(1); }
+    .service-card:hover { background:var(--sand); }
+    .svc-num {
+      font-family:var(--font-display); font-size:10px; font-weight:700;
+      letter-spacing:2px; color:var(--ink-40); margin-bottom:28px;
+    }
+    .svc-icon {
+      width:48px; height:48px; background:var(--gold-soft); border-radius:10px;
+      display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+      transition:background .3s, transform .3s;
+    }
+    .service-card:hover .svc-icon { background:var(--gold); transform:scale(1.05); }
+    .svc-icon svg { width:22px; height:22px; stroke:var(--gold); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; transition:stroke .3s; }
+    .service-card:hover .svc-icon svg { stroke:var(--ink); }
+    .service-card h3 { font-family: 'DM Serif Display', serif; font-size: 20px; font-weight: 400; letter-spacing: -.01em; margin-bottom: 10px; }
+    .service-card p { font-size: 14px; color: var(--ink-70); line-height: 1.8; margin-bottom: 24px; }
+    .svc-list { list-style:none; display:flex; flex-direction:column; gap:7px; }
+    .svc-list li { font-size:13px; color:var(--ink-40); display:flex; align-items:center; gap:9px; }
+    .svc-list li::before { content:''; width:4px; height:4px; border-radius:50%; background:var(--gold); flex-shrink:0; opacity:.7; }
+
+    /* ────────────────── WHY ────────────────── */
     .why-section { background:var(--white); }
     .why-layout { display:grid; grid-template-columns:5fr 7fr; gap:80px; align-items:start; }
-    .why-sticky { position:sticky; top:100px; }
-    .why-sticky .section-title { margin-bottom:20px; }
-    .why-sticky .section-sub { margin-bottom:36px; }
+    .why-sticky { position:sticky; top:96px; }
+    .why-sticky .section-title { margin-bottom:16px; }
+    .why-sticky .section-sub { margin-bottom:32px; }
     .why-items { display:flex; flex-direction:column; gap:2px; }
-    .why-item { display:flex; gap:20px; align-items:flex-start; padding:28px 24px; border-radius:12px; transition:background .3s; cursor:default; }
-    .why-item:hover { background:var(--cream); }
-    .why-item-num { font-family:var(--font-display); font-size:11px; font-weight:700; color:var(--flame); letter-spacing:1px; padding-top:3px; flex-shrink:0; width:24px; }
-    .why-item-body strong { display:block; font-size:16px; font-weight:600; color:var(--ink); margin-bottom:6px; }
-    .why-item-body span { font-size:14px; color:rgba(14,12,10,.65); line-height:1.7; }
+    .why-item {
+      display:flex; gap:18px; align-items:flex-start;
+      padding:24px 20px; border-radius:10px; transition:background .25s; cursor:default;
+    }
+    .why-item:hover { background:var(--sand); }
+    .why-num { font-family:var(--font-display); font-size:10px; font-weight:700; color:var(--gold); letter-spacing:1px; padding-top:3px; flex-shrink:0; width:22px; }
+    .why-body strong { display:block; font-size: 15px; font-weight: 600; color:var(--ink); margin-bottom:5px; font-family: var(--font-body); }
+    .why-body span { font-size: 14px; color:var(--ink-70); line-height:1.75; }
 
-    /* ─── AIDES ─── */
-    .aides-section { background:var(--cream); }
-    .aides-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:16px; margin-top:56px; }
-    .aide-card { background:var(--white); border-radius:14px; padding:32px 26px; position:relative; overflow:hidden; transition:transform .3s var(--ease-out),box-shadow .3s; }
-    .aide-card:hover { transform:translateY(-6px); box-shadow:0 20px 48px var(--ink-08); }
-    .aide-card::after { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:var(--flame); }
-    .aide-name { font-family:var(--font-display); font-size:20px; font-weight:700; letter-spacing:-0.2px; color:var(--ink); margin-bottom:10px; }
-    .aide-desc { font-size:14px; color:rgba(14,12,10,.65); line-height:1.75; }
+    /* ────────────────── AIDES ────────────────── */
+    .aides-section { background:var(--sand); }
+    .aides-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-top:52px; }
+    .aide-card {
+      background:var(--white); border-radius:14px; padding:28px 24px;
+      position:relative; overflow:hidden; transition:transform .3s var(--ease), box-shadow .3s;
+    }
+    .aide-card:hover { transform:translateY(-6px); box-shadow:0 20px 48px var(--ink-06); }
+    .aide-card::before { content:''; position:absolute; top:0; left:0; right:0; height:2px; background:var(--gold); }
+    .aide-name { font-family: 'DM Serif Display', serif; font-size: 20px; font-weight: 400; letter-spacing: -.01em; color: var(--ink); margin-bottom: 8px; }
+    .aide-desc { font-size:13px; color:var(--ink-70); line-height:1.7; }
 
-    /* ─── REVIEWS ─── */
-    .reviews-section { background:var(--white); }
-    .reviews-header { display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:56px; }
-    .rating-big { font-family:var(--font-display); font-size:48px; font-weight:700; letter-spacing:-0.5px; color:var(--ink); line-height:1; }
-    .rating-stars { color:var(--flame); font-size:20px; letter-spacing:3px; }
-    .rating-sub { font-size:13px; color:var(--ink-50); margin-top:2px; }
-    .reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
-    .review-card { background:var(--cream); border-radius:14px; padding:32px 28px; transition:transform .3s var(--ease-out); }
-    .review-card:hover { transform:translateY(-4px); }
-    .review-quote { font-size:40px; line-height:.8; color:var(--flame); font-family:Georgia,serif; margin-bottom:16px; opacity:.5; }
-    .review-text { font-size:15px; color:var(--ink-80); line-height:1.7; margin-bottom:24px; font-style:italic; }
-    .review-author { display:flex; align-items:center; gap:12px; }
-    .review-avatar { width:38px; height:38px; border-radius:50%; background:var(--flame); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-size:12px; font-weight:700; color:white; flex-shrink:0; }
-    .review-name { font-size:14px; font-weight:600; color:var(--ink); }
-    .review-service { font-size:12px; color:var(--flame); margin-top:2px; }
-    .review-stars { color:var(--flame); font-size:13px; letter-spacing:1px; margin-bottom:4px; }
+    /* ────────────────── 3D TESTIMONIALS ────────────────── */
+    .reviews-section { background:var(--dark); padding:96px 0; overflow:hidden; }
+    .reviews-header {
+      max-width:1240px; margin:0 auto; padding:0 40px;
+      display:flex; justify-content:space-between; align-items:flex-end;
+      margin-bottom:64px;
+    }
+    .reviews-header .eyebrow::before { background:var(--gold); }
+    .reviews-header .eyebrow span { color:var(--gold); }
+    .reviews-header .section-title { color:var(--white); font-family: 'DM Serif Display', serif; }
+    .rating-block .big { font-family:var(--font-display); font-size:48px; font-weight:800; letter-spacing:-2px; color:var(--white); line-height:1; }
+    .rating-block .stars { color:var(--gold); font-size:18px; letter-spacing:2px; margin-top:2px; }
+    .rating-block .sub { font-size:12px; color:rgba(250,250,248,.4); margin-top:3px; font-weight:500; }
 
-    /* ─── CTA BAND ─── */
-    .cta-section { background:var(--flame); padding:80px 40px; position:relative; overflow:hidden; }
-    .cta-section::before { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px); background-size:48px 48px; pointer-events:none; }
+    /* 3D Marquee */
+    .marquee-scene {
+      width:100%; height:400px;
+      position:relative;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .marquee-scene::before {
+      content:''; position:absolute; inset-x:0; top:0; height:30%;
+      background:linear-gradient(to bottom, var(--dark), transparent);
+      z-index:2; pointer-events:none;
+    }
+    .marquee-scene::after {
+      content:''; position:absolute; inset-x:0; bottom:0; height:30%;
+      background:linear-gradient(to top, var(--dark), transparent);
+      z-index:2; pointer-events:none;
+    }
+    .marquee-stage {
+      display:flex; gap:14px;
+      transform: translateX(-60px) translateY(0px) translateZ(-80px) rotateX(18deg) rotateY(-9deg) rotateZ(18deg);
+      transform-style:preserve-3d;
+    }
+    .marquee-col { width:200px; overflow:hidden; height:400px; }
+    .marquee-col-inner {
+      display:flex; flex-direction:column; gap:14px;
+    }
+    .marquee-col:nth-child(odd) .marquee-col-inner {
+      animation:scrollDown 28s linear infinite;
+    }
+    .marquee-col:nth-child(even) .marquee-col-inner {
+      animation:scrollUp 32s linear infinite;
+    }
+    .marquee-col:nth-child(1) .marquee-col-inner { animation-duration:30s; }
+    .marquee-col:nth-child(2) .marquee-col-inner { animation-duration:26s; }
+    .marquee-col:nth-child(3) .marquee-col-inner { animation-duration:34s; }
+    .marquee-col:nth-child(4) .marquee-col-inner { animation-duration:24s; }
+    .marquee-col-inner:hover { animation-play-state:paused; }
+
+    .r-card {
+      background:var(--dark-card); border:1px solid var(--dark-border);
+      border-radius:12px; padding:18px 16px; flex-shrink:0;
+    }
+    .r-card-stars { color:var(--gold); font-size:11px; letter-spacing:1px; margin-bottom:10px; }
+    .r-card-text { font-size:12px; color:rgba(250,250,248,.6); line-height:1.65; margin-bottom:14px; font-style:italic; }
+    .r-card-author { display:flex; align-items:center; gap:9px; }
+    .r-avatar {
+      width:28px; height:28px; border-radius:50%; background:var(--gold);
+      display:flex; align-items:center; justify-content:center;
+      font-family:var(--font-display); font-size:10px; font-weight:700;
+      color:var(--ink); flex-shrink:0;
+    }
+    .r-name { font-size:11px; font-weight:600; color:rgba(250,250,248,.8); }
+    .r-service { font-size:10px; color:rgba(201,168,76,.7); margin-top:1px; }
+
+    /* Gradient overlays sides */
+    .marquee-fade-left {
+      position:absolute; left:0; top:0; bottom:0; width:18%;
+      background:linear-gradient(to right, var(--dark), transparent);
+      z-index:2; pointer-events:none;
+    }
+    .marquee-fade-right {
+      position:absolute; right:0; top:0; bottom:0; width:18%;
+      background:linear-gradient(to left, var(--dark), transparent);
+      z-index:2; pointer-events:none;
+    }
+
+    .reviews-footer {
+      max-width:1240px; margin:40px auto 0; padding:0 40px;
+      text-align:center;
+    }
+    .btn-ghost-dark {
+      display:inline-flex; align-items:center; gap:8px;
+      background:transparent; color:rgba(250,250,248,.6);
+      font-family:var(--font-display); font-size:12px; font-weight:600;
+      letter-spacing:.3px; padding:12px 24px; border-radius:6px;
+      border:1.5px solid rgba(255,255,255,.12); transition:all .25s;
+    }
+    .btn-ghost-dark:hover { border-color:var(--gold); color:var(--gold); }
+
+    /* ────────────────── CTA BAND ────────────────── */
+    .cta-band {
+      background:var(--gold); padding:80px 40px;
+      position:relative; overflow:hidden;
+    }
+    .cta-band::before {
+      content:''; position:absolute; inset:0;
+      background-image:linear-gradient(rgba(10,9,8,.06) 1px,transparent 1px),
+        linear-gradient(90deg,rgba(10,9,8,.06) 1px,transparent 1px);
+      background-size:48px 48px; pointer-events:none;
+    }
     .cta-inner { max-width:1240px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:48px; position:relative; }
-    .cta-text h2 { font-family:var(--font-display); font-size:clamp(26px,3.2vw,42px); font-weight:700; letter-spacing:-0.3px; color:var(--white); line-height:1.08; margin-bottom:12px; }
-    .cta-text p { font-size:17px; color:rgba(255,255,255,.75); font-weight:300; }
-    .btn-cta-white { display:inline-flex; align-items:center; gap:10px; background:var(--white); color:var(--flame); padding:18px 36px; border-radius:8px; font-family:var(--font-display); font-size:13px; font-weight:700; letter-spacing:.3px; white-space:nowrap; transition:all .3s var(--ease-out); }
-    .btn-cta-white:hover { background:var(--ink); color:var(--white); transform:translateY(-3px); box-shadow:0 12px 32px rgba(0,0,0,.25); }
+    .cta-text h2 {
+      font-family: 'DM Serif Display', serif; font-size:clamp(26px,3.2vw,44px);
+      font-weight: 400; letter-spacing: -.02em; color:var(--ink); line-height:1.1; margin-bottom:10px;
+    }
+    .cta-text p { font-size:16px; color:rgba(10,9,8,.65); font-weight:400; }
+    .btn-dark {
+      display:inline-flex; align-items:center; gap:10px;
+      background:var(--ink); color:var(--white);
+      font-family:var(--font-display); font-size:13px; font-weight:700;
+      letter-spacing:.3px; padding:18px 36px; border-radius:7px;
+      white-space:nowrap; transition:all .3s var(--ease);
+    }
+    .btn-dark:hover { background:#1a1614; transform:translateY(-3px); box-shadow:0 14px 36px rgba(0,0,0,.3); }
 
-    /* ─── CONTACT ─── */
+    /* ────────────────── CONTACT ────────────────── */
     .contact-section { background:var(--white); }
     .contact-layout { display:grid; grid-template-columns:5fr 7fr; gap:80px; align-items:start; }
-    .contact-info-items { display:flex; flex-direction:column; gap:6px; margin-top:40px; }
-    .contact-info-item { display:flex; gap:16px; align-items:flex-start; padding:18px 20px; border-radius:10px; transition:background .2s; }
-    .contact-info-item:hover { background:var(--cream); }
-    .ci-icon { width:40px; height:40px; background:var(--flame-soft); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .ci-icon svg { width:18px; height:18px; stroke:var(--flame); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
-    .ci-label { font-size:12px; color:var(--ink-50); margin-bottom:3px; }
-    .ci-value { font-size:15px; font-weight:500; color:var(--ink); }
-    .ci-value a:hover { color:var(--flame); }
-    .map-wrap { margin-top:28px; border-radius:16px; overflow:hidden; border:1px solid var(--border); position:relative; }
-    .map-wrap iframe { width:100%; height:220px; display:block; border:none; filter:grayscale(20%) contrast(1.05); transition:filter .3s; }
-    .map-wrap:hover iframe { filter:grayscale(0%) contrast(1); }
-    .map-cta { display:flex; align-items:center; gap:10px; padding:13px 18px; background:var(--cream); border-top:1px solid var(--border); font-size:13px; color:var(--ink-50); transition:background .2s; text-decoration:none; }
-    .map-cta:hover { background:var(--flame-soft); color:var(--flame); }
-    .map-cta svg { width:15px; height:15px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; flex-shrink:0; }
-    .contact-form-wrap { background:var(--cream); border-radius:20px; padding:44px 40px; }
-    .form-title { font-family:var(--font-display); font-size:22px; font-weight:700; letter-spacing:-.5px; color:var(--ink); margin-bottom:32px; }
-    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-    .form-group { display:flex; flex-direction:column; gap:7px; margin-bottom:16px; }
-    .form-group label { font-size:12px; font-weight:600; color:var(--ink-50); letter-spacing:.3px; text-transform:uppercase; }
-    .form-group input, .form-group select, .form-group textarea { padding:13px 16px; border:1.5px solid var(--border); border-radius:8px; font-family:var(--font-body); font-size:14px; color:var(--ink); background:var(--white); outline:none; transition:border-color .2s,box-shadow .2s; }
-    .form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color:var(--flame); box-shadow:0 0 0 3px var(--flame-soft); }
-    .form-group textarea { resize:vertical; min-height:110px; }
-    .btn-submit { width:100%; justify-content:center; padding:16px 24px; font-family:var(--font-display); font-size:13px; font-weight:700; letter-spacing:.3px; background:var(--flame); color:var(--white); border:none; border-radius:8px; cursor:pointer; display:flex; align-items:center; gap:10px; transition:all .3s var(--ease-out); margin-top:8px; }
-    .btn-submit:hover { background:var(--flame-deep); transform:translateY(-2px); box-shadow:0 8px 24px var(--flame-glow); }
+    .contact-info { display:flex; flex-direction:column; gap:4px; margin-top:36px; }
+    .ci-row {
+      display:flex; gap:14px; align-items:flex-start;
+      padding:16px 18px; border-radius:10px; transition:background .2s;
+    }
+    .ci-row:hover { background:var(--sand); }
+    .ci-ico { width:38px; height:38px; background:var(--gold-soft); border-radius:9px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .ci-ico svg { width:17px; height:17px; stroke:var(--gold); fill:none; stroke-width:1.8; stroke-linecap:round; stroke-linejoin:round; }
+    .ci-lbl { font-size:11px; color:var(--ink-40); margin-bottom:2px; letter-spacing:.3px; text-transform:uppercase; font-weight:600; }
+    .ci-val { font-size:14px; font-weight:500; color:var(--ink); }
+    .ci-val a:hover { color:var(--gold); }
+    .map-wrap { margin-top:24px; border-radius:14px; overflow:hidden; border:1px solid var(--ink-12); }
+    .map-wrap iframe { width:100%; height:200px; display:block; border:none; filter:grayscale(25%) contrast(1.05); transition:filter .3s; }
+    .map-wrap:hover iframe { filter:none; }
+    .map-link {
+      display:flex; align-items:center; gap:9px; padding:12px 16px;
+      background:var(--sand); border-top:1px solid var(--ink-12);
+      font-size:12px; color:var(--ink-70); transition:background .2s;
+    }
+    .map-link:hover { background:var(--gold-soft); color:var(--gold); }
+    .map-link svg { width:14px; height:14px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; flex-shrink:0; }
 
-    /* ─── FOOTER ─── */
-    footer { background:var(--ink); padding:64px 40px 36px; }
+    /* ── EXPAND MAP CARD ── */
+    #location-map {
+      display:inline-block; width:100%;
+      perspective:900px; perspective-origin:50% 50%;
+      cursor:pointer; user-select:none;
+    }
+    .lmap-card {
+      width: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.08s cubic-bezier(0.16,1,0.3,1), box-shadow 0.25s ease;
+      will-change: transform;
+    }
+    .lmap-inner {
+      position: relative;
+      border-radius: 16px;
+      border: 1px solid var(--ink-12);
+      background: var(--white);
+      overflow: hidden;
+      width: 100%;
+      height: 160px;
+      transition: height 0.45s cubic-bezier(0.16,1,0.3,1), box-shadow 0.3s;
+    }
+    .lmap-inner:hover { box-shadow: 0 16px 48px rgba(201,168,76,.18), 0 4px 12px rgba(0,0,0,.08); }
+    .lmap-inner.expanded { height: 280px; }
+
+    .lmap-grid { position:absolute; inset:0; opacity:1; transition:opacity .3s; }
+    .lmap-inner.expanded .lmap-grid { opacity:0; }
+    .lmap-grid-svg { position:absolute; inset:0; }
+
+    .lmap-expanded {
+      position:absolute; inset:0;
+      opacity:0; transition:opacity .35s .1s;
+      pointer-events:none;
+    }
+    .lmap-inner.expanded .lmap-expanded { opacity:1; }
+    .lmap-bg { position:absolute; inset:0; background:#EDE9DF; }
+    .lmap-streets { position:absolute; inset:0; width:100%; height:100%; }
+    .lmap-building {
+      position:absolute;
+      background:rgba(14,12,10,.14);
+      border:1px solid rgba(14,12,10,.10);
+      border-radius:2px;
+    }
+    .lmap-park {
+      position:absolute;
+      background:rgba(120,180,100,.25);
+      border:1px solid rgba(100,160,80,.18);
+      border-radius:3px;
+    }
+    .lmap-road-label {
+      position:absolute;
+      font-size:8px;
+      font-weight:600;
+      color:rgba(14,12,10,.45);
+      letter-spacing:.3px;
+      white-space:nowrap;
+      pointer-events:none;
+    }
+    .lmap-pin-wrap {
+      position:absolute; top:52%; left:50%;
+      transform:translate(-50%,-100%);
+      filter:drop-shadow(0 4px 10px rgba(201,168,76,.55));
+      z-index:5;
+    }
+    .lmap-pin-svg { animation:pin-bounce .55s .1s both; }
+    @keyframes pin-bounce {
+      0%{transform:translateY(-16px) scale(.6);opacity:0}
+      65%{transform:translateY(4px) scale(1.08)}
+      100%{transform:translateY(0) scale(1);opacity:1}
+    }
+    .lmap-pulse-ring {
+      position:absolute; top:52%; left:50%;
+      transform:translate(-50%,-50%);
+      width:22px; height:22px;
+      border-radius:50%;
+      background:rgba(201,168,76,.25);
+      animation:map-pulse 2.2s ease-out infinite;
+      z-index:4;
+    }
+    @keyframes map-pulse {
+      0%{transform:translate(-50%,-50%) scale(1);opacity:.7}
+      100%{transform:translate(-50%,-50%) scale(3.2);opacity:0}
+    }
+    .lmap-fade {
+      position:absolute; inset:0;
+      background:linear-gradient(to top, rgba(250,250,248,.6) 0%, transparent 55%);
+    }
+
+    .lmap-content {
+      position:absolute; inset:0; z-index:2;
+      padding:18px 20px;
+      display:flex; flex-direction:column; justify-content:space-between;
+    }
+    .lmap-top { display:flex; align-items:flex-start; justify-content:space-between; }
+    .lmap-icon { transition:opacity .3s; }
+    .lmap-inner.expanded .lmap-icon { opacity:0; }
+    .lmap-badge {
+      display:flex; align-items:center; gap:6px;
+      padding:4px 10px; border-radius:100px;
+      background:rgba(14,12,10,.05);
+      font-size:10px; font-weight:600; letter-spacing:.8px; text-transform:uppercase;
+      color:var(--ink-40);
+    }
+    .lmap-dot {
+      width:6px; height:6px; border-radius:50%;
+      background:var(--gold);
+      box-shadow:0 0 0 2px rgba(201,168,76,.3);
+      animation:dot-pulse 2s ease-out infinite;
+    }
+    @keyframes dot-pulse {
+      0%,100%{box-shadow:0 0 0 2px rgba(201,168,76,.3)}
+      50%{box-shadow:0 0 0 5px rgba(201,168,76,.1)}
+    }
+    .lmap-bottom { }
+    .lmap-name {
+      font-size:14px; font-weight:600; color:var(--ink);
+      transition:transform .3s cubic-bezier(0.16,1,0.3,1);
+    }
+    .lmap-inner:hover .lmap-name { transform:translateX(4px); }
+    .lmap-coords {
+      font-size:12px; color:var(--ink-40); margin-top:2px;
+      max-height:0; overflow:hidden; opacity:0;
+      transition:max-height .3s, opacity .3s;
+    }
+    .lmap-inner.expanded .lmap-coords { max-height:30px; opacity:1; }
+    .lmap-line {
+      height:1px; margin-top:6px;
+      background:linear-gradient(90deg, var(--gold) 0%, rgba(201,168,76,.3) 50%, transparent 100%);
+      transform:scaleX(.3); transform-origin:left;
+      transition:transform .4s cubic-bezier(0.16,1,0.3,1);
+    }
+    .lmap-inner:hover .lmap-line,
+    .lmap-inner.expanded .lmap-line { transform:scaleX(1); }
+    .form-wrap { background:var(--sand); border-radius:18px; padding:40px 36px; }
+    .form-title { font-family: 'DM Serif Display', serif; font-size: 22px; font-weight: 400; letter-spacing: -.01em; color: var(--ink); margin-bottom: 28px; }
+
+    /* ── 3D FORM CARD ── */
+    .form-3d-scene {
+      perspective: 1200px;
+      perspective-origin: 50% 40%;
+    }
+    .form-wrap {
+      border-radius: 20px;
+      padding: 40px 36px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform 0.12s ease-out, box-shadow 0.3s ease;
+      background: var(--sand);
+      will-change: transform;
+      box-shadow:
+        0 2px 4px rgba(14,12,10,.04),
+        0 8px 24px rgba(14,12,10,.07),
+        0 24px 48px rgba(14,12,10,.06),
+        0 1px 0 rgba(255,255,255,.9) inset;
+    }
+    .form-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(255,255,255,.55) 0%, transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+    .form-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 20px;
+      border: 1px solid rgba(14,12,10,.09);
+      pointer-events: none;
+      z-index: 2;
+    }
+    /* floating badge top-right */
+    .form-3d-badge {
+      position: absolute;
+      top: -14px; right: 24px;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: 10px; font-weight: 700;
+      letter-spacing: 1px; text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 100px;
+      transform: translateZ(24px);
+      box-shadow: 0 4px 16px rgba(201,168,76,.35);
+      z-index: 3;
+      white-space: nowrap;
+    }
+    /* floating dot decorations */
+    .form-3d-dot {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .form-3d-dot-1 {
+      width: 80px; height: 80px;
+      background: radial-gradient(circle, rgba(201,168,76,.18), transparent 70%);
+      top: -20px; left: -20px;
+      transform: translateZ(8px);
+    }
+    .form-3d-dot-2 {
+      width: 60px; height: 60px;
+      background: radial-gradient(circle, rgba(201,168,76,.12), transparent 70%);
+      bottom: 40px; right: -10px;
+      transform: translateZ(12px);
+    }
+    /* shimmer line at top */
+    .form-3d-shimmer {
+      position: absolute;
+      top: 0; left: 24px; right: 24px; height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.9) 40%, rgba(201,168,76,.5) 60%, transparent);
+      border-radius: 1px;
+      pointer-events: none;
+      z-index: 3;
+    }
+    .form-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 22px; font-weight: 400;
+      letter-spacing: -.01em; color: var(--ink);
+      margin-bottom: 28px;
+      position: relative; z-index: 1;
+    }
+    .form-group, .form-row { position: relative; z-index: 1; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .form-group { display:flex; flex-direction:column; gap:6px; margin-bottom:14px; }
+    .form-group label { font-size:11px; font-weight:700; color:var(--ink-40); letter-spacing:.5px; text-transform:uppercase; }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding:12px 14px; border:1.5px solid var(--ink-12); border-radius:7px;
+      font-family:var(--font-body); font-size:14px; color:var(--ink);
+      background:var(--white); outline:none;
+      transition:border-color .2s, box-shadow .2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus { border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft); }
+    .form-group textarea { resize:vertical; min-height:100px; }
+    .btn-submit {
+      width:100%; justify-content:center; padding:15px 24px;
+      font-family:var(--font-display); font-size:13px; font-weight:700;
+      letter-spacing:.3px; background:var(--gold); color:var(--ink);
+      border:none; border-radius:7px; cursor:pointer;
+      display:flex; align-items:center; gap:9px;
+      transition:all .3s var(--ease); margin-top:6px;
+    }
+    .btn-submit:hover { background:var(--gold-deep); color:var(--white); transform:translateY(-2px); box-shadow:0 8px 24px var(--gold-glow); }
+    .btn-submit:disabled { opacity:.6; cursor:not-allowed; transform:none; }
+    .success-box {
+      display:none; margin-top:14px;
+      background:var(--gold-soft); border:1.5px solid var(--gold);
+      border-radius:10px; padding:20px 24px;
+    }
+    .success-box-inner { display:flex; align-items:flex-start; gap:12px; }
+    .success-ico { width:36px; height:36px; background:var(--gold); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .success-ico svg { width:18px; height:18px; }
+    .success-title { font-family:var(--font-display); font-size:14px; font-weight:700; color:var(--ink); margin-bottom:4px; }
+    .success-sub { font-size:13px; color:var(--ink-70); line-height:1.6; }
+
+    /* ────────────────── FOOTER ────────────────── */
+    footer { background:var(--dark); padding:60px 40px 32px; }
     .footer-inner { max-width:1240px; margin:0 auto; }
-    .footer-top { display:grid; grid-template-columns:2.5fr 1fr 1fr 1fr; gap:48px; padding-bottom:48px; border-bottom:1px solid rgba(255,255,255,.08); margin-bottom:32px; }
-    .footer-brand .logo { color:var(--white); margin-bottom:16px; }
-    .footer-brand p { font-size:14px; color:rgba(255,255,255,.4); line-height:1.7; }
-    .footer-col h5 { font-family:var(--font-display); font-size:10px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,.35); margin-bottom:20px; }
-    .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:10px; }
-    .footer-col ul li a { font-size:14px; color:rgba(255,255,255,.5); transition:color .2s; }
-    .footer-col ul li a:hover { color:var(--flame); }
-    .footer-bottom { display:flex; justify-content:space-between; align-items:center; font-size:12px; color:rgba(255,255,255,.3); flex-wrap:wrap; gap:12px; }
-    .social-links { display:flex; gap:10px; margin-top:20px; }
-    .social-link { width:38px; height:38px; background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.10); border-radius:10px; display:flex; align-items:center; justify-content:center; transition:background .2s,border-color .2s,transform .2s; }
-    .social-link:hover { background:var(--flame); border-color:var(--flame); transform:translateY(-3px); }
-    .social-link svg { width:17px; height:17px; fill:rgba(255,255,255,.6); transition:fill .2s; }
-    .social-link:hover svg { fill:white; }
+    .footer-top {
+      display:grid; grid-template-columns:2.5fr 1fr 1fr 1fr; gap:48px;
+      padding-bottom:48px; border-bottom:1px solid var(--dark-border); margin-bottom:28px;
+    }
+    .footer-brand p { font-size:13px; color:rgba(250,250,248,.35); line-height:1.7; margin-top:16px; }
+    .footer-logo { display:flex; align-items:center; gap:9px; margin-bottom:0; font-family: 'DM Serif Display', serif; font-size:20px; font-weight:400; letter-spacing:-.01em; }
+    .footer-logo img { height:34px; border-radius:6px; }
+    .footer-col h5 { font-family:var(--font-display); font-size:9px; font-weight:700; letter-spacing:2px; text-transform:uppercase; color:rgba(250,250,248,.3); margin-bottom:18px; }
+    .footer-col ul { list-style:none; display:flex; flex-direction:column; gap:9px; }
+    .footer-col ul li a { font-size:13px; color:rgba(250,250,248,.45); transition:color .2s; }
+    .footer-col ul li a:hover { color:var(--gold); }
+    .footer-bottom { display:flex; justify-content:space-between; align-items:center; font-size:11px; color:rgba(250,250,248,.25); flex-wrap:wrap; gap:10px; }
+    .social-row { display:flex; gap:9px; margin-top:18px; }
+    .social-btn {
+      width:36px; height:36px; background:rgba(255,255,255,.05); border:1px solid var(--dark-border);
+      border-radius:9px; display:flex; align-items:center; justify-content:center;
+      transition:background .2s, border-color .2s, transform .2s;
+    }
+    .social-btn:hover { background:var(--gold); border-color:var(--gold); transform:translateY(-2px); }
+    .social-btn svg { width:15px; height:15px; fill:rgba(250,250,248,.5); transition:fill .2s; }
+    .social-btn:hover svg { fill:var(--ink); }
 
-    /* ─── MOBILE ─── */
+    /* ────────────────── RESPONSIVE ────────────────── */
     @media (max-width:1024px) { .aides-grid { grid-template-columns:repeat(2,1fr); } }
     @media (max-width:768px) {
-      header { padding:0 20px; } nav { display:none; } .pill-rge { display:none; }
-      .burger { display:flex; } .mobile-nav-overlay { display:block; }
-      .hero-content { flex-direction:column; gap:48px; padding:60px 20px 48px; }
+      header { padding:0 20px; }
+      nav, .badge-rge { display:none; }
+      .burger { display:flex; }
+      .hero-content { flex-direction:column; gap:40px; padding:56px 20px 48px; }
       .hero-right { width:100%; display:grid; grid-template-columns:1fr 1fr; }
       .section { padding:72px 20px; }
-      .services-header { flex-direction:column; align-items:flex-start; gap:20px; }
+      .services-header { flex-direction:column; align-items:flex-start; gap:18px; }
       .services-grid { grid-template-columns:1fr; }
-      .why-layout { grid-template-columns:1fr; gap:40px; }
+      .why-layout { grid-template-columns:1fr; gap:36px; }
       .why-sticky { position:static; }
       .aides-grid { grid-template-columns:1fr 1fr; }
-      .reviews-header { flex-direction:column; align-items:flex-start; gap:20px; }
-      .reviews-grid { grid-template-columns:1fr; }
+      .reviews-header { flex-direction:column; align-items:flex-start; gap:20px; padding:0 20px; }
+      .reviews-footer { padding:0 20px; }
       .cta-inner { flex-direction:column; text-align:center; }
-      .contact-layout { grid-template-columns:1fr; gap:48px; }
-      .footer-top { grid-template-columns:1fr 1fr; gap:32px; }
+      .contact-layout { grid-template-columns:1fr; gap:44px; }
+      .footer-top { grid-template-columns:1fr 1fr; gap:28px; }
       .form-row { grid-template-columns:1fr; }
     }
     @media (max-width:480px) {
-      .aides-grid { grid-template-columns:1fr; } .hero-right { grid-template-columns:1fr; }
+      .aides-grid { grid-template-columns:1fr; }
+      .hero-right { grid-template-columns:1fr; }
       .footer-top { grid-template-columns:1fr; }
     }
     @keyframes spin { to { transform:rotate(360deg); } }
   </style>
 </head>
 <body>
-<a href="#main-content" style="position:absolute;left:-9999px;top:4px;z-index:9999;padding:8px 16px;background:var(--flame);color:white;font-size:14px;border-radius:4px;text-decoration:none;" onfocus="this.style.left='4px'" onblur="this.style.left='-9999px'">Aller au contenu principal</a>
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
+<!-- ── HEADER ── -->
 <header id="header">
   <a href="index.html" class="logo">
-    <img src="favicon.png" alt="Selesta" />
-    <span class="logo-text">Selesta</span>
+    <img src="favicon.png" alt="" aria-hidden="true" />
+    <span class="logo-word">Selesta</span>
   </a>
-  <nav id="main-nav">
-    <a href="prestations.html">Nos prestations</a>
+  <nav id="main-nav" aria-label="Navigation principale">
+    <a href="prestations.html">Prestations</a>
     <a href="realisations.html">Réalisations</a>
     <a href="faq.html">Méthode &amp; FAQ</a>
     <a href="#avis">Avis</a>
     <a href="#contact">Contact</a>
   </nav>
-  <div class="header-actions">
-    <span class="pill-rge">RGE Qualibat</span>
-    <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:13px;">Devis gratuit</a>
-    <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  <div class="header-right">
+    <span class="badge-rge" aria-label="Certifié RGE Qualibat">RGE Qualibat</span>
+    <a href="#contact" class="btn-nav">Devis gratuit</a>
+    <button class="burger" id="burger-btn" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
-<div class="mobile-nav-overlay" id="mobile-nav-overlay">
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu mobile">
   <nav class="mobile-nav">
-    <a href="prestations.html">Nos prestations</a>
+    <a href="prestations.html">Prestations</a>
     <a href="realisations.html">Réalisations</a>
     <a href="faq.html">Méthode &amp; FAQ</a>
     <a href="#avis">Avis</a>
     <a href="#contact">Contact</a>
-    <a href="#contact" class="mobile-nav-cta">Devis gratuit →</a>
+    <a href="#contact" class="cta">Devis gratuit →</a>
   </nav>
 </div>
 
 <main id="main-content">
 
-<!-- ─── HERO ─── -->
+<!-- Global mouse gradient -->
+<div id="ds-mouse" aria-hidden="true"></div>
+
+<!-- ── HERO ── -->
 <section class="hero" aria-label="Présentation Selesta">
-  <div class="hero-glow"></div>
-  <div class="hero-glow-2"></div>
-  <div class="hero-decoration" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-glow-2" aria-hidden="true"></div>
+
+  <!-- Digital Serenity: animated SVG grid -->
+  <svg class="ds-grid" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <pattern id="hero-grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(201,168,76,.06)" stroke-width=".5"/>
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#hero-grid)"/>
+    <line x1="0" y1="25%" x2="100%" y2="25%" class="ds-grid-line" style="animation-delay:.4s"/>
+    <line x1="0" y1="75%" x2="100%" y2="75%" class="ds-grid-line" style="animation-delay:.9s"/>
+    <line x1="22%" y1="0" x2="22%" y2="100%" class="ds-grid-line" style="animation-delay:1.3s"/>
+    <line x1="78%" y1="0" x2="78%" y2="100%" class="ds-grid-line" style="animation-delay:1.8s"/>
+    <circle cx="22%" cy="25%" r="2.5" class="ds-dot" style="animation-delay:2.4s"/>
+    <circle cx="78%" cy="25%" r="2.5" class="ds-dot" style="animation-delay:2.7s"/>
+    <circle cx="22%" cy="75%" r="2.5" class="ds-dot" style="animation-delay:3.0s"/>
+    <circle cx="78%" cy="75%" r="2.5" class="ds-dot" style="animation-delay:3.3s"/>
+  </svg>
+
+  <!-- Corner brackets -->
+  <div class="ds-corner" aria-hidden="true" style="top:88px;left:20px;border-right:0;border-bottom:0;animation-delay:2.8s"><div style="position:absolute;top:0;left:0;width:6px;height:6px;background:var(--gold);opacity:.4;border-radius:50%"></div></div>
+  <div class="ds-corner" aria-hidden="true" style="top:88px;right:20px;border-left:0;border-bottom:0;animation-delay:3s"><div style="position:absolute;top:0;right:0;width:6px;height:6px;background:var(--gold);opacity:.4;border-radius:50%"></div></div>
+  <div class="ds-corner" aria-hidden="true" style="bottom:56px;left:20px;border-right:0;border-top:0;animation-delay:3.2s"><div style="position:absolute;bottom:0;left:0;width:6px;height:6px;background:var(--gold);opacity:.4;border-radius:50%"></div></div>
+  <div class="ds-corner" aria-hidden="true" style="bottom:56px;right:20px;border-left:0;border-top:0;animation-delay:3.4s"><div style="position:absolute;bottom:0;right:0;width:6px;height:6px;background:var(--gold);opacity:.4;border-radius:50%"></div></div>
+
+  <!-- Floating particles -->
+  <div class="ds-particle" aria-hidden="true" style="top:28%;left:12%;animation-delay:.6s;animation-duration:5s"></div>
+  <div class="ds-particle" aria-hidden="true" style="top:55%;left:88%;animation-delay:1.1s;animation-duration:4s"></div>
+  <div class="ds-particle" aria-hidden="true" style="top:72%;left:18%;animation-delay:1.8s;animation-duration:6s"></div>
+  <div class="ds-particle" aria-hidden="true" style="top:38%;left:82%;animation-delay:2.2s;animation-duration:3.5s"></div>
+  <div class="ds-particle" aria-hidden="true" style="top:62%;left:50%;animation-delay:2.8s;animation-duration:5.5s"></div>
+
   <div class="hero-content">
     <div class="hero-left">
-      <div class="hero-eyebrow">
-        <div class="hero-eyebrow-dot"></div>
+      <div class="hero-tag">
+        <div class="hero-tag-dot" aria-hidden="true"></div>
         <span>Certifié RGE — Vénissieux (69) — Rhône-Alpes</span>
       </div>
-      <h1>La&nbsp;<span class="accent">rénovation</span><span class="line-indent">énergétique</span> qui&nbsp;dure.</h1>
-      <p class="hero-desc">Selesta accompagne particuliers et professionnels à <strong style="color:var(--ink-80);font-weight:500">Lyon et Rhône-Alpes</strong> dans la rénovation complète de leur bâtiment. Isolation thermique, ravalement de façade, rénovation globale — un interlocuteur unique, certifié RGE Qualibat.</p>
+      <!-- h1 with word-by-word Digital Serenity animation -->
+      <h1>
+        <span class="wa" data-delay="100">La</span>&nbsp;<em><span class="wa title-line" data-delay="250">rénovation</span></em><span class="indent"><span class="wa" data-delay="420">énergétique</span></span>
+        <span class="wa" data-delay="590">qui</span> <span class="wa" data-delay="710">dure.</span>
+      </h1>
+      <p class="hero-desc">Selesta réalise pour particuliers, syndics et collectivités à <strong>Lyon et Rhône-Alpes</strong> des chantiers d'isolation thermique, de ravalement de façade et de rénovation globale. Certifié RGE Qualibat — devis détaillé sous 48h, accompagnement clé en main.</p>
       <div class="hero-ctas">
-        <a href="#contact" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <a href="#contact" class="btn-primary">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
           Devis gratuit
         </a>
-        <a href="prestations.html" class="btn btn-ghost">Nos prestations →</a>
+        <a href="prestations.html" class="btn-outline">Nos prestations →</a>
       </div>
     </div>
     <div class="hero-right">
-      <div class="kpi-card"><div class="kpi-number">RGE</div><div class="kpi-label">Certification Qualibat officielle</div></div>
-      <div class="kpi-card"><div class="kpi-number">3</div><div class="kpi-label">Pôles d'expertise bâtiment</div></div>
-      <div class="kpi-card"><div class="kpi-number">5★</div><div class="kpi-label">Note Google vérifiée</div></div>
-      <div class="kpi-card"><div class="kpi-number">69+</div><div class="kpi-label">Chantiers en Rhône-Alpes</div></div>
+      <div class="kpi"><div class="kpi-val">RGE</div><div class="kpi-lbl">Certification Qualibat officielle</div></div>
+      <div class="kpi"><div class="kpi-val">3</div><div class="kpi-lbl">Pôles d'expertise bâtiment</div></div>
+      <div class="kpi"><div class="kpi-val">5★</div><div class="kpi-lbl">Note Google vérifiée</div></div>
+      <div class="kpi"><div class="kpi-val">69+</div><div class="kpi-lbl">Chantiers en Rhône-Alpes</div></div>
     </div>
   </div>
-  <div class="hero-ticker" aria-hidden="true">
+  <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
       <div class="ticker-item">Isolation thermique extérieure</div>
       <div class="ticker-item">Ravalement de façades</div>
@@ -343,92 +1126,188 @@
   </div>
 </section>
 
-<!-- ─── SERVICES ─── -->
+<!-- ── SERVICES ── -->
 <section class="section services-section" id="services" aria-labelledby="services-title">
   <div class="section-inner">
     <div class="services-header">
       <div>
         <div class="eyebrow reveal"><span>Nos prestations</span></div>
-        <h2 class="section-title reveal" id="services-title">Tout le bâtiment,<br/>une seule entreprise.</h2>
+        <h2 class="section-title title-split" id="services-title">Tout le bâtiment, une seule entreprise.</h2>
       </div>
-      <p class="section-sub reveal">Selesta couvre l'ensemble des besoins en rénovation, avec des équipes qualifiées pour chaque corps de métier et une coordination centralisée.</p>
+      <p class="section-sub reveal">Selesta intervient sur l'ensemble des corps de métier du bâtiment — intérieur, extérieur, structure — avec des équipes qualifiées et une coordination centralisée par un conducteur de travaux dédié.</p>
     </div>
     <div class="services-grid">
       <article class="service-card reveal">
-        <div class="service-num">01</div>
-        <div class="service-icon-wrap"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+        <div class="svc-num">01</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
         <h3>Travaux intérieurs</h3>
-        <p>Amélioration du confort thermique, rénovation des espaces de vie et optimisation énergétique pour votre habitation.</p>
-        <ul class="service-list">
+        <p>Isolation intérieure, plâtrerie, peinture et aménagement pour améliorer le confort et la performance énergétique de votre logement ou local professionnel.</p>
+        <ul class="svc-list">
           <li>Isolation thermique intérieure (ITI)</li>
-          <li>Plâtrerie et agencement</li>
+          <li>Plâtrerie, cloisons &amp; faux-plafonds</li>
           <li>Peinture et revêtements muraux</li>
-          <li>Menuiserie sur mesure</li>
+          <li>Menuiseries intérieures sur mesure</li>
           <li>Électricité &amp; plomberie</li>
           <li>Systèmes CVC</li>
         </ul>
       </article>
       <article class="service-card reveal" style="transition-delay:.1s">
-        <div class="service-num">02</div>
-        <div class="service-icon-wrap"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+        <div class="svc-num">02</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
         <h3>Travaux extérieurs</h3>
-        <p>Isolation par l'extérieur, ravalement et traitement de l'enveloppe du bâtiment pour une performance durable.</p>
-        <ul class="service-list">
-          <li>Isolation thermique extérieure (ITE)</li>
-          <li>Ravalement de façades</li>
-          <li>Restauration &amp; patrimoine</li>
-          <li>Hydrogommage</li>
+        <p>ITE, ravalement et restauration de façade pour protéger et valoriser l'enveloppe du bâtiment tout en améliorant sa classe énergétique.</p>
+        <ul class="svc-list">
+          <li>Isolation thermique par l'extérieur (ITE)</li>
+          <li>Ravalement &amp; imperméabilisation de façades</li>
+          <li>Restauration de patrimoine ancien</li>
+          <li>Hydrogommage &amp; badigeon de chaux</li>
           <li>Maçonnerie &amp; gros œuvre</li>
-          <li>Étanchéité &amp; aménagements</li>
+          <li>Étanchéité terrasses &amp; balcons</li>
         </ul>
       </article>
       <article class="service-card reveal" style="transition-delay:.2s">
-        <div class="service-num">03</div>
-        <div class="service-icon-wrap"><svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+        <div class="svc-num">03</div>
+        <div class="svc-icon">
+          <svg viewBox="0 0 24 24"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
         <h3>Rénovation globale</h3>
-        <p>Prise en charge complète de votre projet, du diagnostic à la réception finale, pour maximiser la valeur de votre bien.</p>
-        <ul class="service-list">
-          <li>Diagnostic énergétique complet</li>
-          <li>Plan d'action personnalisé</li>
+        <p>Un seul interlocuteur pour l'ensemble du chantier : du diagnostic énergétique initial à la réception finale, avec accès aux aides d'État.</p>
+        <ul class="svc-list">
+          <li>Audit &amp; diagnostic énergétique</li>
+          <li>Plan de travaux personnalisé</li>
           <li>Coordination tous corps d'état</li>
-          <li>Suivi qualité rigoureux</li>
-          <li>Aide aux démarches de subventions</li>
-          <li>Réception clé en main</li>
+          <li>Suivi de chantier hebdomadaire</li>
+          <li>Montage des dossiers de subventions</li>
+          <li>Livraison clé en main avec garantie</li>
         </ul>
       </article>
     </div>
-    <div class="services-cta reveal" style="margin-top:40px;">
-      <a href="prestations.html" class="btn btn-ghost">Voir toutes nos prestations en détail →</a>
+    <div style="text-align:center;margin-top:36px;" class="reveal">
+      <a href="prestations.html" style="display:inline-flex;align-items:center;gap:8px;font-family:var(--font-display);font-size:12px;font-weight:700;letter-spacing:.3px;padding:12px 24px;border-radius:6px;border:1.5px solid var(--ink-12);color:var(--ink-70);transition:all .25s;cursor:pointer;text-decoration:none;">
+        Voir toutes nos prestations →
+      </a>
     </div>
+
+    <!-- ── IMAGE ACCORDION ── -->
+    <div class="img-acc-wrap reveal" style="margin-top:72px">
+      <!-- Tab buttons -->
+      <div class="acc-tabs" role="tablist" aria-label="Catégories de réalisations">
+        <button class="acc-tab active" role="tab" aria-selected="true"  aria-controls="acc-int"  id="tab-int"  data-group="int">Travaux intérieurs</button>
+        <button class="acc-tab"        role="tab" aria-selected="false" aria-controls="acc-ext"  id="tab-ext"  data-group="ext">Travaux extérieurs</button>
+        <button class="acc-tab"        role="tab" aria-selected="false" aria-controls="acc-glob" id="tab-glob" data-group="glob">Rénovation globale</button>
+      </div>
+
+      <!-- Panel: Travaux intérieurs -->
+      <div class="acc-panel active" id="acc-int" role="tabpanel" aria-labelledby="tab-int">
+        <div class="acc-row">
+          <div class="acc-item active" data-label="Appartement Lyon 1" tabindex="0">
+            <img src="photo/int-appartement.jpg" alt="Rénovation intérieure appartement Lyon 1 — poutres apparentes et revêtements" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Appartement — Lyon 1</span>
+          </div>
+          <div class="acc-item" data-label="Local professionnel Oullins" tabindex="0">
+            <img src="photo/int-local.jpg" alt="Aménagement intérieur local professionnel Oullins" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Local professionnel — Oullins</span>
+          </div>
+          <div class="acc-item" data-label="Rénovation Belmont-Tramonet" tabindex="0">
+            <img src="photo/int-couloir.png" alt="Rénovation intérieure couloir résidence Belmont-Tramonet" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Résidence — Belmont</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Travaux extérieurs -->
+      <div class="acc-panel" id="acc-ext" role="tabpanel" aria-labelledby="tab-ext" hidden>
+        <div class="acc-row">
+          <div class="acc-item active" data-label="Ravalement façade Lyon 6" tabindex="0">
+            <img src="photo/ext-ornement.jpg" alt="Restauration ornements façade ancienne Lyon 6 après travaux" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Ornements — Lyon 6</span>
+          </div>
+          <div class="acc-item" data-label="Ravalement maison Vénissieux" tabindex="0">
+            <img src="photo/ext-maison.png" alt="Ravalement de façade maison individuelle Vénissieux après travaux" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Maison — Vénissieux</span>
+          </div>
+          <div class="acc-item" data-label="Hydrogommage Lyon 1" tabindex="0">
+            <img src="photo/ext-hydrogommage.jpg" alt="Hydrogommage façade ancienne Lyon 1 en cours de travaux" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Hydrogommage — Lyon 1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel: Rénovation globale -->
+      <div class="acc-panel" id="acc-glob" role="tabpanel" aria-labelledby="tab-glob" hidden>
+        <div class="acc-row">
+          <div class="acc-item active" data-label="EHPAD Saint-Bonnet-de-Mure" tabindex="0">
+            <img src="photo/glob-ehpad.jpg" alt="Isolation thermique extérieure EHPAD Saint-Bonnet-de-Mure après travaux" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">EHPAD — St-Bonnet</span>
+          </div>
+          <div class="acc-item" data-label="Immeuble Villeurbanne" tabindex="0">
+            <img src="photo/glob-immeuble.jpg" alt="Isolation extérieure laine de roche immeuble collectif Villeurbanne après" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">Immeuble — Villeurbanne</span>
+          </div>
+          <div class="acc-item" data-label="École Solaize" tabindex="0">
+            <img src="photo/glob-ecole.jpg" alt="Isolation thermique extérieure école Solaize après travaux" loading="lazy" />
+            <div class="acc-overlay"></div>
+            <span class="acc-label">École — Solaize</span>
+          </div>
+        </div>
+      </div>
+    </div><!-- /img-acc-wrap -->
+
   </div>
 </section>
 
-<!-- ─── WHY ─── -->
+<!-- ── WHY ── -->
 <section class="section why-section" aria-labelledby="why-title">
   <div class="section-inner">
     <div class="why-layout">
       <div class="why-sticky">
         <div class="eyebrow reveal"><span>Pourquoi nous choisir</span></div>
-        <h2 class="section-title reveal" id="why-title" style="margin-bottom:20px">L'expertise qui fait la différence.</h2>
-        <p class="section-sub reveal" style="margin-bottom:36px">Selesta est votre interlocuteur unique en Rhône-Alpes pour une sérénité totale, du premier contact à la livraison finale.</p>
-        <a href="#contact" class="btn btn-primary reveal">Demander un devis gratuit</a>
+        <h2 class="section-title title-split" id="why-title">L'expertise qui fait la différence.</h2>
+        <p class="section-sub reveal" style="margin-top:14px">Devis, chantier, finitions, subventions — tout est géré par Selesta. Pas de coordination à assurer de votre côté, pas de mauvaises surprises.</p>
+        <div style="margin-top:28px" class="reveal">
+          <a href="#contact" class="btn-primary">Demander un devis gratuit</a>
+        </div>
       </div>
       <div class="why-items">
-        <div class="why-item reveal"><span class="why-item-num">01</span><div class="why-item-body"><strong>Interlocuteur unique</strong><span>Un seul contact du premier rendez-vous jusqu'à la réception. Simplifiez toutes vos démarches administratives et techniques.</span></div></div>
-        <div class="why-item reveal" style="transition-delay:.08s"><span class="why-item-num">02</span><div class="why-item-body"><strong>Certification RGE Qualibat</strong><span>Nos certifications vous permettent d'accéder à l'ensemble des aides financières de l'État pour vos travaux de rénovation.</span></div></div>
-        <div class="why-item reveal" style="transition-delay:.16s"><span class="why-item-num">03</span><div class="why-item-body"><strong>Respect des délais</strong><span>Un planning clair et réaliste dès le départ. Nos conducteurs de travaux assurent la cohérence et la ponctualité de chaque chantier.</span></div></div>
-        <div class="why-item reveal" style="transition-delay:.24s"><span class="why-item-num">04</span><div class="why-item-body"><strong>Réseau de spécialistes qualifiés</strong><span>Nos équipes internes maîtrisent maçonnerie, isolation et plâtrerie. Pour les lots techniques, des partenaires experts sont pilotés par notre encadrement.</span></div></div>
+        <div class="why-item reveal">
+          <span class="why-num">01</span>
+          <div class="why-body"><strong>Un seul interlocuteur, du début à la fin</strong><span>Un conducteur de travaux dédié coordonne chaque corps de métier et vous tient informé à chaque étape — sans que vous ayez à gérer plusieurs entreprises.</span></div>
+        </div>
+        <div class="why-item reveal" style="transition-delay:.08s">
+          <span class="why-num">02</span>
+          <div class="why-body"><strong>Certification RGE Qualibat</strong><span>Notre qualification RGE vous ouvre l'accès à MaPrimeRénov', aux CEE et à l'Éco-PTZ. Nous constituons les dossiers de subventions à votre place.</span></div>
+        </div>
+        <div class="why-item reveal" style="transition-delay:.16s">
+          <span class="why-num">03</span>
+          <div class="why-body"><strong>Délais tenus, devis respecté</strong><span>Le planning et le budget sont définis contractuellement avant le démarrage du chantier. Les éventuels écarts sont signalés immédiatement, sans surprises en fin de chantier.</span></div>
+        </div>
+        <div class="why-item reveal" style="transition-delay:.24s">
+          <span class="why-num">04</span>
+          <div class="why-body"><strong>Équipes formées, matériaux certifiés</strong><span>Maçonnerie, isolation, ravalement et finitions sont réalisés par nos équipes internes. Les matériaux utilisés sont certifiés ACERMI ou CSTB selon les postes de travaux.</span></div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ─── AIDES ─── -->
+<!-- ── AIDES ── -->
 <section class="section aides-section" aria-labelledby="aides-title">
   <div class="section-inner">
     <div class="eyebrow reveal"><span>Subventions 2026</span></div>
-    <h2 class="section-title reveal" id="aides-title" style="margin-bottom:16px">Financez votre rénovation<br/>grâce aux aides de l'État.</h2>
-    <p class="section-sub reveal">En tant qu'entreprise certifiée RGE, Selesta vous accompagne dans l'accès aux dispositifs d'aide financière pour réduire votre reste à charge.</p>
+    <h2 class="section-title title-split" id="aides-title">Financez votre rénovation grâce aux aides de l'État.</h2>
+    <p class="section-sub reveal" style="margin-top:14px">En tant qu'entreprise certifiée RGE Qualibat, Selesta est habilitée à effectuer des travaux éligibles à ces dispositifs et constitue les dossiers à votre place pour minimiser votre reste à charge.</p>
     <div class="aides-grid">
       <div class="aide-card reveal"><div class="aide-name">MaPrimeRénov'</div><div class="aide-desc">Aide de l'État pour les travaux d'isolation, de chauffage et de ventilation. Accessible à tous les propriétaires.</div></div>
       <div class="aide-card reveal" style="transition-delay:.08s"><div class="aide-name">CEE</div><div class="aide-desc">Certificats d'Économies d'Énergie : primes versées directement par les fournisseurs d'énergie.</div></div>
@@ -438,93 +1317,299 @@
   </div>
 </section>
 
-<!-- ─── REVIEWS ─── -->
-<section class="section reviews-section" id="avis" aria-labelledby="avis-title">
-  <div class="section-inner">
-    <div class="reviews-header">
-      <div>
-        <div class="eyebrow reveal"><span>Témoignages</span></div>
-        <h2 class="section-title reveal" id="avis-title">Ce que disent<br/>nos clients.</h2>
+<!-- ── 3D TESTIMONIALS ── -->
+<section class="reviews-section" id="avis" aria-labelledby="avis-title">
+  <div class="reviews-header">
+    <div>
+      <div class="eyebrow reveal"><span>Témoignages</span></div>
+      <h2 class="section-title title-split" id="avis-title" style="color:var(--white)">Ce que disent nos clients.</h2>
+    </div>
+    <div class="rating-block reveal">
+      <div class="big">5,0</div>
+      <div class="stars">★★★★★</div>
+      <div class="sub">Avis Google vérifiés</div>
+    </div>
+  </div>
+
+  <div class="marquee-scene" aria-label="Défilement des avis clients" role="region">
+    <div class="marquee-fade-left" aria-hidden="true"></div>
+    <div class="marquee-fade-right" aria-hidden="true"></div>
+    <div class="marquee-stage" aria-hidden="true">
+
+      <!-- Col 1 — descend -->
+      <div class="marquee-col">
+        <div class="marquee-col-inner">
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne. Les murs sont comme neufs, le travail rapide, soigné et de grande qualité. Je recommande sans hésiter.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Ravalement · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très satisfait de la prestation. Équipe sérieuse, ponctuelle et à l'écoute. Je recommande vivement Selesta pour tous vos travaux de rénovation.</p><div class="r-card-author"><div class="r-avatar">MR</div><div><div class="r-name">M. Renault</div><div class="r-service">Isolation · Lyon (69)</div></div></div></div>
+          <!-- duplicate for infinite loop -->
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne. Les murs sont comme neufs, le travail rapide, soigné et de grande qualité. Je recommande sans hésiter.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Ravalement · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très satisfait de la prestation. Équipe sérieuse, ponctuelle et à l'écoute. Je recommande vivement Selesta pour tous vos travaux de rénovation.</p><div class="r-card-author"><div class="r-avatar">MR</div><div><div class="r-name">M. Renault</div><div class="r-service">Isolation · Lyon (69)</div></div></div></div>
+        </div>
       </div>
-      <div class="reveal">
-        <div class="rating-big">5,0</div>
-        <div class="rating-stars">★★★★★</div>
-        <div class="rating-sub">Avis Google vérifiés</div>
+
+      <!-- Col 2 — monte -->
+      <div class="marquee-col">
+        <div class="marquee-col-inner">
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite et vérification après travaux.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très bon travail d'isolation sur notre maison. L'équipe est professionnelle et respectueuse. On a vu une vraie différence sur notre facture de chauffage.</p><div class="r-card-author"><div class="r-avatar">SB</div><div><div class="r-name">S. Bernard</div><div class="r-service">ITE · Villeurbanne (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison, qui présentait de nombreuses fissures profondes. Le résultat est au rendez-vous. Je recommande sans hésiter.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Maçonnerie · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+          <!-- duplicate -->
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite et vérification après travaux.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très bon travail d'isolation sur notre maison. L'équipe est professionnelle et respectueuse. On a vu une vraie différence sur notre facture de chauffage.</p><div class="r-card-author"><div class="r-avatar">SB</div><div><div class="r-name">S. Bernard</div><div class="r-service">ITE · Villeurbanne (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison, qui présentait de nombreuses fissures profondes. Le résultat est au rendez-vous. Je recommande sans hésiter.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Maçonnerie · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+        </div>
       </div>
-    </div>
-    <div class="reviews-grid">
-      <article class="review-card reveal">
-        <div class="review-stars">★★★★★</div>
-        <div class="review-quote">"</div>
-        <p class="review-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne, qui présentait de nombreuses fissures profondes. Le résultat est au rendez-vous : les murs sont comme neufs, le travail rapide, soigné et de grande qualité. Je recommande sans hésiter.</p>
-        <div class="review-author"><div class="review-avatar">P8</div><div><div class="review-name">Profil868088 — Vienne (38)</div><div class="review-service">Ravalement de façades &amp; maçonnerie</div></div></div>
-      </article>
-      <article class="review-card reveal" style="transition-delay:.1s">
-        <div class="review-stars">★★★★★</div>
-        <div class="review-quote">"</div>
-        <p class="review-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p>
-        <div class="review-author"><div class="review-avatar">RT</div><div><div class="review-name">rt.kdc38 — Lyon (69)</div><div class="review-service">Ravalement de façade</div></div></div>
-      </article>
-      <article class="review-card reveal" style="transition-delay:.2s">
-        <div class="review-stars">★★★★★</div>
-        <div class="review-quote">"</div>
-        <p class="review-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite et vérification après travaux.</p>
-        <div class="review-author"><div class="review-avatar">EM</div><div><div class="review-name">Emma — Vénissieux (69)</div><div class="review-service">Ravalement de façades</div></div></div>
-      </article>
-    </div>
-    <div style="text-align:center;margin-top:40px;" class="reveal">
-      <a href="https://www.google.com/maps/search/SELESTA+Vénissieux/" target="_blank" rel="noopener" class="btn btn-ghost">Voir tous les avis Google →</a>
-    </div>
+
+      <!-- Col 3 — descend -->
+      <div class="marquee-col">
+        <div class="marquee-col-inner">
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très satisfait de la prestation de Selesta. L'isolation de ma maison a été réalisée dans les temps, avec soin. L'équipe est à l'écoute et réactive.</p><div class="r-card-author"><div class="r-avatar">JL</div><div><div class="r-name">J. Laurent</div><div class="r-service">Isolation · Saint-Priest (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne. Les murs sont comme neufs, le travail rapide, soigné et de grande qualité.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Ravalement · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <!-- duplicate -->
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très satisfait de la prestation de Selesta. L'isolation de ma maison a été réalisée dans les temps, avec soin. L'équipe est à l'écoute et réactive.</p><div class="r-card-author"><div class="r-avatar">JL</div><div><div class="r-name">J. Laurent</div><div class="r-service">Isolation · Saint-Priest (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne. Les murs sont comme neufs, le travail rapide, soigné et de grande qualité.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Ravalement · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+        </div>
+      </div>
+
+      <!-- Col 4 — monte -->
+      <div class="marquee-col">
+        <div class="marquee-col-inner">
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite et vérification après travaux.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne, qui présentait de nombreuses fissures profondes. Le résultat est au rendez-vous. Je recommande sans hésiter.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Maçonnerie · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très satisfait de la prestation. Équipe sérieuse, ponctuelle et à l'écoute. Je recommande vivement Selesta pour tous vos travaux de rénovation.</p><div class="r-card-author"><div class="r-avatar">MR</div><div><div class="r-name">M. Renault</div><div class="r-service">Isolation · Lyon (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+          <!-- duplicate -->
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Entreprise de très bons conseils, devis respecté. Travail de très bonne qualité, par une équipe ponctuelle et professionnelle. Finition parfaite et vérification après travaux.</p><div class="r-card-author"><div class="r-avatar">EM</div><div><div class="r-name">Emma</div><div class="r-service">Ravalement · Vénissieux (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Selesta a pris en charge les travaux de ma vieille maison à Vienne, qui présentait de nombreuses fissures profondes. Le résultat est au rendez-vous. Je recommande sans hésiter.</p><div class="r-card-author"><div class="r-avatar">P8</div><div><div class="r-name">Profil868088</div><div class="r-service">Maçonnerie · Vienne (38)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Très satisfait de la prestation. Équipe sérieuse, ponctuelle et à l'écoute. Je recommande vivement Selesta pour tous vos travaux de rénovation.</p><div class="r-card-author"><div class="r-avatar">MR</div><div><div class="r-name">M. Renault</div><div class="r-service">Isolation · Lyon (69)</div></div></div></div>
+          <div class="r-card"><div class="r-card-stars">★★★★★</div><p class="r-card-text">Travail efficace et rapide, je vous recommande fortement cette entreprise qui m'a pris au sérieux lors de mon passage chez eux.</p><div class="r-card-author"><div class="r-avatar">RT</div><div><div class="r-name">rt.kdc38</div><div class="r-service">Ravalement · Lyon (69)</div></div></div></div>
+        </div>
+      </div>
+
+    </div><!-- /marquee-stage -->
+  </div><!-- /marquee-scene -->
+
+  <div class="reviews-footer">
+    <a href="https://www.google.com/maps/search/SELESTA+Vénissieux/" target="_blank" rel="noopener" class="btn-ghost-dark reveal">
+      Voir tous les avis Google →
+    </a>
   </div>
 </section>
 
-<!-- ─── CTA BAND ─── -->
-<div class="cta-section" aria-label="Appel à l'action">
+<!-- ── CTA BAND ── -->
+<div class="cta-band" aria-label="Appel à l'action">
   <div class="cta-inner">
     <div class="cta-text reveal">
-      <h2>Votre projet de rénovation<br/>commence ici.</h2>
-      <p>Devis gratuit, diagnostic précis, accompagnement clé en main. Sans engagement.</p>
+      <h2 class="title-split">Votre projet de rénovation commence ici.</h2>
+      <p>Diagnostic sur site, devis détaillé sous 48h, accompagnement complet — du dossier de subventions à la réception des travaux.</p>
     </div>
-    <a href="#contact" class="btn-cta-white reveal">
+    <a href="#contact" class="btn-dark reveal">
       Obtenir mon devis gratuit
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
 </div>
 
-<!-- ─── CONTACT ─── -->
+<!-- ── CONTACT ── -->
 <section class="section contact-section" id="contact" aria-labelledby="contact-title">
   <div class="section-inner">
     <div class="contact-layout">
       <div>
         <div class="eyebrow reveal"><span>Contactez-nous</span></div>
-        <h2 class="section-title reveal" id="contact-title" style="margin-bottom:16px">Parlons de<br/>votre projet.</h2>
-        <p class="section-sub reveal" style="font-size:15px">Nous répondons à chaque demande sous 48h et proposons un devis personnalisé gratuit et sans engagement.</p>
-        <div class="contact-info-items">
-          <div class="contact-info-item reveal"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.46a16 16 0 0 0 5.63 5.63l1.51-1.51a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div><div class="ci-label">Téléphone</div><div class="ci-value"><a href="tel:+33487627179">04 87 62 71 79</a> &nbsp;/&nbsp; <a href="tel:+33765165430">07 65 16 54 30</a></div></div></div>
-          <div class="contact-info-item reveal" style="transition-delay:.08s"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div><div><div class="ci-label">Email</div><div class="ci-value"><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></div></div></div>
-          <div class="contact-info-item reveal" style="transition-delay:.16s"><div class="ci-icon"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><div class="ci-label">Adresse</div><div class="ci-value">158 Av. Francis de Pressensé<br/>69200 Vénissieux</div></div></div>
+        <h2 class="section-title title-split" id="contact-title">Parlons de votre projet.</h2>
+        <p class="section-sub reveal" style="margin-top:14px;font-size:14px">Décrivez votre projet en quelques lignes. Nous analysons votre demande et vous transmettons un devis détaillé et personnalisé sous 48h, sans engagement.</p>
+        <div class="contact-info">
+          <div class="ci-row reveal">
+            <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.39 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.46a16 16 0 0 0 5.63 5.63l1.51-1.51a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div><div class="ci-lbl">Téléphone</div><div class="ci-val"><a href="tel:+33487627179">04 87 62 71 79</a> &nbsp;/&nbsp; <a href="tel:+33765165430">07 65 16 54 30</a></div></div>
+          </div>
+          <div class="ci-row reveal" style="transition-delay:.08s">
+            <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></div></div>
+          </div>
+          <div class="ci-row reveal" style="transition-delay:.16s">
+            <div class="ci-ico"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="ci-lbl">Adresse</div><div class="ci-val">158 Av. Francis de Pressensé<br/>69200 Vénissieux</div></div>
+          </div>
         </div>
-        <div class="map-wrap reveal" style="transition-delay:.24s">
-          <iframe src="https://maps.google.com/maps?q=158+Avenue+Francis+de+Pressen%C3%A9,+69200+V%C3%A9nissieux,+France&output=embed&hl=fr&z=16" title="Selesta Bâtiment — 158 Avenue Francis de Pressensé, 69200 Vénissieux" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <a href="https://www.google.com/maps/dir/?api=1&destination=158+Avenue+Francis+de+Pressen%C3%A9,+69200+V%C3%A9nissieux,+France" target="_blank" rel="noopener noreferrer" class="map-cta">
+        <div class="map-wrap reveal" style="transition-delay:.24s; overflow:visible; border:none; background:none;">
+          <div id="location-map" class="lmap-card">
+            <div class="lmap-inner">
+
+              <!-- grid bg -->
+              <div class="lmap-grid" id="lmap-grid">
+                <svg width="100%" height="100%" class="lmap-grid-svg">
+                  <defs><pattern id="lmap-pat" width="20" height="20" patternUnits="userSpaceOnUse">
+                    <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(14,12,10,.12)" stroke-width="0.5"/>
+                  </pattern></defs>
+                  <rect width="100%" height="100%" fill="url(#lmap-pat)"/>
+                </svg>
+              </div>
+
+              <!-- expanded map view – Vénissieux précis -->
+              <div class="lmap-expanded" id="lmap-expanded">
+                <div class="lmap-bg"></div>
+
+                <!-- SVG rues précises autour de 158 Av. Francis de Pressensé, Vénissieux -->
+                <svg class="lmap-streets" preserveAspectRatio="none" viewBox="0 0 400 280">
+                  <!-- Fond sable -->
+                  <rect width="400" height="280" fill="#EDE9DF"/>
+
+                  <!-- Îlots de quartier (zones bâties) -->
+                  <rect x="0" y="0" width="400" height="280" fill="#E8E4D8"/>
+
+                  <!-- Avenue Francis de Pressensé (axe principal horizontal, centre) -->
+                  <rect x="0" y="124" width="400" height="16" fill="#FFFFFF" opacity=".85"/>
+                  <rect x="0" y="130" width="400" height="2" fill="rgba(201,168,76,.35)" stroke="none"/>
+
+                  <!-- Rue Roger Salengro (verticale gauche) -->
+                  <rect x="58" y="0" width="10" height="280" fill="#FFFFFF" opacity=".75"/>
+
+                  <!-- Rue Léon Blum (verticale milieu-gauche) -->
+                  <rect x="148" y="0" width="9" height="280" fill="#FFFFFF" opacity=".7"/>
+
+                  <!-- Rue du 8 Mai 1945 (verticale droite) -->
+                  <rect x="248" y="0" width="9" height="280" fill="#FFFFFF" opacity=".7"/>
+
+                  <!-- Avenue Youri Gagarine (horizontale haut) -->
+                  <rect x="0" y="52" width="400" height="12" fill="#FFFFFF" opacity=".75"/>
+
+                  <!-- Rue de Minguettes (horizontale bas) -->
+                  <rect x="0" y="208" width="400" height="10" fill="#FFFFFF" opacity=".65"/>
+
+                  <!-- Rues secondaires -->
+                  <rect x="0" y="85" width="400" height="6" fill="#FFFFFF" opacity=".45"/>
+                  <rect x="0" y="170" width="400" height="6" fill="#FFFFFF" opacity=".45"/>
+                  <rect x="100" y="0" width="5" height="280" fill="#FFFFFF" opacity=".35"/>
+                  <rect x="200" y="0" width="5" height="280" fill="#FFFFFF" opacity=".35"/>
+                  <rect x="310" y="0" width="5" height="280" fill="#FFFFFF" opacity=".35"/>
+                  <rect x="350" y="0" width="5" height="280" fill="#FFFFFF" opacity=".35"/>
+
+                  <!-- Parc / espace vert côté sud-ouest -->
+                  <rect x="62" y="215" width="80" height="55" rx="4" fill="rgba(120,180,90,.28)" stroke="rgba(90,150,60,.2)" stroke-width="1"/>
+                  <rect x="155" y="218" width="55" height="35" rx="3" fill="rgba(120,180,90,.18)" stroke="rgba(90,150,60,.15)" stroke-width="1"/>
+
+                  <!-- Bâtiments représentatifs (îlots urbains) -->
+                  <!-- Quadrant NW -->
+                  <rect x="4" y="4" width="50" height="44" rx="2" fill="rgba(14,12,10,.11)" stroke="rgba(14,12,10,.08)" stroke-width=".5"/>
+                  <rect x="4" y="57" width="50" height="22" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="4" y="90" width="50" height="30" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+
+                  <!-- Quadrant NE -->
+                  <rect x="108" y="4" width="36" height="44" rx="2" fill="rgba(14,12,10,.11)" stroke="rgba(14,12,10,.08)" stroke-width=".5"/>
+                  <rect x="158" y="4" width="84" height="44" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="258" y="4" width="60" height="44" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="324" y="4" width="72" height="30" rx="2" fill="rgba(14,12,10,.08)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+
+                  <!-- Zone autour de la route principale (N de l'avenue) -->
+                  <rect x="108" y="57" width="36" height="22" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="158" y="57" width="84" height="62" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="258" y="57" width="60" height="62" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="324" y="57" width="72" height="62" rx="2" fill="rgba(14,12,10,.08)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+
+                  <!-- Sous l'avenue -->
+                  <rect x="4" y="145" width="50" height="20" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="108" y="145" width="36" height="20" rx="2" fill="rgba(14,12,10,.08)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="158" y="145" width="84" height="58" rx="2" fill="rgba(14,12,10,.08)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="258" y="145" width="60" height="58" rx="2" fill="rgba(14,12,10,.08)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="324" y="145" width="72" height="58" rx="2" fill="rgba(14,12,10,.07)" stroke="rgba(14,12,10,.06)" stroke-width=".5"/>
+
+                  <!-- Bas de carte -->
+                  <rect x="4" y="175" width="50" height="28" rx="2" fill="rgba(14,12,10,.09)" stroke="rgba(14,12,10,.07)" stroke-width=".5"/>
+                  <rect x="4" y="215" width="50" height="60" rx="2" fill="rgba(14,12,10,.07)" stroke="rgba(14,12,10,.06)" stroke-width=".5"/>
+                  <rect x="158" y="215" width="84" height="60" rx="2" fill="rgba(14,12,10,.07)" stroke="rgba(14,12,10,.06)" stroke-width=".5"/>
+                  <rect x="258" y="215" width="60" height="60" rx="2" fill="rgba(14,12,10,.07)" stroke="rgba(14,12,10,.06)" stroke-width=".5"/>
+                  <rect x="324" y="215" width="72" height="60" rx="2" fill="rgba(14,12,10,.06)" stroke="rgba(14,12,10,.05)" stroke-width=".5"/>
+
+                  <!-- Labels des rues (texte) -->
+                  <text x="4" y="135" font-size="7" fill="rgba(14,12,10,.5)" font-family="DM Sans,sans-serif" font-weight="600" letter-spacing=".3">Av. Francis de Pressensé</text>
+                  <text x="4" y="48" font-size="6" fill="rgba(14,12,10,.4)" font-family="DM Sans,sans-serif" font-weight="500" letter-spacing=".2">Av. Youri Gagarine</text>
+                  <text x="4" y="204" font-size="6" fill="rgba(14,12,10,.4)" font-family="DM Sans,sans-serif" font-weight="500" letter-spacing=".2">Rue de Minguettes</text>
+
+                  <!-- Marqueur bâtiment Selesta (au niveau 158) -->
+                  <rect x="188" y="106" width="22" height="16" rx="2" fill="rgba(201,168,76,.35)" stroke="rgba(201,168,76,.7)" stroke-width="1.2"/>
+                </svg>
+
+                <!-- Pin animé -->
+                <div class="lmap-pulse-ring"></div>
+                <div class="lmap-pin-wrap">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" class="lmap-pin-svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#C9A84C" stroke="#fff" stroke-width=".8"/>
+                    <circle cx="12" cy="9" r="2.5" fill="#FAF8F5"/>
+                  </svg>
+                </div>
+                <div class="lmap-fade"></div>
+              </div>
+
+              <!-- content -->
+              <div class="lmap-content">
+                <div class="lmap-top">
+                  <div class="lmap-icon" id="lmap-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                      <line x1="9" x2="9" y1="3" y2="18"/>
+                      <line x1="15" x2="15" y1="6" y2="21"/>
+                    </svg>
+                  </div>
+                  <div class="lmap-badge">
+                    <div class="lmap-dot"></div>
+                    <span>Vénissieux</span>
+                  </div>
+                </div>
+                <div class="lmap-bottom">
+                  <div class="lmap-name">158 Av. Francis de Pressensé</div>
+                  <div class="lmap-coords" id="lmap-coords">69200 Vénissieux, France</div>
+                  <div class="lmap-line" id="lmap-line"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=158+Avenue+Francis+de+Pressen%C3%A9,+69200+V%C3%A9nissieux,+France" target="_blank" rel="noopener noreferrer" class="map-link" style="margin-top:12px;border-radius:10px;border:1px solid var(--ink-12);">
             <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
             Obtenir l'itinéraire →
           </a>
         </div>
       </div>
-      <div class="contact-form-wrap reveal">
-        <div class="form-title">Demande de devis gratuit</div>
-        <form id="devisForm">
+      <div class="form-3d-scene reveal">
+        <div class="form-wrap" id="form-wrap-3d">
+          <div class="form-3d-shimmer"></div>
+          <div class="form-3d-badge">Devis gratuit · 48h</div>
+          <div class="form-3d-dot form-3d-dot-1"></div>
+          <div class="form-3d-dot form-3d-dot-2"></div>
+          <div class="form-title">Demande de devis gratuit</div>
+        <form id="devisForm" novalidate>
           <div class="form-row">
-            <div class="form-group"><label for="prenom">Prénom</label><input type="text" id="prenom" name="prenom" placeholder="Jean" required /></div>
-            <div class="form-group"><label for="nom">Nom</label><input type="text" id="nom" name="nom" placeholder="Dupont" required /></div>
+            <div class="form-group">
+              <label for="prenom">Prénom <span aria-hidden="true" style="color:var(--gold)">*</span></label>
+              <input type="text" id="prenom" name="prenom" placeholder="Jean" required autocomplete="given-name" />
+            </div>
+            <div class="form-group">
+              <label for="nom">Nom <span aria-hidden="true" style="color:var(--gold)">*</span></label>
+              <input type="text" id="nom" name="nom" placeholder="Dupont" required autocomplete="family-name" />
+            </div>
           </div>
-          <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="jean@email.com" required /></div>
-          <div class="form-group"><label for="tel">Téléphone</label><input type="tel" id="tel" name="tel" placeholder="06 xx xx xx xx" /></div>
+          <div class="form-group">
+            <label for="email">Email <span aria-hidden="true" style="color:var(--gold)">*</span></label>
+            <input type="email" id="email" name="email" placeholder="jean@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" placeholder="06 xx xx xx xx" autocomplete="tel" />
+          </div>
           <div class="form-group">
             <label for="type">Type de travaux</label>
-            <select id="type" name="type">
+            <select id="type" name="type" autocomplete="off">
               <option value="">Choisir une prestation</option>
               <option>Travaux intérieurs</option>
               <option>Travaux extérieurs / Façade</option>
@@ -533,17 +1618,22 @@
               <option>Autre</option>
             </select>
           </div>
-          <div class="form-group"><label for="message">Description du projet</label><textarea id="message" name="message" placeholder="Décrivez votre projet, la surface, le type de bâtiment..."></textarea></div>
-          <button type="submit" class="btn-submit">
+          <div class="form-group">
+            <label for="message">Description du projet</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre projet, la surface, le type de bâtiment..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
             Envoyer ma demande
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </button>
-          <div id="successMessage" style="display:none;margin-top:16px;background:var(--flame-soft);border:1.5px solid var(--flame);border-radius:12px;padding:24px 28px;">
-            <div style="display:flex;align-items:flex-start;gap:14px;">
-              <div style="width:40px;height:40px;background:var(--flame);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="success-box" id="successMessage" role="status" aria-live="polite">
+            <div class="success-box-inner">
+              <div class="success-ico">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
               <div>
-                <div style="font-family:var(--font-display);font-size:15px;font-weight:700;color:var(--ink);margin-bottom:6px;">Demande envoyée avec succès !</div>
-                <div style="font-size:14px;color:var(--ink-50);line-height:1.6;">Merci pour votre message. Notre équipe vous recontacte sous <strong style="color:var(--ink);">48h</strong> pour établir votre devis gratuit.</div>
+                <div class="success-title">Demande envoyée avec succès !</div>
+                <div class="success-sub">Merci pour votre message. Notre équipe vous recontacte sous <strong>48h</strong> pour établir votre devis gratuit.</div>
               </div>
             </div>
           </div>
@@ -555,89 +1645,271 @@
 
 </main>
 
+<!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo" style="gap:10px;margin-bottom:0;"><img src="favicon.png" alt="Selesta" style="height:40px;width:auto;border-radius:8px;" /><span class="logo-text" style="font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:700;background:linear-gradient(135deg,#C9A84C 0%,#F0D080 40%,#A07830 70%,#C9A84C 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.5px;line-height:1;">Selesta</span></div>
-        <p>Entreprise de rénovation énergétique certifiée RGE Qualibat, basée à Vénissieux (69). Nous intervenons sur toute la région Rhône-Alpes pour les particuliers, syndics et professionnels.</p>
-        <div class="social-links">
-          <a href="https://www.instagram.com/selesta_lyon/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-          <a href="https://www.facebook.com/people/Selesta-B%C3%A2timent/61586632689830/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
-          <a href="https://www.linkedin.com/company/selesta-b%C3%A2timent/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+        <div class="footer-logo">
+          <img src="favicon.png" alt="" aria-hidden="true" />
+          <span style="background:linear-gradient(135deg,#C9A84C 0%,#E8C96A 45%,#A07830 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Selesta</span>
+        </div>
+        <p>Entreprise de rénovation énergétique certifiée RGE Qualibat, basée à Vénissieux (69). Nous intervenons sur toute la région Rhône-Alpes.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/selesta_lyon/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram Selesta">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/people/Selesta-B%C3%A2timent/61586632689830/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Facebook Selesta">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/company/selesta-b%C3%A2timent/" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Selesta">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
         </div>
       </div>
-      <div class="footer-col"><h5>Prestations</h5><ul><li><a href="prestations.html#interieurs">Travaux intérieurs</a></li><li><a href="prestations.html#exterieurs">Travaux extérieurs</a></li><li><a href="prestations.html#renovation-globale">Rénovation globale</a></li><li><a href="prestations.html#isolation">Isolation thermique</a></li><li><a href="prestations.html#facades">Ravalement de façades</a></li></ul></div>
-      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="realisations.html">Nos réalisations</a></li><li><a href="faq.html">Notre méthode</a></li><li><a href="#avis">Avis clients</a></li><li><a href="faq.html#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
-      <div class="footer-col"><h5>Nous joindre</h5><ul><li><a href="tel:+33487627179">04 87 62 71 79</a></li><li><a href="tel:+33765165430">07 65 16 54 30</a></li><li><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></li></ul></div>
+      <div class="footer-col">
+        <h5>Prestations</h5>
+        <ul>
+          <li><a href="prestations.html#interieurs">Travaux intérieurs</a></li>
+          <li><a href="prestations.html#exterieurs">Travaux extérieurs</a></li>
+          <li><a href="prestations.html#renovation-globale">Rénovation globale</a></li>
+          <li><a href="prestations.html#isolation">Isolation thermique</a></li>
+          <li><a href="prestations.html#facades">Ravalement de façades</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="realisations.html">Nos réalisations</a></li>
+          <li><a href="faq.html">Notre méthode</a></li>
+          <li><a href="#avis">Avis clients</a></li>
+          <li><a href="faq.html#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Nous joindre</h5>
+        <ul>
+          <li><a href="tel:+33487627179">04 87 62 71 79</a></li>
+          <li><a href="tel:+33765165430">07 65 16 54 30</a></li>
+          <li><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 <a href="index.html" style="color:inherit;text-decoration:none;">Selesta</a> — 158 Av. Francis de Pressensé, 69200 Vénissieux · <a href="mentions-legales.html" style="color:rgba(255,255,255,.3);">Mentions légales</a></span>
-      <strong>RGE Qualibat · Entreprise du Bâtiment</strong>
+      <span>© 2026 <a href="index.html" style="color:inherit">Selesta</a> — 158 Av. Francis de Pressensé, 69200 Vénissieux</span>
+      <strong style="color:rgba(250,250,248,.35)">RGE Qualibat · Entreprise du Bâtiment</strong>
     </div>
   </div>
 </footer>
 
 <script>
-  const burgerBtn = document.getElementById('burger-btn');
-  const mobileOverlay = document.getElementById('mobile-nav-overlay');
-  burgerBtn.addEventListener('click', () => {
-    const isOpen = mobileOverlay.classList.toggle('open');
-    burgerBtn.classList.toggle('open', isOpen);
-    burgerBtn.setAttribute('aria-expanded', isOpen);
-    document.body.style.overflow = isOpen ? 'hidden' : '';
+  /* ── burger ── */
+  const burger = document.getElementById('burger-btn');
+  const menu   = document.getElementById('mobile-menu');
+  burger.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    burger.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', open);
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu');
+    document.body.style.overflow = open ? 'hidden' : '';
   });
-  mobileOverlay.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => { mobileOverlay.classList.remove('open'); burgerBtn.classList.remove('open'); burgerBtn.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; });
-  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    menu.classList.remove('open');
+    burger.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+    burger.setAttribute('aria-label', 'Ouvrir le menu');
+    document.body.style.overflow = '';
+  }));
+
+  /* ── header scroll ── */
   const header = document.getElementById('header');
-  window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 20); }, { passive:true });
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); revealObserver.unobserve(entry.target); } });
-  }, { threshold:0.12, rootMargin:'0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  window.addEventListener('scroll', () => header.classList.toggle('scrolled', scrollY > 20), { passive:true });
+
+  /* ── reveal on scroll (non-title elements) ── */
+  const ro = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); ro.unobserve(e.target); } });
+  }, { threshold:.1, rootMargin:'0px 0px -36px 0px' });
+  document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+
+  /* ════════════════════════════════════════════
+     DIGITAL SERENITY SYSTEM
+  ════════════════════════════════════════════ */
+
+  /* 1 ── Hero h1: fire word animations on load */
+  document.querySelectorAll('h1 .wa').forEach(w => {
+    const delay = parseInt(w.dataset.delay) || 0;
+    setTimeout(() => {
+      w.classList.add('go');
+      /* trigger underline on the accent word */
+      if (w.classList.contains('title-line')) {
+        setTimeout(() => w.classList.add('line-go'), 200);
+      }
+    }, delay);
+  });
+
+  /* 2 ── Section titles: split into .wa spans, animate on scroll */
+  function splitTitle(el) {
+    /* grab raw text, preserving the element's existing style attr */
+    const raw = el.textContent.trim();
+    const words = raw.split(/\s+/);
+    el.innerHTML = words.map((w, i) =>
+      `<span class="wa" data-delay="${i * 90}">${w}</span>`
+    ).join(' ');
+    /* mark first word with underline decoration */
+    const first = el.querySelector('.wa');
+    if (first) first.classList.add('title-line');
+  }
+
+  const titleObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      splitTitle(el);
+      /* small rAF so DOM updates before we read spans */
+      requestAnimationFrame(() => {
+        el.querySelectorAll('.wa').forEach(w => {
+          const delay = parseInt(w.dataset.delay) || 0;
+          setTimeout(() => {
+            w.classList.add('go');
+            if (w.classList.contains('title-line')) {
+              setTimeout(() => w.classList.add('line-go'), 300);
+            }
+          }, delay);
+        });
+      });
+      titleObserver.unobserve(el);
+    });
+  }, { threshold: 0.25, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.title-split').forEach(el => titleObserver.observe(el));
+
+  /* 3 ── Mouse gradient follower */
+  const dsMouse = document.getElementById('ds-mouse');
+  let mouseActive = false;
+  document.addEventListener('mousemove', e => {
+    dsMouse.style.left    = e.clientX + 'px';
+    dsMouse.style.top     = e.clientY + 'px';
+    dsMouse.style.opacity = '1';
+    mouseActive = true;
+  }, { passive: true });
+  document.addEventListener('mouseleave', () => {
+    dsMouse.style.opacity = '0';
+    mouseActive = false;
+  });
+
+  /* 4 ── Click ripple */
+  document.addEventListener('click', e => {
+    const r = document.createElement('div');
+    r.className = 'ds-ripple';
+    r.style.left = e.clientX + 'px';
+    r.style.top  = e.clientY + 'px';
+    document.body.appendChild(r);
+    setTimeout(() => r.remove(), 950);
+  });
+
+  /* ── IMAGE ACCORDION ── */
+  /* Tab switching */
+  document.querySelectorAll('.acc-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const group = tab.dataset.group;
+      // update tabs
+      document.querySelectorAll('.acc-tab').forEach(t => {
+        t.classList.toggle('active', t === tab);
+        t.setAttribute('aria-selected', t === tab);
+      });
+      // update panels
+      document.querySelectorAll('.acc-panel').forEach(p => {
+        const show = p.id === 'acc-' + group;
+        p.classList.toggle('active', show);
+        p.hidden = !show;
+        // reset accordion to first item active when switching tabs
+        if (show) {
+          p.querySelectorAll('.acc-item').forEach((it, i) => it.classList.toggle('active', i === 0));
+        }
+      });
+    });
+  });
+
+  /* Accordion hover / focus */
+  document.querySelectorAll('.acc-row').forEach(row => {
+    row.querySelectorAll('.acc-item').forEach(item => {
+      const activate = () => {
+        row.querySelectorAll('.acc-item').forEach(it => it.classList.remove('active'));
+        item.classList.add('active');
+      };
+      item.addEventListener('mouseenter', activate);
+      item.addEventListener('focus', activate);
+    });
+  });
+
+  /* 5 ── Word hover glow (hero h1 only — gold tint on dark bg) */
+  document.querySelectorAll('h1 .wa').forEach(w => {
+    w.addEventListener('mouseenter', () => { w.style.textShadow = '0 0 22px rgba(201,168,76,0.55)'; });
+    w.addEventListener('mouseleave', () => { w.style.textShadow = 'none'; });
+  });
 </script>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
   import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
-  const firebaseConfig = { apiKey:"AIzaSyAYLyaxPVShaP8TgmwSnhy_GYmMg2pnkvE", authDomain:"selesta-4533a.firebaseapp.com", projectId:"selesta-4533a", storageBucket:"selesta-4533a.firebasestorage.app", messagingSenderId:"687723882748", appId:"1:687723882748:web:02f769fd223a29be748f79" };
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-  const form = document.getElementById("devisForm");
-  form.addEventListener("submit", async (e) => {
+  const cfg = { apiKey:"AIzaSyAYLyaxPVShaP8TgmwSnhy_GYmMg2pnkvE", authDomain:"selesta-4533a.firebaseapp.com", projectId:"selesta-4533a", storageBucket:"selesta-4533a.firebasestorage.app", messagingSenderId:"687723882748", appId:"1:687723882748:web:02f769fd223a29be748f79" };
+  const app = initializeApp(cfg);
+  const db  = getFirestore(app);
+  const form = document.getElementById('devisForm');
+  const btn  = document.getElementById('submitBtn');
+  form.addEventListener('submit', async e => {
     e.preventDefault();
-    const submitBtn = document.querySelector(".btn-submit");
-    submitBtn.disabled = true;
-    submitBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation:spin .8s linear infinite"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Envoi en cours…';
-    submitBtn.style.opacity = '0.7';
-    const data = { prenom:document.getElementById("prenom").value, nom:document.getElementById("nom").value, email:document.getElementById("email").value, tel:document.getElementById("tel").value, type:document.getElementById("type").value, message:document.getElementById("message").value, date:new Date() };
-    const MAKE_WEBHOOK = "https://hook.eu1.make.com/56d2w0jc5z98ug15ng8nqvq5xqny3s09";
+    btn.disabled = true;
+    btn.innerHTML = '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation:spin .8s linear infinite"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg> Envoi…';
+    const data = { prenom: form.prenom.value, nom: form.nom.value, email: form.email.value, tel: form.tel.value, type: form.type.value, message: form.message.value, date: new Date() };
     try {
-      await addDoc(collection(db,"devis"), data);
-
-      // Envoi vers Make (Google Sheets + email automatique)
-      await fetch(MAKE_WEBHOOK, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          date: new Date().toLocaleDateString("fr-FR"),
-          nom: data.nom,
-          prenom: data.prenom,
-          email: data.email,
-          telephone: data.tel,
-          type_presta: data.type,
-          description: data.message
-        })
+      await addDoc(collection(db,'devis'), data);
+      await fetch("https://hook.eu1.make.com/56d2w0jc5z98ug15ng8nqvq5xqny3s09", {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ date: new Date().toLocaleDateString('fr-FR'), nom: data.nom, prenom: data.prenom, email: data.email, telephone: data.tel, type_presta: data.type, description: data.message })
       });
-
-      const successMsg = document.getElementById("successMessage");
-      successMsg.style.display = "block";
-      successMsg.scrollIntoView({ behavior:"smooth", block:"nearest" });
-      document.querySelector(".btn-submit").style.display = "none";
+      document.getElementById('successMessage').style.display = 'block';
+      btn.style.display = 'none';
       form.reset();
-    } catch(error) { console.error("Erreur :",error); alert("Erreur ❌"); }
+    } catch(err) {
+      console.error(err);
+      btn.disabled = false;
+      btn.innerHTML = 'Envoyer ma demande <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+      alert('Une erreur est survenue. Veuillez réessayer ou nous appeler directement.');
+    }
   });
+
+  /* ── EXPAND MAP CARD ── */
+  (function(){
+    const card   = document.getElementById('location-map');
+    const inner  = card.querySelector('.lmap-inner');
+    if(!card) return;
+
+    let isExpanded = false;
+
+    // Click to expand/collapse
+    card.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      inner.classList.toggle('expanded', isExpanded);
+    });
+
+    // 3D tilt on mousemove
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = (e.clientX - cx) / (rect.width / 2);
+      const dy = (e.clientY - cy) / (rect.height / 2);
+      card.querySelector('.lmap-card').style.transform =
+        `perspective(1000px) rotateX(${-dy * 6}deg) rotateY(${dx * 6}deg)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.querySelector('.lmap-card').style.transform =
+        'perspective(1000px) rotateX(0deg) rotateY(0deg)';
+    });
+  })();
 </script>
 </body>
 </html>
