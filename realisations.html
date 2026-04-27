@@ -4,143 +4,185 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nos Réalisations – Selesta Lyon | Chantiers Avant/Après | Façade, ITE, Rénovation</title>
-  <meta name="description" content="Découvrez les réalisations Selesta à Lyon et Rhône-Alpes : restauration de mascarons, ravalement façade Cartier, Abbaye La Rochette, bardage ITE, maçonnerie et rénovation globale." />
+  <meta name="description" content="Découvrez les réalisations Selesta à Lyon et Rhône-Alpes : ravalement de façade, isolation thermique par l'extérieur, restauration de patrimoine et rénovation globale." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://selesta.fr/realisations.html" />
   <meta property="og:title" content="Nos Réalisations – Selesta Lyon | Avant / Après" />
   <meta property="og:description" content="Chantiers de rénovation, restauration patrimoniale, ITE et façades à Lyon et Rhône-Alpes." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://selesta.fr/realisations.html" />
-  <meta property="og:image" content="https://selesta.fr/wp-content/uploads/Copie-de-Logo-Selesta.webp" />
   <link rel="icon" type="image/png" href="./favicon_32x32.png" />
   <link rel="shortcut icon" type="image/png" href="./favicon_32x32.png" />
   <link rel="apple-touch-icon" href="./favicon_32x32.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Instrument+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--flame:#C9A84C;--flame-deep:#A07830;--flame-soft:rgba(201,168,76,.10);--flame-glow:rgba(201,168,76,.30);--ink:#0E0C0A;--ink-80:rgba(14,12,10,.8);--ink-50:rgba(14,12,10,.5);--ink-20:rgba(14,12,10,.2);--ink-08:rgba(14,12,10,.08);--cream:#FAF8F5;--cream-deep:#F2EFE9;--white:#FFFFFF;--border:rgba(14,12,10,.12);--font-display:'Unbounded',sans-serif;--font-body:'Instrument Sans',sans-serif;--ease-out:cubic-bezier(0.16,1,0.3,1)}
+    :root{
+      --gold:#C9A84C;--gold-deep:#A07830;--gold-soft:rgba(201,168,76,.10);--gold-glow:rgba(201,168,76,.25);
+      --dark:#0D0B09;--dark-80:rgba(13,11,9,.8);--dark-50:rgba(13,11,9,.5);--dark-20:rgba(13,11,9,.2);--dark-08:rgba(13,11,9,.08);
+      --cream:#FAF8F5;--cream-deep:#F2EFE9;--white:#FFFFFF;
+      --border:rgba(13,11,9,.10);
+      --font-display:'DM Sans',sans-serif;--font-body:'DM Sans',sans-serif;
+      --ease:cubic-bezier(0.16,1,0.3,1)
+    }
     html{scroll-behavior:smooth}
-    body{font-family:var(--font-body);color:var(--ink);background:var(--white);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+    body{font-family:var(--font-body);color:var(--dark);background:var(--white);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-weight:400;letter-spacing:-.01em}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
 
     @keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
     @keyframes fadeIn{from{opacity:0}to{opacity:1}}
     @keyframes pulse-ring{0%{transform:scale(1);opacity:.6}100%{transform:scale(1.6);opacity:0}}
-    @keyframes grain{0%,100%{transform:translate(0,0)}10%{transform:translate(-2%,-3%)}20%{transform:translate(3%,1%)}30%{transform:translate(-1%,4%)}40%{transform:translate(4%,-1%)}50%{transform:translate(-3%,2%)}60%{transform:translate(1%,-4%)}70%{transform:translate(-4%,3%)}80%{transform:translate(2%,-2%)}90%{transform:translate(3%,4%)}}
-    body::after{content:'';position:fixed;inset:-50%;width:200%;height:200%;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='1'/%3E%3C/svg%3E");opacity:.025;pointer-events:none;z-index:9999;animation:grain 8s steps(10) infinite}
-    .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    @keyframes word-appear{0%{opacity:0;transform:translateY(22px) scale(0.86);filter:blur(8px)}60%{opacity:.9;transform:translateY(6px) scale(0.98);filter:blur(1px)}100%{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s var(--ease),transform .65s var(--ease)}
     .reveal.visible{opacity:1;transform:none}
+    .wa{display:inline-block;opacity:0}
+    .wa.go{animation:word-appear .78s ease-out forwards}
 
     /* HEADER */
     header{position:fixed;top:0;left:0;right:0;z-index:500;padding:0 40px;height:72px;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,245,.96);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--border)}
-    .logo { display:flex; align-items:center; gap:10px; text-decoration:none; }
-    .logo img { height:40px; width:auto; display:block; border-radius:8px; }
-    .logo-text { font-family: 'Playfair Display', Georgia, serif; font-size:26px; font-weight:700; background: linear-gradient(135deg, #C9A84C 0%, #F0D080 40%, #A07830 70%, #C9A84C 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; letter-spacing:-0.5px; line-height:1; }
-    
-    
+    .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo img{height:40px;width:auto;display:block;border-radius:8px}
+    .logo-text{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;color:var(--dark);letter-spacing:-.01em;line-height:1}
     nav{display:flex;align-items:center;gap:32px}
-    nav a{font-size:13px;font-weight:500;color:var(--ink-50);transition:color .2s}
-    nav a:hover,nav a.active{color:var(--ink)}
+    nav a{font-family:var(--font-body);font-size:14px;font-weight:400;color:var(--dark-50);transition:color .2s;letter-spacing:0}
+    nav a:hover,nav a.active{color:var(--dark)}
     .header-actions{display:flex;align-items:center;gap:12px}
-    .pill-rge{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--flame);border:1.5px solid var(--flame);padding:5px 12px;border-radius:100px}
-    .btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:500;cursor:pointer;background:var(--flame);color:var(--white);padding:10px 20px;border-radius:6px;font-size:13px;border:none;transition:all .25s var(--ease-out)}
-    .btn-primary:hover{background:var(--flame-deep);transform:translateY(-2px)}
-    .btn-ghost{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:500;background:transparent;color:var(--ink);padding:13px 24px;border-radius:6px;font-size:14px;border:1.5px solid var(--border);transition:all .25s var(--ease-out)}
-    .btn-ghost:hover{border-color:var(--ink-50)}
+    .pill-rge{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);border:1.5px solid var(--gold);padding:5px 12px;border-radius:100px}
+    .btn-primary{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:600;font-size:13px;cursor:pointer;background:var(--gold);color:var(--white);padding:10px 20px;border-radius:6px;border:none;transition:all .25s var(--ease)}
+    .btn-primary:hover{background:var(--gold-deep);transform:translateY(-2px)}
     .burger{display:none;flex-direction:column;justify-content:center;gap:5px;width:40px;height:40px;background:none;border:1.5px solid var(--border);border-radius:8px;cursor:pointer;padding:8px}
-    .burger span{display:block;height:1.5px;background:var(--ink);border-radius:2px;transition:all .3s var(--ease-out);transform-origin:center}
+    .burger span{display:block;height:1.5px;background:var(--dark);border-radius:2px;transition:all .3s var(--ease);transform-origin:center}
     .burger.open span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
     .burger.open span:nth-child(2){opacity:0;transform:scaleX(0)}
     .burger.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
-    .mobile-nav-overlay{display:none;position:fixed;inset:0;top:72px;background:rgba(250,248,245,.98);backdrop-filter:blur(20px);z-index:490;padding:32px 24px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .3s var(--ease-out),transform .3s var(--ease-out)}
+    .mobile-nav-overlay{display:none;position:fixed;inset:0;top:72px;background:rgba(250,248,245,.98);backdrop-filter:blur(20px);z-index:490;padding:32px 24px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .3s var(--ease),transform .3s var(--ease)}
     .mobile-nav-overlay.open{opacity:1;transform:translateY(0);pointer-events:all}
     .mobile-nav{display:flex;flex-direction:column;gap:4px}
-    .mobile-nav a{font-family:var(--font-display);font-size:22px;font-weight:700;color:var(--ink);padding:14px 0;border-bottom:1px solid var(--border);display:block;transition:color .2s,padding-left .2s}
-    .mobile-nav a:hover{color:var(--flame);padding-left:8px}
-    .mobile-nav a.mobile-nav-cta{margin-top:20px;background:var(--flame);color:white;padding:16px 24px;border-radius:8px;border:none;text-align:center;font-size:14px}
+    .mobile-nav a{font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--dark);padding:14px 0;border-bottom:1px solid var(--border);display:block;transition:color .2s,padding-left .2s}
+    .mobile-nav a:hover{color:var(--gold);padding-left:8px}
+    .mobile-nav a.mobile-nav-cta{margin-top:20px;background:var(--gold);color:white;padding:16px 24px;border-radius:8px;border:none;text-align:center;font-size:14px;font-weight:600}
 
-    /* HERO PAGE */
-    .page-hero{background:linear-gradient(160deg,#FAF8F5 0%,#EDE8DF 55%,#FAF8F5 100%);padding:140px 40px 80px;position:relative;overflow:hidden}
-    .page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(14,12,10,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(14,12,10,.05) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
-    .page-hero-glow{position:absolute;width:700px;height:700px;top:-200px;right:-200px;background:radial-gradient(ellipse,rgba(201,168,76,.18) 0%,transparent 65%);pointer-events:none}
+    /* PAGE HERO */
+    .page-hero{
+      background: linear-gradient(to right, rgba(10,9,8,.80) 0%, rgba(10,9,8,.50) 55%, rgba(10,9,8,.25) 100%), url('photo/ext-maison.png') center center / cover no-repeat;
+      padding:140px 40px 80px;position:relative;overflow:hidden
+    }
+    .page-hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:60px 60px;pointer-events:none}
+    .page-hero-glow{position:absolute;width:600px;height:600px;top:-150px;right:-150px;background:radial-gradient(ellipse,rgba(201,168,76,.12) 0%,transparent 65%);pointer-events:none}
     .page-hero-inner{max-width:1240px;margin:0 auto;position:relative;z-index:1}
-    .page-hero-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px;animation:fadeIn .8s var(--ease-out) .1s both}
-    .page-hero-eyebrow-dot{width:8px;height:8px;background:var(--flame);border-radius:50%;position:relative}
-    .page-hero-eyebrow-dot::after{content:'';position:absolute;inset:-4px;border:1px solid var(--flame);border-radius:50%;animation:pulse-ring 2s ease-out infinite}
-    .page-hero-eyebrow span{font-family:var(--font-display);font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--flame)}
-    .page-hero h1{font-family:var(--font-display);font-size:clamp(38px,4.5vw,60px);font-weight:700;line-height:1.05;letter-spacing:-0.5px;color:var(--ink);margin-bottom:24px;animation:fadeUp .9s var(--ease-out) .2s both}
-    .page-hero h1 span{color:var(--flame)}
-    .page-hero-desc{font-size:16px;font-weight:400;color:rgba(14,12,10,.68);max-width:620px;line-height:1.8;animation:fadeUp .9s var(--ease-out) .35s both}
+    .page-hero-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:24px;animation:fadeIn .8s var(--ease) .1s both}
+    .page-hero-eyebrow-dot{width:8px;height:8px;background:var(--gold);border-radius:50%;position:relative}
+    .page-hero-eyebrow-dot::after{content:'';position:absolute;inset:-4px;border:1px solid var(--gold);border-radius:50%;animation:pulse-ring 2s ease-out infinite}
+    .page-hero-eyebrow span{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold)}
+    .page-hero h1{font-family:'DM Serif Display',serif;font-size:clamp(40px,5vw,64px);font-weight:400;line-height:1.05;letter-spacing:-.02em;color:#fff;margin-bottom:20px;animation:fadeUp .9s var(--ease) .2s both}
+    .page-hero h1 em{font-style:italic;color:var(--gold)}
+    .page-hero-desc{font-family:var(--font-body);font-size:16px;font-weight:400;color:rgba(255,255,255,.55);max-width:560px;line-height:1.85;animation:fadeUp .9s var(--ease) .35s both}
+    .page-hero-eyebrow span{font-family:var(--font-body);font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
+    .page-hero-stats{display:flex;gap:48px;margin-top:48px;animation:fadeUp .9s var(--ease) .45s both}
+    .stat-item{display:flex;flex-direction:column;gap:4px}
+    .stat-val{font-family:'DM Serif Display',serif;font-size:32px;font-weight:400;color:#fff;letter-spacing:-.01em}
+    .stat-val span{color:var(--gold)}
+    .stat-lbl{font-size:12px;color:rgba(255,255,255,.45);letter-spacing:.3px;font-weight:400}
 
-    /* PROJECTS */
-    .realisations-section{background:var(--cream);padding:0 40px 100px}
-    .section-inner{max-width:1240px;margin:0 auto}
-    .eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:16px}
-    .eyebrow::before{content:'';display:block;width:28px;height:2px;background:var(--flame);flex-shrink:0}
-    .eyebrow span{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--flame)}
-    .section-title{font-family:var(--font-display);font-size:clamp(28px,3.5vw,46px);font-weight:600;letter-spacing:-0.3px;line-height:1.08;color:var(--ink)}
-    .section-sub{font-size:16px;color:rgba(14,12,10,.68);max-width:520px;line-height:1.8;font-weight:400}
+    /* GALLERY GRID */
+    .gallery-section{background:var(--cream);padding:80px 40px 100px}
+    .gallery-inner{max-width:1240px;margin:0 auto}
+    .section-header{margin-bottom:56px}
+    .section-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .section-eyebrow::before{content:'';display:block;width:24px;height:2px;background:var(--gold);flex-shrink:0}
+    .section-eyebrow span{font-family:var(--font-body);font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
+    .section-title{font-family:'DM Serif Display',serif;font-size:clamp(26px,3vw,42px);font-weight:400;letter-spacing:-.02em;line-height:1.1;color:var(--dark)}
+    .section-sub{font-size:15px;color:var(--dark-50);max-width:480px;line-height:1.8;margin-top:10px;font-weight:400}
 
-    .realisation-project{margin-bottom:80px;padding-bottom:80px;border-bottom:1px solid var(--border)}
-    .realisation-project:last-child{margin-bottom:0;padding-bottom:0;border-bottom:none}
-    .realisation-meta{display:flex;align-items:center;gap:16px;margin-bottom:20px;flex-wrap:wrap}
-    .realisation-tag{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--flame);border:1.5px solid var(--flame);padding:4px 12px;border-radius:100px}
-    .realisation-location{font-size:13px;color:var(--ink-50);font-style:italic}
-    .realisation-project h3{font-family:var(--font-display);font-size:clamp(18px,2.2vw,24px);font-weight:600;letter-spacing:0;color:var(--ink);margin-bottom:12px}
-    .realisation-desc{font-size:15px;color:rgba(14,12,10,.65);line-height:1.8;max-width:680px;margin-bottom:40px}
-    .before-after-wrap{display:grid;grid-template-columns:1fr 1fr;gap:2px;border-radius:16px;overflow:hidden;background:var(--border);box-shadow:0 4px 24px rgba(14,12,10,.08)}
-    .ba-panel{position:relative;overflow:hidden}
-    .ba-panel img{width:100%;height:340px;object-fit:cover;display:block;transition:transform .6s var(--ease-out);background:rgba(255,255,255,.05)}
-    .ba-panel:hover img{transform:scale(1.04)}
-    .ba-label{position:absolute;top:16px;left:16px;font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:100px;backdrop-filter:blur(12px)}
-    .ba-label.avant{background:rgba(14,12,10,.7);color:rgba(255,255,255,.7);border:1px solid rgba(255,255,255,.15)}
-    .ba-label.apres{background:var(--flame);color:var(--white)}
-    .ba-caption{padding:16px 20px;font-size:13px;color:var(--ink-50);line-height:1.55;background:var(--white);border-top:1px solid var(--border)}
+    .projects-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px 48px}
 
-    /* IMG placeholder when broken */
-    .img-placeholder{width:100%;height:340px;background:var(--cream-deep);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;color:var(--ink-20)}
-    .img-placeholder svg{width:40px;height:40px;stroke:var(--ink-20);fill:none;stroke-width:1.5}
-    .img-placeholder span{font-size:12px;font-family:var(--font-display);letter-spacing:1px;text-transform:uppercase}
+    /* PROJECT CARD */
+    .project-card{display:flex;flex-direction:column;gap:20px}
+    .project-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    .project-tag{font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--gold);border:1.5px solid var(--gold);padding:4px 12px;border-radius:100px}
+    .project-location{font-family:var(--font-body);font-size:12px;color:var(--dark-50);display:flex;align-items:center;gap:5px}
+    .project-location svg{flex-shrink:0;opacity:.5}
+    .project-card h3{font-family:'DM Serif Display',serif;font-size:clamp(17px,1.6vw,22px);font-weight:400;letter-spacing:-.01em;color:var(--dark);line-height:1.3}
+    .project-card p{font-family:var(--font-body);font-size:14px;color:var(--dark-50);line-height:1.8;font-weight:400}
 
-    /* CTA BAND */
-    .cta-section{background:var(--flame);padding:80px 40px;position:relative;overflow:hidden}
-    .cta-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+    /* COMPARE SLIDER */
+    .compare-wrap{position:relative;overflow:hidden;border-radius:14px;cursor:ew-resize;user-select:none;-webkit-user-select:none;box-shadow:0 4px 32px rgba(13,11,9,.10);touch-action:none;background:#E8E4DE}
+    .compare-img{width:100%;height:380px;object-fit:cover;display:block}
+    .compare-img--after{position:absolute;top:0;left:0;width:100%;height:100%;clip-path:inset(0 50% 0 0);object-fit:cover}
+    .compare-handle{position:absolute;top:0;bottom:0;left:50%;transform:translateX(-50%);width:2px;background:rgba(255,255,255,.9);z-index:10;pointer-events:none;box-shadow:0 0 8px rgba(0,0,0,.3)}
+    .compare-handle-btn{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:44px;height:44px;background:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 20px rgba(0,0,0,.25);flex-shrink:0}
+    .compare-handle-btn svg{width:20px;height:20px;flex-shrink:0}
+    .compare-label{position:absolute;top:14px;font-family:var(--font-display);font-size:9px;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:5px 12px;border-radius:100px;backdrop-filter:blur(10px);pointer-events:none;z-index:9}
+    .compare-label--avant{left:14px;background:rgba(13,11,9,.65);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15)}
+    .compare-label--apres{right:14px;background:var(--gold);color:var(--white)}
+    .compare-hint{position:absolute;bottom:14px;left:50%;transform:translateX(-50%);white-space:nowrap;font-family:var(--font-body);font-size:11px;font-weight:500;color:rgba(255,255,255,.7);background:rgba(13,11,9,.5);backdrop-filter:blur(8px);padding:5px 14px;border-radius:100px;pointer-events:none;z-index:9;transition:opacity .3s ease}
+    .compare-wrap.interacted .compare-hint{opacity:0}
+
+    /* FEATURED (full width) */
+    .project-featured{grid-column:1/-1}
+    .project-featured .compare-img,
+    .project-featured .compare-img--after{height:500px}
+    .project-featured-inner{display:grid;grid-template-columns:1fr 1.8fr;gap:48px;align-items:start}
+    .project-featured-info{display:flex;flex-direction:column;gap:16px;padding-top:8px}
+    .project-featured-info h3{font-family:'DM Serif Display',serif;font-size:clamp(20px,2.2vw,28px);font-weight:400;letter-spacing:-.01em;line-height:1.2;color:var(--dark)}
+    .project-featured-info p{font-size:15px;color:var(--dark-50);line-height:1.8;font-weight:400}
+    .project-detail-list{display:flex;flex-direction:column;gap:10px;margin-top:4px}
+    .project-detail-row{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--dark-50)}
+    .project-detail-row strong{font-weight:600;color:var(--dark);min-width:80px;flex-shrink:0}
+
+    /* CTA */
+    .cta-section{background:var(--dark);padding:80px 40px;position:relative;overflow:hidden}
+    .cta-section::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.04) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+    .cta-glow{position:absolute;width:500px;height:500px;top:-150px;left:50%;transform:translateX(-50%);background:radial-gradient(ellipse,rgba(201,168,76,.12) 0%,transparent 65%);pointer-events:none}
     .cta-inner{max-width:1240px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:48px;position:relative}
-    .cta-text h2{font-family:var(--font-display);font-size:clamp(28px,3.5vw,46px);font-weight:800;letter-spacing:-1.5px;color:var(--white);line-height:1.05;margin-bottom:12px}
-    .cta-text p{font-size:17px;color:rgba(255,255,255,.75);font-weight:300}
-    .btn-cta-white{display:inline-flex;align-items:center;gap:10px;background:var(--white);color:var(--flame);padding:18px 36px;border-radius:8px;font-family:var(--font-display);font-size:13px;font-weight:700;white-space:nowrap;transition:all .3s var(--ease-out)}
-    .btn-cta-white:hover{background:var(--ink);color:var(--white);transform:translateY(-3px)}
+    .cta-text h2{font-family:'DM Serif Display',serif;font-size:clamp(24px,3vw,42px);font-weight:400;letter-spacing:-.02em;color:var(--white);line-height:1.1;margin-bottom:10px}
+    .cta-text p{font-size:15px;color:rgba(255,255,255,.5);font-weight:400;line-height:1.7}
+    .btn-cta-gold{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:var(--white);padding:16px 32px;border-radius:8px;font-family:var(--font-body);font-size:14px;font-weight:500;letter-spacing:0;white-space:nowrap;transition:all .3s var(--ease)}
+    .btn-cta-gold:hover{background:var(--gold-deep);transform:translateY(-3px);box-shadow:0 8px 32px rgba(201,168,76,.35)}
 
     /* FOOTER */
-    footer{background:var(--ink);padding:64px 40px 36px;border-top:1px solid rgba(255,255,255,.06)}
+    footer{background:var(--dark);padding:64px 40px 36px;border-top:1px solid rgba(255,255,255,.06)}
     .footer-inner{max-width:1240px;margin:0 auto}
     .footer-top{display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:32px}
-    .footer-brand .logo{margin-bottom:16px}
-    .footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.7}
-    .footer-col h5{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:20px}
+    .footer-brand p{font-size:14px;color:rgba(255,255,255,.4);line-height:1.7;margin-top:14px}
+    .footer-col h5{font-family:var(--font-display);font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.3);margin-bottom:20px}
     .footer-col ul{list-style:none;display:flex;flex-direction:column;gap:10px}
-    .footer-col ul li a{font-size:14px;color:rgba(255,255,255,.5);transition:color .2s}
-    .footer-col ul li a:hover{color:var(--flame)}
-    .footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.3);flex-wrap:wrap;gap:12px}
+    .footer-col ul li a{font-size:14px;color:rgba(255,255,255,.45);transition:color .2s}
+    .footer-col ul li a:hover{color:var(--gold)}
+    .footer-bottom{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(255,255,255,.25);flex-wrap:wrap;gap:12px}
+    .footer-logo-wrap{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+    .footer-logo-text{font-family:'DM Serif Display',serif;font-size:20px;font-weight:400;color:#fff;letter-spacing:-.01em}
 
+    @media(max-width:1024px){
+      .projects-grid{grid-template-columns:1fr}
+      .project-featured-inner{grid-template-columns:1fr}
+    }
     @media(max-width:768px){
-      header{padding:0 20px} nav{display:none} .pill-rge{display:none}
-      .burger{display:flex} .mobile-nav-overlay{display:block}
-      .page-hero{padding:120px 20px 60px}
-      .realisations-section{padding:0 20px 72px}
-      .before-after-wrap{grid-template-columns:1fr}
-      .ba-panel img,.img-placeholder{height:240px}
-      .realisation-meta{gap:8px}
+      header{padding:0 20px}
+      nav{display:none}
+      .pill-rge{display:none}
+      .burger{display:flex}
+      .mobile-nav-overlay{display:block}
+      .page-hero{padding:110px 20px 60px}
+      .page-hero-stats{gap:28px}
+      .gallery-section{padding:60px 20px 80px}
+      .compare-img,.project-featured .compare-img--after{height:260px}
+      .project-featured .compare-img,.project-featured .compare-img--after{height:300px}
       .cta-inner{flex-direction:column;text-align:center}
       .footer-top{grid-template-columns:1fr 1fr;gap:32px}
     }
-    @media(max-width:480px){.footer-top{grid-template-columns:1fr}}
+    @media(max-width:480px){
+      .footer-top{grid-template-columns:1fr}
+      .page-hero-stats{flex-wrap:wrap;gap:20px}
+    }
   </style>
 </head>
 <body>
+
 <header>
   <a href="index.html" class="logo">
     <img src="favicon.png" alt="Selesta" />
@@ -150,7 +192,7 @@
     <a href="prestations.html">Nos prestations</a>
     <a href="realisations.html" class="active">Réalisations</a>
     <a href="faq.html">Méthode &amp; FAQ</a>
-    <a href="index.html#avis">Avis</a>
+    <a href="index.html#avis">Avis clients</a>
     <a href="index.html#contact">Contact</a>
   </nav>
   <div class="header-actions">
@@ -159,227 +201,352 @@
     <button class="burger" id="burger-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
 </header>
+
 <div class="mobile-nav-overlay" id="mobile-nav-overlay">
   <nav class="mobile-nav">
     <a href="prestations.html">Nos prestations</a>
     <a href="realisations.html">Réalisations</a>
     <a href="faq.html">Méthode &amp; FAQ</a>
-    <a href="index.html#avis">Avis</a>
+    <a href="index.html#avis">Avis clients</a>
     <a href="index.html#contact">Contact</a>
     <a href="index.html#contact" class="mobile-nav-cta">Devis gratuit →</a>
   </nav>
 </div>
 
 <main id="main-content">
+
 <section class="page-hero">
   <div class="page-hero-glow"></div>
   <div class="page-hero-inner">
-    <div class="page-hero-eyebrow"><div class="page-hero-eyebrow-dot"></div><span>Lyon &amp; Rhône-Alpes — Depuis 2020</span></div>
-    <h1>Des chantiers qui<br/><span>parlent d'eux-mêmes.</span></h1>
-    <p class="page-hero-desc">Découvrez nos projets récents alliant qualité d'exécution, économies d'énergie et esthétisme. Chaque réalisation est une référence — restauration patrimoniale, isolation thermique ou rénovation globale.</p>
+    <div class="page-hero-eyebrow">
+      <div class="page-hero-eyebrow-dot"></div>
+      <span>Lyon &amp; Rhône-Alpes — Depuis 2020</span>
+    </div>
+    <h1>Des chantiers qui<br/><em>parlent d'eux-mêmes.</em></h1>
+    <p class="page-hero-desc">Façades restaurées, bâtiments isolés, intérieurs transformés. Glissez le curseur pour comparer l'état initial et le résultat final de chaque chantier.</p>
+    <div class="page-hero-stats">
+      <div class="stat-item">
+        <div class="stat-val">200<span>+</span></div>
+        <div class="stat-lbl">Chantiers réalisés</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">5<span> ans</span></div>
+        <div class="stat-lbl">D'expertise terrain</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">RGE</div>
+        <div class="stat-lbl">Qualibat certifié</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="realisations-section">
-  <div class="section-inner" style="padding-top:72px;">
+<section class="gallery-section">
+  <div class="gallery-inner">
 
-    <!-- Projet 1 -->
-    <div class="realisation-project reveal">
-      <div class="realisation-meta">
-        <span class="realisation-tag">Restauration patrimoine</span>
-        <span class="realisation-location">4 Quai Victor Augagneur, Lyon 7</span>
-      </div>
-      <h3>Restauration de bâti ancien — Mascarons sculptés</h3>
-      <p class="realisation-desc">Ravalement de façade et restauration minutieuse des mascarons sculptés, détériorés par le temps et par un sablage agressif. Nettoyage contrôlé, purge, rejointoiement à la chaux, ragréage, sculpture et reconstitution volumique.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">Avant</span>
-          <img src="Photos/imageretouché.png" alt="Mascaron avant restauration" loading="lazy" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Photo disponible sur selesta.fr</span></div><div class=\'ba-caption\'>État initial : encrassement, éclats et couches de peinture vieillie avant intervention.</div>'" />
-          <div class="ba-caption">État initial : encrassement, éclats et couches de peinture vieillie avant intervention.</div>
-        </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Après</span>
-          <img src="Photos/imagetete.png" alt="Mascaron après restauration" loading="lazy" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Photo disponible sur selesta.fr</span></div><div class=\'ba-caption\'>Après intervention : ornements et lecture architecturale restitués à leur apparence d\'origine.</div>'" />
-          <div class="ba-caption">Après intervention : ornements et lecture architecturale restitués à leur apparence d'origine.</div>
-        </div>
-      </div>
+    <div class="section-header reveal">
+      <div class="section-eyebrow"><span>Avant / Après</span></div>
+      <h2 class="section-title">Nos réalisations récentes</h2>
+      <p class="section-sub">Chaque chantier est documenté avant et après intervention. Glissez le curseur pour mesurer la transformation.</p>
     </div>
 
-    <!-- Projet 2 -->
-    <div class="realisation-project reveal" style="transition-delay:.1s">
-      <div class="realisation-meta">
-        <span class="realisation-tag">Façade pierre de taille</span>
-        <span class="realisation-location">25 Rue Édouard Herriot, Lyon 1 — Bijouterie Cartier</span>
-      </div>
-      <h3>Ravalement façade ancienne — Futur Cartier Lyon</h3>
-      <p class="realisation-desc">Ravalement et restauration de la façade en pierre avec techniques traditionnelles : badigeon de chaux, nettoyage doux, reprise d'ornements. Un chantier de prestige pour l'ouverture de la prochaine bijouterie Cartier à Lyon.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">Avant</span>
-          <img src="Photos/photo2.png" alt="Façade Herriot avant ravalement" loading="lazy" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Photo sur selesta.fr</span></div><div class=\'ba-caption\'>Pierres encrassées avant travaux.</div>'" />
-          <div class="ba-caption">Pierres encrassées, apparition de mousses et ornements dégradés avant travaux.</div>
-        </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Après</span>
-          <img src="Photos/photo.png" alt="Façade Herriot après ravalement" loading="lazy" onerror="this.parentNode.innerHTML='<div class=\'img-placeholder\'><svg viewBox=\'0 0 24 24\'><rect x=\'3\' y=\'3\' width=\'18\' height=\'18\' rx=\'2\'/><circle cx=\'8.5\' cy=\'8.5\' r=\'1.5\'/><polyline points=\'21 15 16 10 5 21\'/></svg><span>Photo sur selesta.fr</span></div><div class=\'ba-caption\'>Pierres nettoyées, badigeon de chaux appliqué.</div>'" />
-          <div class="ba-caption">Pierres nettoyées, badigeon de chaux appliqué, ornements repris et restaurés.</div>
-        </div>
-      </div>
-    </div>
+    <div class="projects-grid">
 
-    <!-- Projet 3 -->
-    <div class="realisation-project reveal" style="transition-delay:.15s">
-      <div class="realisation-meta">
-        <span class="realisation-tag">Rénovation intérieure</span>
-        <span class="realisation-location">Abbaye de La Rochette — Belmont Tramonet, 73</span>
-      </div>
-      <h3>Transformation de l'Abbaye — 24 logements</h3>
-      <p class="realisation-desc">Transformation de l'aile ouest de l'Abbaye de La Rochette en béguinage : création de 24 logements avec isolation thermique intérieure, cloisons, plafonds, peintures et menuiseries. Un projet alliant respect du patrimoine historique et efficacité énergétique.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">Avant</span>
-          <img src="Photos/14.jpg.png" alt="Abbaye La Rochette en travaux" loading="lazy" onerror="this.src='Photos/14.jpg'" />
-          <div class="ba-caption">Création des cloisons, isolation thermique et plafonds pour aménager les 24 logements.</div>
+      <!-- Projet 1 : Vénissieux (featured) -->
+      <div class="project-card project-featured reveal">
+        <div class="project-featured-inner">
+          <div class="project-featured-info">
+            <div class="project-meta">
+              <span class="project-tag">Ravalement de façade</span>
+              <span class="project-location">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                Vénissieux, 69200
+              </span>
+            </div>
+            <h3>Ravalement complet — Maison individuelle</h3>
+            <p>Décrépissage, traitement des fissures, application d'un enduit imperméable à la chaux et finition peinture façade. La maison retrouve son étanchéité et une esthétique renouvelée, avec une garantie décennale sur l'ensemble des travaux.</p>
+            <div class="project-detail-list">
+              <div class="project-detail-row"><strong>Prestation</strong>Ravalement, imperméabilisation, finition enduit</div>
+              <div class="project-detail-row"><strong>Durée</strong>8 jours de chantier</div>
+              <div class="project-detail-row"><strong>Garantie</strong>Décennale</div>
+            </div>
+          </div>
+          <div class="compare-wrap" role="img" aria-label="Comparaison avant/après ravalement de façade à Vénissieux">
+            <img class="compare-img" src="photo/ba/venissieux-avant.jpg" alt="Façade maison Vénissieux avant ravalement" loading="eager" />
+            <img class="compare-img--after" src="photo/ba/venissieux-apres.png" alt="Façade maison Vénissieux après ravalement" loading="eager" />
+            <div class="compare-handle">
+              <div class="compare-handle-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"/><path d="M15 6l6 6-6 6"/></svg>
+              </div>
+            </div>
+            <span class="compare-label compare-label--avant">Apres</span>
+            <span class="compare-label compare-label--apres">Avant</span>
+            <span class="compare-hint">Glisser pour comparer</span>
+          </div>
         </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Après</span>
-          <img src="Photos/couloir-Abbaye.png" alt="Abbaye La Rochette couloir après" loading="lazy" onerror="this.src='Photos/Image35.png'" />
-          <div class="ba-caption">Couloir moderne avec peintures, menuiseries et mobilier — prêt à accueillir les résidents.</div>
-        </div>
       </div>
-    </div>
 
-    <!-- Projet 4 -->
-    <div class="realisation-project reveal" style="transition-delay:.2s">
-      <div class="realisation-meta">
-        <span class="realisation-tag">ITE &amp; Bardage</span>
-        <span class="realisation-location">Green Park — 33 rue George Levy, Vénissieux 69200</span>
-      </div>
-      <h3>Isolation &amp; bardage bois — Bâtiment tertiaire</h3>
-      <p class="realisation-desc">Isolation thermique par l'extérieur et habillage en bardage bois sur ossature pour ce bâtiment tertiaire à Vénissieux. Pose de laine de roche, traitement des ponts thermiques, pare-pluie et bardage bois vertical en finition.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">En chantier</span>
-          <img src="https://selesta.fr/wp-content/uploads/2024/10/cropped-IMG_0546-scaled-1.jpg" alt="Green Park pose ITE" loading="lazy" onerror="this.src='Photos/1.webp'" />
-          <div class="ba-caption">Pose de l'ITE : fixation des panneaux laine de roche, traitement ponts thermiques.</div>
+      <!-- Projet 2 : Villeurbanne immeuble ITE -->
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-tag">ITE · Laine de roche</span>
+          <span class="project-location">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Villeurbanne, 69100
+          </span>
         </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Après</span>
-          <img src="https://selesta.fr/wp-content/uploads/2024/10/cropped-cropped-IMG_0549-1-scaled-2.jpg" alt="Green Park bardage bois finition" loading="lazy" onerror="this.src='Photos/2.webp'" />
-          <div class="ba-caption">Mise en place du bardage bois vertical sur ossature : finition esthétique et durable.</div>
+        <h3>Isolation thermique par l'extérieur — Immeuble collectif</h3>
+        <p>Mise en œuvre d'une ITE en laine de roche sur immeuble collectif en copropriété, rue du Progrès. Isolation des ponts thermiques, finition enduit de façade, gain énergétique estimé à 35%.</p>
+        <div class="compare-wrap" role="img" aria-label="Comparaison avant/après ITE immeuble Villeurbanne">
+          <img class="compare-img" src="photo/ba/villeurbanne-avant.png" alt="Immeuble Villeurbanne avant ITE" loading="lazy" />
+          <img class="compare-img--after" src="photo/ba/villeurbanne-apres.png" alt="Immeuble Villeurbanne après ITE" loading="lazy" />
+          <div class="compare-handle">
+            <div class="compare-handle-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"/><path d="M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="compare-label compare-label--avant">Apres</span>
+          <span class="compare-label compare-label--apres">Avant</span>
+          <span class="compare-hint">Glisser pour comparer</span>
         </div>
       </div>
-    </div>
 
-    <!-- Projet 5 -->
-    <div class="realisation-project reveal" style="transition-delay:.25s">
-      <div class="realisation-meta">
-        <span class="realisation-tag">Maçonnerie &amp; ITE</span>
-        <span class="realisation-location">La Verpillière, 38537</span>
-      </div>
-      <h3>Ouverture mur porteur — Baie vitrée panoramique</h3>
-      <p class="realisation-desc">Transformation d'une maison traditionnelle en villa moderne et lumineuse. Ouverture de mur porteur, installation d'une baie vitrée panoramique (+150 % de surface vitrée), isolation thermique extérieure, rénovation des sous-faces et descentes d'eau.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">Avant</span>
-          <img src="https://selesta.fr/wp-content/uploads/2026/01/2.png" alt="Maison La Verpillière avant" loading="lazy" onerror="this.src='Photos/maison avant.jpg'" />
-          <div class="ba-caption">Deux petites fenêtres limitaient l'accès à la lumière naturelle dans tout l'espace.</div>
+      <!-- Projet 3 : Lyon 1 facade ancienne -->
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-tag">Façade ancienne</span>
+          <span class="project-location">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lyon 1er
+          </span>
         </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Après</span>
-          <img src="https://selesta.fr/wp-content/uploads/2026/02/WhatsApp-Image-2026-02-27-at-13.29.40.jpeg" alt="Baie vitrée panoramique après" loading="lazy" />
-          <div class="ba-caption">Baie vitrée panoramique créée grâce à l'ouverture du mur porteur — luminosité exceptionnelle.</div>
+        <h3>Restauration de façade en pierre — Badigeon de chaux</h3>
+        <p>Nettoyage de la pierre, reprise des joints à la chaux naturelle, traitement des fissures et finition badigeon de lait de chaux teinté. Respect des techniques traditionnelles et des prescriptions de l'ABF.</p>
+        <div class="compare-wrap" role="img" aria-label="Comparaison avant/après facade ancienne Lyon 1">
+          <img class="compare-img" src="photo/ba/lyon1-avant.jpg" alt="Façade ancienne Lyon 1 avant restauration" loading="lazy" />
+          <img class="compare-img--after" src="photo/ba/lyon1-apres.jpg" alt="Façade ancienne Lyon 1 après restauration" loading="lazy" />
+          <div class="compare-handle">
+            <div class="compare-handle-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"/><path d="M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="compare-label compare-label--avant">Apres</span>
+          <span class="compare-label compare-label--apres">Avant</span>
+          <span class="compare-hint">Glisser pour comparer</span>
         </div>
       </div>
-    </div>
 
-    <!-- Projet 6 -->
-    <div class="realisation-project reveal" style="transition-delay:.3s">
-      <div class="realisation-meta">
-        <span class="realisation-tag">Rénovation globale</span>
-        <span class="realisation-location">Lyon &amp; agglomération — Rhône-Alpes</span>
-      </div>
-      <h3>Rénovation complète — Second œuvre &amp; finitions</h3>
-      <p class="realisation-desc">Prise en charge complète d'un chantier de rénovation intérieure : démolition des cloisons existantes, création de nouvelles parois, isolation thermique, plâtrerie, peinture et finitions. Un interlocuteur unique du gros œuvre aux finitions.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">En chantier</span>
-          <img src="Photos/WhatsApp Image 2026-02-24 at 15.20.20 (1).jpg" alt="Chantier rénovation intérieure en cours" loading="lazy" />
-          <div class="ba-caption">Chantier en cours : second œuvre, cloisons et isolation en cours de réalisation.</div>
+      <!-- Projet 4 : École Solaize -->
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-tag">ITE · Bâtiment public</span>
+          <span class="project-location">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Solaize, 69360
+          </span>
         </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Après</span>
-          <img src="Photos/WhatsApp Image 2026-02-24 at 15.20.20.jpg" alt="Rénovation terminée finitions soignées" loading="lazy" />
-          <div class="ba-caption">Résultat final : finitions soignées, espaces rénovés prêts à être habités.</div>
+        <h3>Isolation thermique par l'extérieur — École</h3>
+        <p>Rénovation énergétique d'un bâtiment scolaire : ITE laine de roche, traitement des ponts thermiques et finition enduit. Chantier réalisé pendant les vacances scolaires, dans les délais contractuels.</p>
+        <div class="compare-wrap" role="img" aria-label="Comparaison avant/après ITE école Solaize">
+          <img class="compare-img" src="photo/ba/ecole-avant.jpg" alt="École avant isolation thermique extérieure" loading="lazy" />
+          <img class="compare-img--after" src="photo/ba/ecole-apres.jpg" alt="École après isolation thermique extérieure" loading="lazy" />
+          <div class="compare-handle">
+            <div class="compare-handle-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"/><path d="M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="compare-label compare-label--avant">Apres</span>
+          <span class="compare-label compare-label--apres">Avant</span>
+          <span class="compare-hint">Glisser pour comparer</span>
         </div>
       </div>
-    </div>
 
-    <!-- Projet 7 -->
-    <div class="realisation-project reveal" style="transition-delay:.35s">
-      <div class="realisation-meta">
-        <span class="realisation-tag">Maçonnerie &amp; structures</span>
-        <span class="realisation-location">Rhône-Alpes — Divers chantiers</span>
-      </div>
-      <h3>Structures métalliques &amp; démolition maîtrisée</h3>
-      <p class="realisation-desc">Ouvertures de murs porteurs, pose d'IPN, démolition sélective et terrassement. Selesta intervient sur tous les travaux de gros œuvre et maçonnerie, avec des équipes équipées et qualifiées pour les chantiers les plus techniques.</p>
-      <div class="before-after-wrap">
-        <div class="ba-panel">
-          <span class="ba-label avant">Démolition</span>
-          <img src="Photos/demolition-helfaut-travaux-1024x768.jpg" alt="Démolition et terrassement Selesta" loading="lazy" />
-          <div class="ba-caption">Démolition sélective et curage : préparation du chantier dans les règles de l'art.</div>
+      <!-- Projet 5 : Hydrogommage Lyon 1 -->
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-tag">Hydrogommage · Badigeon</span>
+          <span class="project-location">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Lyon 1er, Rue Burdeau
+          </span>
         </div>
-        <div class="ba-panel">
-          <span class="ba-label apres">Structure</span>
-          <img src="Photos/pose métallique.png" alt="Pose de structure métallique IPN" loading="lazy" />
-          <div class="ba-caption">Pose de structures métalliques et IPN pour reprises en sous-œuvre et ouvertures portantes.</div>
+        <h3>Hydrogommage &amp; badigeon de lait de chaux — Façade ancienne</h3>
+        <p>Décrassage de la pierre par hydrogommage à basse pression, préservant la surface sans l'agresser. Finition en badigeon de lait de chaux teinté, renforçant l'imperméabilité tout en restituant l'aspect d'origine.</p>
+        <div class="compare-wrap" role="img" aria-label="Comparaison avant/après hydrogommage et badigeon Lyon 1">
+          <img class="compare-img" src="photo/ba/hydrogommage-avant.jpg" alt="Façade avant hydrogommage Lyon 1 rue Burdeau" loading="lazy" />
+          <img class="compare-img--after" src="photo/ba/hydrogommage-apres.png" alt="Façade après hydrogommage et badigeon de chaux" loading="lazy" />
+          <div class="compare-handle">
+            <div class="compare-handle-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"/><path d="M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="compare-label compare-label--avant">Apres</span>
+          <span class="compare-label compare-label--apres">Avant</span>
+          <span class="compare-hint">Glisser pour comparer</span>
         </div>
       </div>
-    </div>
 
+      <!-- Projet 6 : La Verpillière ITE maison -->
+      <div class="project-card reveal">
+        <div class="project-meta">
+          <span class="project-tag">ITE · Maison individuelle</span>
+          <span class="project-location">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            La Verpillière, 38290
+          </span>
+        </div>
+        <h3>ITE polystyrène &amp; finition enduit — Maison individuelle</h3>
+        <p>Isolation thermique par l'extérieur en polystyrène expansé graphité, finition enduit de façade teinté. Mise en œuvre soignée des angles, encadrements de fenêtres et périphérie des ouvrants pour un résultat sans pont thermique.</p>
+        <div class="compare-wrap" role="img" aria-label="Comparaison avant/après ITE maison La Verpillière">
+          <img class="compare-img" src="photo/ba/verpilliere-avant.jpg" alt="Maison La Verpillière avant isolation extérieure" loading="lazy" />
+          <img class="compare-img--after" src="photo/ba/verpilliere-apres.jpg" alt="Maison La Verpillière après isolation extérieure" loading="lazy" />
+          <div class="compare-handle">
+            <div class="compare-handle-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l-6-6 6-6"/><path d="M15 6l6 6-6 6"/></svg>
+            </div>
+          </div>
+          <span class="compare-label compare-label--avant">Apres</span>
+          <span class="compare-label compare-label--apres">Avant</span>
+          <span class="compare-hint">Glisser pour comparer</span>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- CTA -->
 <div class="cta-section">
+  <div class="cta-glow"></div>
   <div class="cta-inner">
     <div class="cta-text reveal">
       <h2>Votre projet mérite<br/>la même rigueur.</h2>
-      <p>Devis gratuit sous 48h, diagnostic précis, accompagnement clé en main.</p>
+      <p>Diagnostic précis, devis détaillé sous 48h,<br/>accompagnement clé en main de A à Z.</p>
     </div>
-    <a href="index.html#contact" class="btn-cta-white reveal">
-      Demander mon devis gratuit
+    <a href="index.html#contact" class="btn-cta-gold reveal" style="transition-delay:.15s">
+      Demander un devis gratuit
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
     </a>
   </div>
 </div>
+
 </main>
 
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <div class="logo" style="gap:10px;margin-bottom:0;"><img src="favicon.png" alt="Selesta" style="height:40px;width:auto;border-radius:8px;" /><span class="logo-text" style="font-family:'Playfair Display',Georgia,serif;font-size:26px;font-weight:700;background:linear-gradient(135deg,#C9A84C 0%,#F0D080 40%,#A07830 70%,#C9A84C 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;letter-spacing:-0.5px;line-height:1;">Selesta</span></div>
-        <p>Entreprise de rénovation énergétique certifiée RGE Qualibat, basée à Vénissieux (69). Rhône-Alpes.</p>
+        <div class="footer-logo-wrap">
+          <img src="favicon.png" alt="Selesta" style="height:36px;width:auto;border-radius:6px;" />
+          <span class="footer-logo-text">Selesta</span>
+        </div>
+        <p>Entreprise de rénovation énergétique certifiée RGE Qualibat, basée à Vénissieux (69). Interventions dans toute la région Rhône-Alpes.</p>
       </div>
-      <div class="footer-col"><h5>Prestations</h5><ul><li><a href="prestations.html#interieurs">Travaux intérieurs</a></li><li><a href="prestations.html#exterieurs">Travaux extérieurs</a></li><li><a href="prestations.html#isolation">Isolation thermique</a></li><li><a href="prestations.html#facades">Façades &amp; Patrimoine</a></li></ul></div>
-      <div class="footer-col"><h5>Navigation</h5><ul><li><a href="index.html">Accueil</a></li><li><a href="realisations.html">Réalisations</a></li><li><a href="faq.html">Méthode &amp; FAQ</a></li><li><a href="index.html#avis">Avis clients</a></li></ul></div>
-      <div class="footer-col"><h5>Nous joindre</h5><ul><li><a href="tel:+33487627179">04 87 62 71 79</a></li><li><a href="tel:+33765165430">07 65 16 54 30</a></li><li><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></li></ul></div>
+      <div class="footer-col">
+        <h5>Prestations</h5>
+        <ul>
+          <li><a href="prestations.html#interieurs">Travaux intérieurs</a></li>
+          <li><a href="prestations.html#exterieurs">Travaux extérieurs</a></li>
+          <li><a href="prestations.html#isolation">Isolation thermique</a></li>
+          <li><a href="prestations.html#facades">Façades &amp; Patrimoine</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="realisations.html">Réalisations</a></li>
+          <li><a href="faq.html">Méthode &amp; FAQ</a></li>
+          <li><a href="index.html#avis">Avis clients</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Nous joindre</h5>
+        <ul>
+          <li><a href="tel:+33487627179">04 87 62 71 79</a></li>
+          <li><a href="tel:+33765165430">07 65 16 54 30</a></li>
+          <li><a href="mailto:contact@selesta.fr">contact@selesta.fr</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       <span>© 2026 <a href="index.html" style="color:inherit">Selesta</a> — 158 Av. Francis de Pressensé, 69200 Vénissieux</span>
-      <strong style="color:rgba(255,255,255,.5)">RGE Qualibat · Entreprise du Bâtiment</strong>
+      <strong style="color:rgba(255,255,255,.35)">RGE Qualibat · Entreprise du Bâtiment</strong>
     </div>
   </div>
 </footer>
 
 <script>
+  // Mobile burger
   const burgerBtn = document.getElementById('burger-btn');
-  const mobileOverlay = document.getElementById('mobile-nav-overlay');
-  burgerBtn.addEventListener('click', () => { const isOpen = mobileOverlay.classList.toggle('open'); burgerBtn.classList.toggle('open', isOpen); burgerBtn.setAttribute('aria-expanded', isOpen); document.body.style.overflow = isOpen ? 'hidden' : ''; });
-  mobileOverlay.querySelectorAll('a').forEach(a => { a.addEventListener('click', () => { mobileOverlay.classList.remove('open'); burgerBtn.classList.remove('open'); burgerBtn.setAttribute('aria-expanded','false'); document.body.style.overflow = ''; }); });
-  const revealObserver = new IntersectionObserver((entries) => { entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('visible'); revealObserver.unobserve(e.target); } }); }, { threshold:0.1, rootMargin:'0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  const mobileNav = document.getElementById('mobile-nav-overlay');
+  burgerBtn.addEventListener('click', () => {
+    const isOpen = mobileNav.classList.toggle('open');
+    burgerBtn.classList.toggle('open', isOpen);
+    burgerBtn.setAttribute('aria-expanded', isOpen);
+  });
+
+  // Scroll reveal
+  const revealObs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObs.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+  // Drag-to-compare slider
+  class CompareSlider {
+    constructor(wrap) {
+      this.wrap = wrap;
+      this.after = wrap.querySelector('.compare-img--after');
+      this.handle = wrap.querySelector('.compare-handle');
+      this.dragging = false;
+      this._onMove = this._onMove.bind(this);
+      this._onUp = this._onUp.bind(this);
+      this.setPos(50);
+      this.init();
+    }
+
+    setPos(pct) {
+      this.pct = Math.max(1, Math.min(99, pct));
+      this.after.style.clipPath = `inset(0 ${100 - this.pct}% 0 0)`;
+      this.handle.style.left = `${this.pct}%`;
+    }
+
+    clientX(e) {
+      return e.touches ? e.touches[0].clientX : e.clientX;
+    }
+
+    calcPct(x) {
+      const r = this.wrap.getBoundingClientRect();
+      return ((x - r.left) / r.width) * 100;
+    }
+
+    _onMove(e) {
+      if (!this.dragging) return;
+      this.setPos(this.calcPct(this.clientX(e)));
+      this.wrap.classList.add('interacted');
+    }
+
+    _onUp() { this.dragging = false; }
+
+    init() {
+      this.wrap.addEventListener('mousedown', e => {
+        this.dragging = true;
+        this.setPos(this.calcPct(e.clientX));
+        this.wrap.classList.add('interacted');
+      });
+      this.wrap.addEventListener('touchstart', e => {
+        this.dragging = true;
+        this.setPos(this.calcPct(e.touches[0].clientX));
+        this.wrap.classList.add('interacted');
+      }, { passive: true });
+      document.addEventListener('mousemove', this._onMove);
+      document.addEventListener('touchmove', this._onMove, { passive: true });
+      document.addEventListener('mouseup', this._onUp);
+      document.addEventListener('touchend', this._onUp);
+    }
+  }
+
+  document.querySelectorAll('.compare-wrap').forEach(w => new CompareSlider(w));
 </script>
 </body>
 </html>
