@@ -1422,7 +1422,6 @@
 
     const gallery = document.createElement('div');
     gallery.className = 'inline-gallery';
-    gallery.style.display = 'none'; // hidden until at least one image loads
 
     const strip = document.createElement('div');
     strip.className = 'inline-gallery-strip';
@@ -1453,16 +1452,15 @@
         caption.textContent = photo.caption || '';
       });
 
-      // Reveal gallery on first success; hide card entirely if all fail
+      // Hide failed items; hide entire card if all photos fail
       img.addEventListener('load', () => {
         card._loadedCount = (card._loadedCount || 0) + 1;
-        gallery.style.display = '';
       });
       img.onerror = function() {
         card._errorCount = (card._errorCount || 0) + 1;
         item.style.display = 'none';
         if (card._errorCount === photos.length) {
-          card.style.display = 'none'; // hide the whole card — no photos at all
+          card.style.display = 'none';
         }
       };
 
